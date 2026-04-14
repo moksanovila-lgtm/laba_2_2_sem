@@ -6,18 +6,18 @@
 template <typename T>
 class Sequence : public ICollection<T>, public IEnumerable<T> {
 public:
-    // Р‘Р°Р·РѕРІС‹Рµ РјРµС‚РѕРґС‹ РёР· ICollection
+    // Базовые методы из ICollection
     T& Get(size_t index) override = 0;
     const T& Get(size_t index) const override = 0;
     size_t GetCount() const override = 0;
 
-    // РћРїРµСЂР°С†РёРё
+    // Операции
     virtual void Append(const T& item) = 0;
     virtual void Prepend(const T& item) = 0;
     virtual void InsertAt(const T& item, size_t index) = 0;
     virtual void Clear() = 0;
 
-    // РљРѕРЅРєР°С‚РµРЅР°С†РёСЏ (РІРѕР·РІСЂР°С‰Р°РµС‚ РЅРѕРІСѓСЋ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ)
+    // Конкатенация (возвращает новую последовательность)
     virtual Sequence<T>* Concat(Sequence<T>* other) const = 0;
 
     // Map-Reduce
@@ -25,7 +25,7 @@ public:
     virtual Sequence<T>* Where(bool (*predicate)(const T&)) const = 0;
     virtual T Reduce(T (*func)(const T&, const T&), const T& initial) const = 0;
 
-    // РџРµСЂРµРіСЂСѓР·РєР° РѕРїРµСЂР°С‚РѕСЂРѕРІ
+    // Перегрузка операторов
     T& operator[](size_t index);
     const T& operator[](size_t index) const;
     Sequence<T>& operator+=(const T& item);
@@ -34,5 +34,4 @@ public:
     virtual ~Sequence() = default;
 };
 
-#include "Sequence.tpp" // РќСѓР¶РµРЅ РґР»СЏ С€Р°Р±Р»РѕРЅРЅС‹С… РјРµС‚РѕРґРѕРІ СЃ РїРµСЂРµРіСЂСѓР·РєРѕР№
-
+#include "Sequence.tpp" // Нужен для шаблонных методов с перегрузкой

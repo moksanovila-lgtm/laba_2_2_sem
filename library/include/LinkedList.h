@@ -32,8 +32,6 @@ public:
     void RemoveAt(size_t index);
     void Clear();
 
-    // Р”Р»СЏ РёС‚РµСЂР°С‚РѕСЂР°
+    // Для итератора
     Node* GetHead() const { return head; }
 };
-
-#include "LinkedList.tpp"

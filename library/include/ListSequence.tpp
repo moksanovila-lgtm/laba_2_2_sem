@@ -2,7 +2,8 @@
 
 #include "ListSequence.h"
 
-// ------------------- –ö–æ–Ω—Å—Ç—Ä—É–∫—Ç–æ—Ä—ã -------------------
+// ====================  ŒÕ—“–” “Œ–€ ====================
+
 template <typename T>
 ListSequence<T>::ListSequence(bool mutableFlag) : isMutable(mutableFlag) {}
 
@@ -14,7 +15,8 @@ template <typename T>
 ListSequence<T>::ListSequence(const ListSequence& other)
     : data(other.data), isMutable(other.isMutable) {}
 
-// ------------------- –ë–∞–∑–æ–≤—ã–µ –º–µ—Ç–æ–¥—ã -------------------
+// ==================== ¡¿«Œ¬€≈ Ã≈“Œƒ€ ====================
+
 template <typename T>
 T& ListSequence<T>::Get(size_t index) {
     return data.Get(index);
@@ -30,32 +32,42 @@ size_t ListSequence<T>::GetCount() const {
     return data.GetCount();
 }
 
-// ------------------- –û–ø–µ—Ä–∞—Ü–∏–∏ –º–æ–¥–∏—Ñ–∏–∫–∞—Ü–∏–∏ -------------------
+// ==================== Œœ≈–¿÷»» ÃŒƒ»‘» ¿÷»» ====================
+
 template <typename T>
 void ListSequence<T>::Append(const T& item) {
-    if (!isMutable) throw std::logic_error("Cannot modify immutable sequence");
+    if (!isMutable) {
+        throw std::logic_error("Cannot modify immutable sequence");
+    }
     data.Append(item);
 }
 
 template <typename T>
 void ListSequence<T>::Prepend(const T& item) {
-    if (!isMutable) throw std::logic_error("Cannot modify immutable sequence");
+    if (!isMutable) {
+        throw std::logic_error("Cannot modify immutable sequence");
+    }
     data.Prepend(item);
 }
 
 template <typename T>
 void ListSequence<T>::InsertAt(const T& item, size_t index) {
-    if (!isMutable) throw std::logic_error("Cannot modify immutable sequence");
+    if (!isMutable) {
+        throw std::logic_error("Cannot modify immutable sequence");
+    }
     data.InsertAt(item, index);
 }
 
 template <typename T>
 void ListSequence<T>::Clear() {
-    if (!isMutable) throw std::logic_error("Cannot modify immutable sequence");
+    if (!isMutable) {
+        throw std::logic_error("Cannot modify immutable sequence");
+    }
     data.Clear();
 }
 
-// ------------------- Concat -------------------
+// ==================== CONCAT ====================
+
 template <typename T>
 Sequence<T>* ListSequence<T>::Concat(Sequence<T>* other) const {
     LinkedList<T> newData(data);
@@ -65,7 +77,8 @@ Sequence<T>* ListSequence<T>::Concat(Sequence<T>* other) const {
     return new ListSequence<T>(newData, isMutable);
 }
 
-// ------------------- Map, Where, Reduce -------------------
+// ==================== MAP, WHERE, REDUCE ====================
+
 template <typename T>
 Sequence<T>* ListSequence<T>::Map(T (*func)(const T&)) const {
     LinkedList<T> newData;
@@ -95,7 +108,8 @@ T ListSequence<T>::Reduce(T (*func)(const T&, const T&), const T& initial) const
     return result;
 }
 
-// ------------------- –ò—Ç–µ—Ä–∞—Ç–æ—Ä -------------------
+// ==================== »“≈–¿“Œ– ====================
+
 template <typename T>
 ListSequence<T>::Iterator::Iterator(const ListSequence* sequence)
     : seq(sequence), current(nullptr) {}
@@ -103,7 +117,7 @@ ListSequence<T>::Iterator::Iterator(const ListSequence* sequence)
 template <typename T>
 bool ListSequence<T>::Iterator::MoveNext() {
     if (!current) {
-        current = seq->data.GetHead();
+        current = const_cast<typename LinkedList<T>::Node*>(seq->data.GetHead());
     } else {
         current = current->next;
     }
@@ -112,13 +126,17 @@ bool ListSequence<T>::Iterator::MoveNext() {
 
 template <typename T>
 T& ListSequence<T>::Iterator::Current() {
-    if (!current) throw std::runtime_error("Iterator not started or finished");
+    if (!current) {
+        throw std::runtime_error("Iterator not started or finished");
+    }
     return current->data;
 }
 
 template <typename T>
 const T& ListSequence<T>::Iterator::Current() const {
-    if (!current) throw std::runtime_error("Iterator not started or finished");
+    if (!current) {
+        throw std::runtime_error("Iterator not started or finished");
+    }
     return current->data;
 }
 
