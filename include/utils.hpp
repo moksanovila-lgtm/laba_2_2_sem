@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include "Sequence.h"
+#include "Sequence.hpp"
 
 template <typename T>
 std::ostream& operator<<(std::ostream& os, const Sequence<T>& seq) {

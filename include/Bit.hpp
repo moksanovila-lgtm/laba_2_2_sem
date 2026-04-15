@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include <stdexcept>
+#include "exceptions.hpp"
 
 class Bit {
 private:
@@ -13,10 +13,8 @@ public:
     Bit(int v) : value(v != 0) {}
     Bit(bool v) : value(v) {}
     
-    // Преобразование в int
+    // Преобразование
     int toInt() const { return value ? 1 : 0; }
-    
-    // Преобразование в bool
     bool toBool() const { return value; }
     
     // Операторы сравнения
@@ -45,15 +43,19 @@ public:
     Bit& operator|=(const Bit& other) { value = value || other.value; return *this; }
     Bit& operator^=(const Bit& other) { value = value != other.value; return *this; }
     
-    // Ввод/вывод (для отладки)
+    // Вывод
     friend std::ostream& operator<<(std::ostream& os, const Bit& bit) {
         os << (bit.value ? "1" : "0");
         return os;
     }
     
+    // Ввод
     friend std::istream& operator>>(std::istream& is, Bit& bit) {
         int v;
         is >> v;
+        if (v != 0 && v != 1) {
+            throw InvalidArgumentException("Bit::operator>>(): value must be 0 or 1");
+        }
         bit.value = (v != 0);
         return is;
     }

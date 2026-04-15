@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Sequence.h"
-#include "DynamicArray.h"
-#include "IEnumerator.h"
+#include "Sequence.hpp"
+#include "DynamicArray.hpp"
+#include "exceptions.hpp"
 
 template <typename T>
 class ArraySequence : public Sequence<T> {
@@ -20,6 +20,11 @@ public:
     T& Get(size_t index) override;
     const T& Get(size_t index) const override;
     size_t GetCount() const override;
+    
+    // Дополнительные методы Sequence
+    T GetFirst() const override;
+    T GetLast() const override;
+    Sequence<T>* GetSubsequence(size_t start, size_t end) const override;
     
     // Операции модификации
     void Append(const T& item) override;
@@ -43,6 +48,7 @@ public:
     private:
         const ArraySequence* seq;
         size_t currentIndex;
+        mutable T currentValue;
         
     public:
         Iterator(const ArraySequence* sequence);
@@ -52,7 +58,6 @@ public:
         void Reset() override;
     };
     
-    // Дружественный класс
     template <typename U> friend class ImmutableArraySequence;
 };
 

@@ -1,32 +1,33 @@
-#pragma once 
+#pragma once
 
-#include "ArraySequence.h"
+#include "ListSequence.hpp"
+#include "exceptions.hpp"
 
 template <typename T>
-class ImmutableArraySequence : public ArraySequence<T> {
+class ImmutableListSequence : public ListSequence<T> {
 public:
-    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
-    ImmutableArraySequence() : ArraySequence<T>(false) {}
+    // Конструкторы
+    ImmutableListSequence() : ListSequence<T>(false) {}
     
-    ImmutableArraySequence(const DynamicArray<T>& arr) : ArraySequence<T>(arr, false) {}
+    ImmutableListSequence(const LinkedList<T>& list) : ListSequence<T>(list, false) {}
     
-    ImmutableArraySequence(const ImmutableArraySequence<T>& other) 
-        : ArraySequence<T>(other) {}
+    ImmutableListSequence(const ImmutableListSequence<T>& other) 
+        : ListSequence<T>(other) {}
     
-    // РћРїРµСЂР°С‚РѕСЂ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ
-    ImmutableArraySequence<T>& operator=(const ImmutableArraySequence<T>& other) {
+    // Оператор присваивания
+    ImmutableListSequence<T>& operator=(const ImmutableListSequence<T>& other) {
         if (this != &other) {
-            // РћС‡РёС‰Р°РµРј С‚РµРєСѓС‰РёРµ РґР°РЅРЅС‹Рµ
+            // Очищаем текущие данные
             this->Clear();
-            // РљРѕРїРёСЂСѓРµРј РґР°РЅРЅС‹Рµ РёР· other
+            // Копируем данные из other
             for (size_t i = 0; i < other.GetCount(); i++) {
-                const_cast<DynamicArray<T>&>(this->data).Append(other.Get(i));
+                const_cast<LinkedList<T>&>(this->data).Append(other.Get(i));
             }
         }
         return *this;
     }
     
-    // РџРµСЂРµРѕРїСЂРµРґРµР»СЏРµРј РјРµС‚РѕРґС‹ РјРѕРґРёС„РёРєР°С†РёРё (Р·Р°РїСЂРµС‰Р°РµРј)
+    // Переопределяем методы модификации (запрещаем)
     void Append(const T& item) override {
         throw std::logic_error("Cannot modify immutable sequence");
     }
@@ -43,37 +44,37 @@ public:
         throw std::logic_error("Cannot modify immutable sequence");
     }
     
-    // Concat РІРѕР·РІСЂР°С‰Р°РµС‚ РЅРѕРІС‹Р№ РѕР±СЉРµРєС‚ (РЅРµ РёР·РјРµРЅСЏРµС‚ С‚РµРєСѓС‰РёР№)
+    // Concat возвращает новый объект
     Sequence<T>* Concat(Sequence<T>* other) const override {
-        DynamicArray<T> newData;
-        // РљРѕРїРёСЂСѓРµРј С‚РµРєСѓС‰РёРµ РґР°РЅРЅС‹Рµ
+        LinkedList<T> newData;
+        // Копируем текущие данные
         for (size_t i = 0; i < this->GetCount(); i++) {
             newData.Append(this->Get(i));
         }
-        // РљРѕРїРёСЂСѓРµРј РґР°РЅРЅС‹Рµ РёР· other
+        // Копируем данные из other
         for (size_t i = 0; i < other->GetCount(); i++) {
             newData.Append(other->Get(i));
         }
-        return new ImmutableArraySequence<T>(newData);
+        return new ImmutableListSequence<T>(newData);
     }
     
-    // Map РІРѕР·РІСЂР°С‰Р°РµС‚ РЅРѕРІС‹Р№ РѕР±СЉРµРєС‚
+    // Map возвращает новый объект
     Sequence<T>* Map(T (*func)(const T&)) const override {
-        DynamicArray<T> newData;
+        LinkedList<T> newData;
         for (size_t i = 0; i < this->GetCount(); i++) {
             newData.Append(func(this->Get(i)));
         }
-        return new ImmutableArraySequence<T>(newData);
+        return new ImmutableListSequence<T>(newData);
     }
     
-    // Where РІРѕР·РІСЂР°С‰Р°РµС‚ РЅРѕРІС‹Р№ РѕР±СЉРµРєС‚
+    // Where возвращает новый объект
     Sequence<T>* Where(bool (*predicate)(const T&)) const override {
-        DynamicArray<T> newData;
+        LinkedList<T> newData;
         for (size_t i = 0; i < this->GetCount(); i++) {
             if (predicate(this->Get(i))) {
                 newData.Append(this->Get(i));
             }
         }
-        return new ImmutableArraySequence<T>(newData);
+        return new ImmutableListSequence<T>(newData);
     }
 };

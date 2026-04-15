@@ -1,27 +1,32 @@
 #pragma once
 
-#include "Sequence.h"
-#include "LinkedList.h"
-#include "IEnumerator.h"
+#include "Sequence.hpp"
+#include "DynamicArray.hpp"
+#include "exceptions.hpp"
 
 template <typename T>
-class ListSequence : public Sequence<T> {
+class ArraySequence : public Sequence<T> {
 protected:
-    LinkedList<T> data;
+    DynamicArray<T> data;
     bool isMutable;
 
 public:
-    // Конструкторы
-    ListSequence(bool mutableFlag = true);
-    ListSequence(const LinkedList<T>& list, bool mutableFlag = true);
-    ListSequence(const ListSequence& other);
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
+    ArraySequence(bool mutableFlag = true);
+    ArraySequence(const DynamicArray<T>& arr, bool mutableFlag = true);
+    ArraySequence(const ArraySequence& other);
     
-    // Базовые методы
+    // Р‘Р°Р·РѕРІС‹Рµ РјРµС‚РѕРґС‹
     T& Get(size_t index) override;
     const T& Get(size_t index) const override;
     size_t GetCount() const override;
     
-    // Операции модификации
+    // Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РјРµС‚РѕРґС‹ Sequence
+    T GetFirst() const override;
+    T GetLast() const override;
+    Sequence<T>* GetSubsequence(size_t start, size_t end) const override;
+    
+    // РћРїРµСЂР°С†РёРё РјРѕРґРёС„РёРєР°С†РёРё
     void Append(const T& item) override;
     void Prepend(const T& item) override;
     void InsertAt(const T& item, size_t index) override;
@@ -35,24 +40,25 @@ public:
     Sequence<T>* Where(bool (*predicate)(const T&)) const override;
     T Reduce(T (*func)(const T&, const T&), const T& initial) const override;
     
-    // Итератор
+    // РС‚РµСЂР°С‚РѕСЂ
     IEnumerator<T>* GetEnumerator() const override;
     
-    // Внутренний класс итератора
+    // Р’РЅСѓС‚СЂРµРЅРЅРёР№ РєР»Р°СЃСЃ РёС‚РµСЂР°С‚РѕСЂР°
     class Iterator : public IEnumerator<T> {
     private:
-        const ListSequence* seq;
-        typename LinkedList<T>::Node* current;
+        const ArraySequence* seq;
+        size_t currentIndex;
+        mutable T currentValue;
         
     public:
-        Iterator(const ListSequence* sequence);
+        Iterator(const ArraySequence* sequence);
         bool MoveNext() override;
         T& Current() override;
         const T& Current() const override;
         void Reset() override;
     };
     
-    template <typename U> friend class ImmutableListSequence;
+    template <typename U> friend class ImmutableArraySequence;
 };
 
-#include "ListSequence.tpp"
+#include "ArraySequence.tpp"

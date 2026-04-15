@@ -1,9 +1,9 @@
 #pragma once
 
-#include "Sequence.h"
-#include "Bit.h"
-#include "exceptions.h"
-#include "IEnumerator.h"
+#include "Sequence.hpp"
+#include "Bit.hpp"
+#include "IEnumerator.hpp"
+#include "exceptions.hpp"
 
 class BitSequence : public Sequence<Bit> {
 private:
@@ -33,23 +33,24 @@ public:
     
     // ==================== Методы Sequence<Bit> ====================
     
-    // Декомпозиция
-    Bit Get(size_t index) const override;
-    Bit GetFirst() const override;
-    Bit GetLast() const override;
+    // ICollection методы
+    Bit& Get(size_t index) override;
+    const Bit& Get(size_t index) const override;
     size_t GetCount() const override;
     
-    // Операции (проверяют isMutable)
+    // Sequence методы
+    Bit GetFirst() const override;
+    Bit GetLast() const override;
+    Sequence<Bit>* GetSubsequence(size_t start, size_t end) const override;
+    
+    // Операции
     void Append(const Bit& item) override;
     void Prepend(const Bit& item) override;
     void InsertAt(const Bit& item, size_t index) override;
     void Clear() override;
     
-    // Конкатенация
+    // Concat
     Sequence<Bit>* Concat(Sequence<Bit>* other) const override;
-    
-    // Получение подпоследовательности
-    Sequence<Bit>* GetSubsequence(size_t start, size_t end) const override;
     
     // Map-Reduce
     Sequence<Bit>* Map(Bit (*func)(const Bit&)) const override;
@@ -71,7 +72,7 @@ public:
     bool operator==(const BitSequence& other) const;
     bool operator!=(const BitSequence& other) const;
     
-    // Доступ к биту для изменения (если mutable)
+    // Доступ к биту для изменения
     void Set(size_t index, const Bit& value);
     
     // ==================== Внутренний класс итератора ====================
@@ -79,6 +80,7 @@ public:
     private:
         const BitSequence* seq;
         size_t currentPos;
+        mutable Bit currentValue;
         
     public:
         BitEnumerator(const BitSequence* sequence);
@@ -88,3 +90,5 @@ public:
         void Reset() override;
     };
 };
+
+#include "BitSequence.tpp"
