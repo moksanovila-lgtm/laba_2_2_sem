@@ -395,7 +395,6 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp \
   C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/MainWindow.cpp \
   C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/main.cpp \
-  app_gui/SequenceGUI_autogen/moc_predefs.h \
   C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp \
   C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.tpp \
   C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp \
@@ -455,13 +454,8 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/array \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/auto_ptr.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/binders.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bit \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/align.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/alloc_traits.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocated_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
@@ -469,18 +463,17 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/c++0x_warning.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cow_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_forced.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_init_exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/enable_special_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/erase_if.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functexcept.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functional_hash.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h \
@@ -495,28 +488,19 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/move.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/nested_exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/new_allocator.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/node_handle.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream_insert.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/parse_numbers.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/predefined_ops.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
@@ -535,21 +519,15 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_raw_storage_iter.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_relops.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_set.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_tempbuf.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_tree.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_uninitialized.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_vector.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stream_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_set.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uses_allocator.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uses_allocator_args.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/utility.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/vector.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/version.h \
@@ -561,13 +539,10 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/concepts \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstddef \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdlib \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/assertions.h \
@@ -576,9 +551,7 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/aligned_buffer.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/alloc_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/atomicity.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/concurrence.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
@@ -595,10 +568,6 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h \
@@ -606,21 +575,8 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/string \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/string_view \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/system_error \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/bessel_function.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/beta_function.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/ell_integral.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/exp_integral.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/gamma.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/hypergeometric.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/legendre_function.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/modified_bessel_func.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/poly_hermite.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/poly_laguerre.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/riemann_zeta.tcc \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/special_function_util.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tuple \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/type_traits \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/typeinfo \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/unordered_map \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/unordered_set \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/utility \
@@ -642,7 +598,7 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint-gcc.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
 
 
@@ -708,8 +664,6 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bi
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/FindVulkan.cmake:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h:
-
 C:/Qt/6.11.0/mingw_64/include/QtCore/qanystringview.h:
 
 C:/w64devkit/include/pthread_time.h:
@@ -744,11 +698,11 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qconstructormacros.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qarraydataops.h:
 
-C:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h:
+C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h:
 
-C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h:
+C:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qfunctionpointer.h:
 
@@ -814,8 +768,6 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qexceptionhandling.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qbindingstorage.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h:
-
 C:/Qt/6.11.0/mingw_64/include/QtCore/qassert.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qatomic.h:
@@ -866,8 +818,6 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qendian.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qfloat16.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/hypergeometric.tcc:
-
 C:/Qt/6.11.0/mingw_64/include/QtCore/qforeach.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qfunctionaltools_impl.h:
@@ -877,8 +827,6 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric:
 C:/Qt/6.11.0/mingw_64/include/QtCore/qgenericatomic.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/parse_numbers.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qtaggedpointer.h:
 
@@ -1036,8 +984,6 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qstdlibdetection.h:
 
 C:/w64devkit/include/_mingw.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/align.h:
-
 C:/Qt/6.11.0/mingw_64/include/QtCore/qstring.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qstringalgorithms.h:
@@ -1061,8 +1007,6 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qstringmatcher.h:
 C:/w64devkit/include/sdks/_mingw_ddk.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qstringtokenizer.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/concurrence.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qstringview.h:
 
@@ -1107,8 +1051,6 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6VersionlessAliasTargets.cmake:
 C:/Qt/6.11.0/mingw_64/include/QtCore/qtdeprecationdefinitions.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qtenvironmentvariables.h:
 
@@ -1170,11 +1112,7 @@ C:/Qt/6.11.0/mingw_64/include/QtGui/qaction.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio:
-
 C:/Qt/6.11.0/mingw_64/include/QtGui/qbrush.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
 
@@ -1228,6 +1166,8 @@ C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qpixmap.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_map.h:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qpolygon.h:
@@ -1280,6 +1220,8 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_pair.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/c++0x_warning.h:
+
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc:
@@ -1294,8 +1236,6 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/array:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdio:
-
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
@@ -1304,9 +1244,9 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multimap.h:
-
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multimap.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h:
 
@@ -1314,13 +1254,9 @@ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/ell_integral.tcc:
-
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/exp_integral.tcc:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
@@ -1343,8 +1279,6 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h:
 
 C:/w64devkit/include/sys/types.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
 
@@ -1372,6 +1306,8 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtFeature.cmake:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h:
+
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake:
 
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.tpp:
@@ -1395,8 +1331,6 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake:
 
@@ -1441,8 +1375,6 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake:
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/bessel_function.tcc:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake:
 
@@ -1570,8 +1502,6 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/binders.h:
-
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake:
@@ -1593,6 +1523,8 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cctype:
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_funcs.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake:
 
@@ -1650,17 +1582,15 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.c
 
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/CMakeLists.txt:
 
-app_gui/SequenceGUI_autogen/moc_predefs.h:
-
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp:
 
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp:
 
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.hpp:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_function.h:
-
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.hpp:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_function.h:
 
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.tpp:
 
@@ -1670,9 +1600,9 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ICollection.hpp:
 
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/IEnumerator.hpp:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h:
-
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableArraySequence.hpp:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multiset.h:
 
@@ -1690,8 +1620,6 @@ C:/w64devkit/include/_mingw_stat64.h:
 
 C:/w64devkit/include/_timeval.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h:
-
 C:/w64devkit/include/corecrt.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
@@ -1705,6 +1633,8 @@ C:/w64devkit/include/corecrt_wstdlib.h:
 C:/w64devkit/include/time.h:
 
 C:/w64devkit/include/crtdefs.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h:
 
 C:/w64devkit/include/errno.h:
 
@@ -1730,27 +1660,17 @@ C:/w64devkit/include/wctype.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/auto_ptr.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_init_exception.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bit:
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_list.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/alloc_traits.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocated_ptr.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_types.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_types.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h:
 
@@ -1758,9 +1678,9 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/enable_special_members.h:
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cow_string.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_ptr.h:
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/enable_special_members.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hashtable_policy.h:
 
@@ -1768,39 +1688,15 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/nested_exception.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/new_allocator.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/node_handle.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/legendre_function.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/alloc_traits.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_construct.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_funcs.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_map.h:
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_numeric.h:
 
@@ -1808,29 +1704,21 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_raw_storage_
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_set.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_tempbuf.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_tree.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_uninitialized.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stream_iterator.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uses_allocator.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uses_allocator_args.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/utility.h:
 
@@ -1842,13 +1730,9 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/concepts:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstddef:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdlib:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/assertions.h:
 
@@ -1856,11 +1740,11 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/exception:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/aligned_buffer.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/alloc_traits.h:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/atomicity.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h:
 
@@ -1882,31 +1766,13 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/string_view:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/beta_function.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/gamma.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/modified_bessel_func.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/poly_hermite.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/poly_laguerre.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/riemann_zeta.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/special_function_util.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/type_traits:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/typeinfo:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/unordered_map:
 
@@ -1929,5 +1795,7 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bi
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint-gcc.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
