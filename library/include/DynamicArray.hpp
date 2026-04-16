@@ -1,8 +1,7 @@
 #pragma once
 
 #include "ICollection.hpp"
-#include "exceptions.hpp" 
-#include <stdexcept>
+#include "exceptions.hpp"
 
 template <typename T>
 class DynamicArray : public ICollection<T> {
@@ -20,10 +19,9 @@ public:
     DynamicArray& operator=(const DynamicArray& other);
     ~DynamicArray();
 
-    // Эти методы теперь могут бросать IndexOutOfRangeException
-    T& Get(size_t index);
-    const T& Get(size_t index) const;
-    size_t GetCount() const;
+    // ICollection методы (только const, возвращает копию)
+    T Get(size_t index) const override;
+    size_t GetCount() const override;
 
     void Set(size_t index, const T& value);
     void Append(const T& item);

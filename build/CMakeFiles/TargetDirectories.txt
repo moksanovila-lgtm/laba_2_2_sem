@@ -1,0 +1,9 @@
+C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/CMakeFiles/edit_cache.dir
+C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/library/CMakeFiles/edit_cache.dir
+C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/library/CMakeFiles/rebuild_cache.dir
+C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/CMakeFiles/SequenceGUI.dir
+C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/CMakeFiles/edit_cache.dir
+C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/CMakeFiles/rebuild_cache.dir
+C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir
+C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/CMakeFiles/SequenceGUI_autogen.dir

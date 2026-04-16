@@ -6,6 +6,7 @@
 template <typename T>
 class ImmutableArraySequence : public ArraySequence<T> {
 public:
+    bool IsMutable() const override { return false; }
     // Конструкторы
     ImmutableArraySequence() : ArraySequence<T>(false) {}
     

@@ -1,17 +1,18 @@
 #pragma once
 
 #include "ICollection.hpp"
-#include "exceptions.hpp"  
+#include "exceptions.hpp"
 
 template <typename T>
 class LinkedList : public ICollection<T> {
-private:
+public:
     struct Node {
         T data;
         Node* next;
         Node(const T& value) : data(value), next(nullptr) {}
     };
 
+private:
     Node* head;
     Node* tail;
     size_t size;
@@ -22,12 +23,10 @@ public:
     LinkedList& operator=(const LinkedList& other);
     ~LinkedList();
 
-    // ICollection методы (теперь могут бросать исключения)
-    T& Get(size_t index);
-    const T& Get(size_t index) const;
-    size_t GetCount() const;
+    // ICollection методы
+    T Get(size_t index) const override;
+    size_t GetCount() const override;
 
-    // Дополнительные методы
     T GetFirst() const;
     T GetLast() const;
     
@@ -37,7 +36,6 @@ public:
     void RemoveAt(size_t index);
     void Clear();
 
-    // Для итератора
     Node* GetHead() const { return head; }
 };
 

@@ -6,6 +6,7 @@
 template <typename T>
 class ImmutableListSequence : public ListSequence<T> {
 public:
+    bool IsMutable() const override { return false; }
     // Конструкторы
     ImmutableListSequence() : ListSequence<T>(false) {}
     

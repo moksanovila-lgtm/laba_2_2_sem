@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/cmake_install.cmake",
+		"C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/library/cmake_install.cmake",
+		"C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

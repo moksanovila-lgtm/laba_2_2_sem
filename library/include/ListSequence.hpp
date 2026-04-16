@@ -11,14 +11,15 @@ protected:
     bool isMutable;
 
 public:
+    bool IsMutable() const override { return isMutable; }
+    
     // Конструкторы
     ListSequence(bool mutableFlag = true);
     ListSequence(const LinkedList<T>& list, bool mutableFlag = true);
     ListSequence(const ListSequence& other);
     
-    // Базовые методы
-    T& Get(size_t index) override;
-    const T& Get(size_t index) const override;
+    // ICollection методы (возвращают КОПИЮ)
+    T Get(size_t index) const override;
     size_t GetCount() const override;
     
     // Дополнительные методы Sequence
