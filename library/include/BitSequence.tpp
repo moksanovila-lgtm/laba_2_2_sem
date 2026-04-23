@@ -135,8 +135,14 @@ inline Bit BitSequence::GetLast() const {
 }
 
 inline Sequence<Bit>* BitSequence::GetSubsequence(size_t start, size_t end) const {
-    if (start > end || end >= bitCount) {
-        throw IndexOutOfRangeException("BitSequence::GetSubsequence(): invalid bounds");
+    // Исправлено: разделяем проверки
+    if (start > end) {
+        throw InvalidArgumentException(
+            "BitSequence::GetSubsequence(): start > end");
+    }
+    if (end >= bitCount) {
+        throw IndexOutOfRangeException(
+            "BitSequence::GetSubsequence(): end >= bitCount");
     }
     size_t newSize = end - start + 1;
     BitSequence* result = new BitSequence(newSize, isMutable);

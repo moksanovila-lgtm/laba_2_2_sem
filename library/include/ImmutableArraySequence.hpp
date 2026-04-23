@@ -30,19 +30,19 @@ public:
     
     // Переопределяем методы модификации (запрещаем)
     void Append(const T& item) override {
-        throw std::logic_error("Cannot modify immutable sequence");
+        throw ImmutableModificationException("Cannot modify immutable sequence");
     }
     
     void Prepend(const T& item) override {
-        throw std::logic_error("Cannot modify immutable sequence");
+        throw ImmutableModificationException("Cannot modify immutable sequence");
     }
     
     void InsertAt(const T& item, size_t index) override {
-        throw std::logic_error("Cannot modify immutable sequence");
+        throw ImmutableModificationException("Cannot modify immutable sequence");
     }
     
     void Clear() override {
-        throw std::logic_error("Cannot modify immutable sequence");
+        throw ImmutableModificationException("Cannot modify immutable sequence");
     }
     
     // Concat возвращает новый объект (не изменяет текущий)

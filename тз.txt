@@ -319,3 +319,25 @@ project/
 3. BitSequence	?? Средний	2-3 часа	
 4. Immutable варианты	?? Средний	1 час	
 5. Обработка исключений	?? Низкий	30 мин
+
+
+
+
+1   exceptions.hpp	(иерархия собственных исключений)
+2	Bit.hpp	15 мин
+3	ICollection.hpp	5 мин
+4	IEnumerator.hpp	5 мин
+5	DynamicArray.hpp + .tpp	30 мин
+6	LinkedList.hpp + .tpp	30 мин
+7	Sequence.hpp	15 мин
+8	ArraySequence.hpp + .tpp	20 мин
+9	ListSequence.hpp + .tpp	20 мин
+10	BitSequence.hpp + .tpp	30 мин
+11	ImmutableArraySequence.hpp	10 мин
+12	ImmutableListSequence.hpp	10 мин
+13	Utils.hpp	5 мин
+14	app_console/src/main.cpp	20 мин
+15	app_gui/include/MainWindow.hpp	
+16	app_gui/src/MainWindow.cpp
+17	tests/test_*.cpp	
+18	CMakeLists.txt файлы

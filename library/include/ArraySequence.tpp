@@ -1,4 +1,5 @@
 #include "ArraySequence.hpp"
+#include "exceptions.hpp"
 
 template <typename T>
 ArraySequence<T>::ArraySequence(bool mutableFlag) : isMutable(mutableFlag) {}
@@ -37,10 +38,16 @@ T ArraySequence<T>::GetLast() const {
     return data.Get(data.GetCount() - 1);
 }
 
+// ========== хяопюбкеммши лернд ==========
 template <typename T>
 Sequence<T>* ArraySequence<T>::GetSubsequence(size_t start, size_t end) const {
-    if (start > end || end >= data.GetCount()) {
-        throw IndexOutOfRangeException("ArraySequence::GetSubsequence(): invalid bounds");
+    if (start > end) {
+        throw InvalidArgumentException(
+            "ArraySequence::GetSubsequence(): start > end");
+    }
+    if (end >= data.GetCount()) {
+        throw IndexOutOfRangeException(
+            "ArraySequence::GetSubsequence(): end >= size");
     }
     DynamicArray<T> newData;
     for (size_t i = start; i <= end; ++i) {
@@ -48,6 +55,7 @@ Sequence<T>* ArraySequence<T>::GetSubsequence(size_t start, size_t end) const {
     }
     return new ArraySequence<T>(newData, isMutable);
 }
+// =====================================
 
 template <typename T>
 void ArraySequence<T>::Append(const T& item) {
@@ -130,13 +138,6 @@ T ArraySequence<T>::Reduce(T (*func)(const T&, const T&), const T& initial) cons
     }
     return result;
 }
-
-// ========== сдюкхрэ щрс яейжхч ==========
-// template <typename T>
-// bool ArraySequence<T>::IsMutable() const {
-//     return isMutable;
-// }
-// ========== йнмеж сдюкемхъ ==========
 
 template <typename T>
 IEnumerator<T>* ArraySequence<T>::GetEnumerator() const {
