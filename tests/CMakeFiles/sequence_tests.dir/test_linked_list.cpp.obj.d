@@ -235,4 +235,5 @@ tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj: \
  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.hpp \
  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ICollection.hpp \
  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/exceptions.hpp \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.tpp

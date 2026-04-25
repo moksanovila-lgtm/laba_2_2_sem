@@ -207,6 +207,7 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h
  mdp:C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
+ mdp:C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/moc_predefs.h
  mdp:C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp
  mdp:C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.tpp
  mdp:C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp
@@ -266,8 +267,13 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/array
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/auto_ptr.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/binders.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bit
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/align.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/alloc_traits.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocated_ptr.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h
@@ -275,17 +281,18 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.tcc
- mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/c++0x_warning.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h
- mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cow_string.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_forced.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_init_exception.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/enable_special_members.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/erase_if.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_ptr.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functexcept.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functional_hash.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h
@@ -300,19 +307,28 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/move.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/nested_exception.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/new_allocator.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/node_handle.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream_insert.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/parse_numbers.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/predefined_ops.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h
@@ -331,15 +347,21 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_raw_storage_iter.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_relops.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_set.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_tempbuf.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_tree.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_uninitialized.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_vector.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stream_iterator.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_set.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uses_allocator.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uses_allocator_args.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/utility.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/vector.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/version.h
@@ -351,10 +373,13 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/concepts
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstddef
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdio
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdlib
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/assertions.h
@@ -363,7 +388,9 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/aligned_buffer.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/alloc_traits.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/atomicity.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/concurrence.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list
@@ -380,6 +407,10 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h
@@ -387,8 +418,21 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/string
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/string_view
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/system_error
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/bessel_function.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/beta_function.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/ell_integral.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/exp_integral.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/gamma.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/hypergeometric.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/legendre_function.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/modified_bessel_func.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/poly_hermite.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/poly_laguerre.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/riemann_zeta.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/special_function_util.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tuple
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/type_traits
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/typeinfo
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/unordered_map
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/unordered_set
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/utility
@@ -410,7 +454,7 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h
- mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint-gcc.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/MainWindow.cpp
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/main.cpp

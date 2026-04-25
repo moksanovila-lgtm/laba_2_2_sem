@@ -238,9 +238,9 @@ tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj: \
  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/IEnumerator.hpp \
  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.tpp \
  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/exceptions.hpp \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp \
  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.tpp \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h \
