@@ -38,7 +38,6 @@ T ArraySequence<T>::GetLast() const {
     return data.Get(data.GetCount() - 1);
 }
 
-// ========== хяопюбкеммши лернд ==========
 template <typename T>
 Sequence<T>* ArraySequence<T>::GetSubsequence(size_t start, size_t end) const {
     if (start > end) {
@@ -55,7 +54,6 @@ Sequence<T>* ArraySequence<T>::GetSubsequence(size_t start, size_t end) const {
     }
     return new ArraySequence<T>(newData, isMutable);
 }
-// =====================================
 
 template <typename T>
 void ArraySequence<T>::Append(const T& item) {

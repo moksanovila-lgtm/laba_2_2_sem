@@ -355,62 +355,62 @@
         {
           "name": "PrependAddsToBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 39
+          "line": 40
         },
         {
           "name": "InsertAtBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 53
+          "line": 54
         },
         {
           "name": "InsertAtMiddle",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 65
+          "line": 66
         },
         {
           "name": "InsertAtEnd",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 77
+          "line": 78
         },
         {
           "name": "InsertAtThrowsOnInvalidIndex",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 87
+          "line": 88
         },
         {
           "name": "GetFirstReturnsFirstElement",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 94
+          "line": 96
         },
         {
           "name": "GetFirstThrowsOnEmptySequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 102
+          "line": 104
         },
         {
           "name": "GetLastReturnsLastElement",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 107
+          "line": 110
         },
         {
           "name": "GetSubsequenceReturnsCorrectSubsequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 117
+          "line": 120
         },
         {
           "name": "GetSubsequenceThrowsOnInvalidBounds",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 133
+          "line": 136
         },
         {
           "name": "ConcatCombinesTwoSequences",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 145
+          "line": 151
         },
         {
           "name": "ClearEmptiesSequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 168
+          "line": 174
         }
       ]
     },

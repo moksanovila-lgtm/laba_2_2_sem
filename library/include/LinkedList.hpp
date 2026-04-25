@@ -15,7 +15,6 @@ public:
 private:
     Node* head;
     Node* tail;
-    size_t size;
 
 public:
     LinkedList();

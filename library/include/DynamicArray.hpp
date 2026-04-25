@@ -8,9 +8,6 @@ class DynamicArray : public ICollection<T> {
 private:
     T* data;
     size_t size;
-    size_t capacity;
-
-    void resize(size_t newCapacity);
 
 public:
     DynamicArray();
@@ -19,7 +16,7 @@ public:
     DynamicArray& operator=(const DynamicArray& other);
     ~DynamicArray();
 
-    // ICollection методы (только const, возвращает копию)
+    // ICollection методы
     T Get(size_t index) const override;
     size_t GetCount() const override;
 

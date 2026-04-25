@@ -15,12 +15,12 @@ TEST(MapReduceTest, MapOnArraySequence) {
     auto doubleFunc = [](const int& x) { return x * 2; };
     Sequence<int>* result = seq.Map(doubleFunc);
     
-    EXPECT_EQ(result->GetCount(), 5);
-    EXPECT_EQ(result->Get(0), 2);
-    EXPECT_EQ(result->Get(1), 4);
-    EXPECT_EQ(result->Get(2), 6);
-    EXPECT_EQ(result->Get(3), 8);
-    EXPECT_EQ(result->Get(4), 10);
+    EXPECT_EQ(result->GetCount(), 5) << "Map on [1,2,3,4,5] with x*2: size should be 5";
+    EXPECT_EQ(result->Get(0), 2) << "Map: 1*2 should be 2";
+    EXPECT_EQ(result->Get(1), 4) << "Map: 2*2 should be 4";
+    EXPECT_EQ(result->Get(2), 6) << "Map: 3*2 should be 6";
+    EXPECT_EQ(result->Get(3), 8) << "Map: 4*2 should be 8";
+    EXPECT_EQ(result->Get(4), 10) << "Map: 5*2 should be 10";
     
     delete result;
 }
@@ -34,10 +34,10 @@ TEST(MapReduceTest, MapOnListSequence) {
     auto squareFunc = [](const int& x) { return x * x; };
     Sequence<int>* result = seq.Map(squareFunc);
     
-    EXPECT_EQ(result->GetCount(), 3);
-    EXPECT_EQ(result->Get(0), 1);
-    EXPECT_EQ(result->Get(1), 4);
-    EXPECT_EQ(result->Get(2), 9);
+    EXPECT_EQ(result->GetCount(), 3) << "Map on [1,2,3] with x*x: size should be 3";
+    EXPECT_EQ(result->Get(0), 1) << "Map: 1*1 should be 1";
+    EXPECT_EQ(result->Get(1), 4) << "Map: 2*2 should be 4";
+    EXPECT_EQ(result->Get(2), 9) << "Map: 3*3 should be 9";
     
     delete result;
 }
@@ -47,7 +47,7 @@ TEST(MapReduceTest, MapOnEmptySequence) {
     auto doubleFunc = [](const int& x) { return x * 2; };
     Sequence<int>* result = seq.Map(doubleFunc);
     
-    EXPECT_EQ(result->GetCount(), 0);
+    EXPECT_EQ(result->GetCount(), 0) << "Map on empty sequence: result should be empty";
     
     delete result;
 }
@@ -66,10 +66,10 @@ TEST(MapReduceTest, WhereFiltersEvenNumbers) {
     auto isEven = [](const int& x) { return x % 2 == 0; };
     Sequence<int>* result = seq.Where(isEven);
     
-    EXPECT_EQ(result->GetCount(), 3);
-    EXPECT_EQ(result->Get(0), 2);
-    EXPECT_EQ(result->Get(1), 4);
-    EXPECT_EQ(result->Get(2), 6);
+    EXPECT_EQ(result->GetCount(), 3) << "Where(even) on [1,2,3,4,5,6]: should have 3 elements";
+    EXPECT_EQ(result->Get(0), 2) << "Where(even): first element should be 2";
+    EXPECT_EQ(result->Get(1), 4) << "Where(even): second element should be 4";
+    EXPECT_EQ(result->Get(2), 6) << "Where(even): third element should be 6";
     
     delete result;
 }
@@ -85,9 +85,9 @@ TEST(MapReduceTest, WhereFiltersGreaterThan) {
     auto greaterThan3 = [](const int& x) { return x > 3; };
     Sequence<int>* result = seq.Where(greaterThan3);
     
-    EXPECT_EQ(result->GetCount(), 2);
-    EXPECT_EQ(result->Get(0), 5);
-    EXPECT_EQ(result->Get(1), 8);
+    EXPECT_EQ(result->GetCount(), 2) << "Where(x>3) on [1,5,3,8,2]: should have 2 elements (5,8)";
+    EXPECT_EQ(result->Get(0), 5) << "Where(x>3): first element should be 5";
+    EXPECT_EQ(result->Get(1), 8) << "Where(x>3): second element should be 8";
     
     delete result;
 }
@@ -97,7 +97,7 @@ TEST(MapReduceTest, WhereOnEmptySequence) {
     auto isEven = [](const int& x) { return x % 2 == 0; };
     Sequence<int>* result = seq.Where(isEven);
     
-    EXPECT_EQ(result->GetCount(), 0);
+    EXPECT_EQ(result->GetCount(), 0) << "Where on empty sequence: result should be empty";
     
     delete result;
 }
@@ -115,7 +115,7 @@ TEST(MapReduceTest, ReduceSum) {
     auto sum = [](const int& a, const int& b) { return a + b; };
     int result = seq.Reduce(sum, 0);
     
-    EXPECT_EQ(result, 15);
+    EXPECT_EQ(result, 15) << "Reduce(sum) on [1,2,3,4,5] with init=0 should be 15";
 }
 
 TEST(MapReduceTest, ReduceProduct) {
@@ -128,7 +128,7 @@ TEST(MapReduceTest, ReduceProduct) {
     auto product = [](const int& a, const int& b) { return a * b; };
     int result = seq.Reduce(product, 1);
     
-    EXPECT_EQ(result, 24);
+    EXPECT_EQ(result, 24) << "Reduce(product) on [1,2,3,4] with init=1 should be 24";
 }
 
 TEST(MapReduceTest, ReduceMax) {
@@ -142,7 +142,7 @@ TEST(MapReduceTest, ReduceMax) {
     auto max = [](const int& a, const int& b) { return a > b ? a : b; };
     int result = seq.Reduce(max, seq.Get(0));
     
-    EXPECT_EQ(result, 9);
+    EXPECT_EQ(result, 9) << "Reduce(max) on [3,7,2,9,1] should find maximum 9";
 }
 
 TEST(MapReduceTest, ReduceOnEmptySequenceReturnsInitial) {
@@ -150,7 +150,7 @@ TEST(MapReduceTest, ReduceOnEmptySequenceReturnsInitial) {
     auto sum = [](const int& a, const int& b) { return a + b; };
     int result = seq.Reduce(sum, 0);
     
-    EXPECT_EQ(result, 0);
+    EXPECT_EQ(result, 0) << "Reduce on empty sequence should return initial value 0";
 }
 
 // ==================== ÖÅÏÎ×ÊÀ MAP + WHERE + REDUCE ====================
@@ -172,8 +172,8 @@ TEST(MapReduceTest, ChainMapWhereReduce) {
     Sequence<int>* filtered = mapped->Where(isEven);
     int result = filtered->Reduce(sum, 0);
     
-    // 2,4,6,8,10 ? 2,4,6,8,10 ? 2+4+6+8+10 = 30
-    EXPECT_EQ(result, 30);
+    // 2,4,6,8,10 ? 2,4,6,8,10 (âñå ÷¸òíûå) ? 2+4+6+8+10 = 30
+    EXPECT_EQ(result, 30) << "Chain: Map(x*2)->Where(even)->Reduce(sum) on [1,2,3,4,5] should be 30";
     
     delete mapped;
     delete filtered;

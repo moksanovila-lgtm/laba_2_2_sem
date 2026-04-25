@@ -17,7 +17,7 @@ public:
     ArraySequence(const ArraySequence& other);
     
     // ICollection методы
-    T Get(size_t index) const override;      // ? только const, возвращает копию
+    T Get(size_t index) const override;      //только const, возвращает копию
     size_t GetCount() const override;
     
     // Sequence методы
