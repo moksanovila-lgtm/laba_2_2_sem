@@ -192,6 +192,7 @@ tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj: C:/Users/ilamo/
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdlib \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype \
@@ -713,6 +714,7 @@ tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj: C:/Users/ilamo/O
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdlib \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype \
@@ -1250,6 +1252,7 @@ tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: C:/Users/ilamo/OneDr
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdlib \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype \
@@ -1505,6 +1508,7 @@ tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj: C:/Users/ilamo/One
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdlib \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype \
@@ -1765,6 +1769,7 @@ tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj: C:/Users/ilamo/O
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdlib \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype \
@@ -2029,6 +2034,7 @@ tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj: C:/Users/ilamo/OneD
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdlib \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype \

@@ -323,10 +323,10 @@ project/
 
 
 
-1   exceptions.hpp	(иерархия собственных исключений)
+1   exceptions.hpp	(иерархия собственных исключений) 1
 2	Bit.hpp	15 мин
-3	ICollection.hpp	5 мин
-4	IEnumerator.hpp	5 мин
+3	ICollection.hpp	5 мин 1
+4	IEnumerator.hpp	5 мин 1
 5	DynamicArray.hpp + .tpp	30 мин
 6	LinkedList.hpp + .tpp	30 мин
 7	Sequence.hpp	15 мин

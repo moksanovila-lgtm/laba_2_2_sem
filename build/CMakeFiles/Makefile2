@@ -218,8 +218,8 @@ tests/clean: tests/CMakeFiles/sequence_tests.dir/clean
 # Target rules for target app_gui/CMakeFiles/SequenceGUI.dir
 
 # All Build rule for target.
-app_gui/CMakeFiles/SequenceGUI.dir/all: app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/all
 app_gui/CMakeFiles/SequenceGUI.dir/all: app_gui/CMakeFiles/SequenceGUI_autogen.dir/all
+app_gui/CMakeFiles/SequenceGUI.dir/all: app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/depend
 	$(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target SequenceGUI"

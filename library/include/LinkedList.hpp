@@ -3,16 +3,17 @@
 #include "ICollection.hpp"
 #include "exceptions.hpp"
 
+template <typename T> class ListSequence;
+
 template <typename T>
 class LinkedList : public ICollection<T> {
-public:
+private:                         
     struct Node {
         T data;
         Node* next;
         Node(const T& value) : data(value), next(nullptr) {}
     };
 
-private:
     Node* head;
     Node* tail;
 
@@ -25,7 +26,7 @@ public:
     // ICollection методы
     T Get(size_t index) const override;
     size_t GetCount() const override;
-
+    
     T GetFirst() const;
     T GetLast() const;
     
@@ -36,6 +37,8 @@ public:
     void Clear();
 
     Node* GetHead() const { return head; }
+
+    template <typename U> friend class ListSequence;
 };
 
 #include "LinkedList.tpp"

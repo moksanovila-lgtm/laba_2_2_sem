@@ -44,7 +44,6 @@ size_t LinkedList<T>::GetCount() const {
 
 template <typename T>
 T LinkedList<T>::Get(size_t index) const {
-    // —начала провер€ем, не выходит ли индекс за границы
     if (index >= GetCount()) {
         throw IndexOutOfRangeException(
             "LinkedList::Get(): index out of range");

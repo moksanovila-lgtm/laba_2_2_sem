@@ -14,67 +14,67 @@
         {
           "name": "InsertAtThrowsIndexOutOfRange",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 18
+          "line": 20
         },
         {
           "name": "GetFirstThrowsEmptySequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 27
+          "line": 31
         },
         {
           "name": "GetLastThrowsEmptySequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 32
+          "line": 37
         },
         {
           "name": "ImmutableArraySequenceAppendThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 39
+          "line": 45
         },
         {
           "name": "ImmutableArraySequencePrependThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 44
+          "line": 51
         },
         {
           "name": "ImmutableArraySequenceInsertAtThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 49
+          "line": 57
         },
         {
           "name": "ImmutableArraySequenceClearThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 54
+          "line": 63
         },
         {
           "name": "ConcatWithNullptrThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 61
+          "line": 71
         },
         {
           "name": "MapWithNullptrThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 66
+          "line": 77
         },
         {
           "name": "WhereWithNullptrThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 71
+          "line": 83
         },
         {
           "name": "ReduceWithNullptrThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 76
+          "line": 89
         },
         {
           "name": "BitSequenceGetSubsequenceInvalidBounds",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 83
+          "line": 97
         },
         {
           "name": "BitSequenceAndDifferentSizes",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 91
+          "line": 107
         }
       ]
     },
@@ -151,32 +151,32 @@
         {
           "name": "PrependThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 12
+          "line": 13
         },
         {
           "name": "InsertAtThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 17
+          "line": 19
         },
         {
           "name": "ClearThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 22
+          "line": 25
         },
         {
           "name": "GetWorksCorrectly",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 27
+          "line": 31
         },
         {
           "name": "ConcatReturnsNewSequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 40
+          "line": 44
         },
         {
           "name": "IsMutableReturnsFalse",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 97
+          "line": 104
         }
       ]
     },
@@ -187,22 +187,22 @@
         {
           "name": "AppendThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 69
+          "line": 73
         },
         {
           "name": "PrependThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 74
+          "line": 79
         },
         {
           "name": "GetWorksCorrectly",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 79
+          "line": 85
         },
         {
           "name": "IsMutableReturnsFalse",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 92
+          "line": 98
         }
       ]
     },
@@ -466,27 +466,27 @@
         {
           "name": "GetLastReturnsLastElement",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 102
+          "line": 103
         },
         {
           "name": "RemoveAtBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 112
+          "line": 113
         },
         {
           "name": "RemoveAtMiddle",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 124
+          "line": 125
         },
         {
           "name": "RemoveAtEnd",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 136
+          "line": 137
         },
         {
           "name": "ClearEmptiesList",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 150
+          "line": 151
         }
       ]
     },
@@ -527,62 +527,62 @@
         {
           "name": "SetThrowsOnInvalidIndex",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 53
+          "line": 55
         },
         {
           "name": "AppendIncreasesSize",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 60
+          "line": 63
         },
         {
           "name": "AppendManyElements",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 71
+          "line": 74
         },
         {
           "name": "InsertAtBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 82
+          "line": 85
         },
         {
           "name": "InsertAtMiddle",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 94
+          "line": 97
         },
         {
           "name": "InsertAtEnd",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 106
+          "line": 109
         },
         {
           "name": "InsertAtThrowsOnInvalidIndex",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 116
+          "line": 119
         },
         {
           "name": "RemoveAtBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 124
+          "line": 128
         },
         {
           "name": "RemoveAtMiddle",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 136
+          "line": 140
         },
         {
           "name": "RemoveAtEnd",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 148
+          "line": 152
         },
         {
           "name": "RemoveAtThrowsOnInvalidIndex",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 160
+          "line": 164
         },
         {
           "name": "ClearEmptiesArray",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 168
+          "line": 173
         }
       ]
     }

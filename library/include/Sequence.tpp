@@ -9,8 +9,15 @@ Sequence<T>& Sequence<T>::operator+=(const T& item) {
 
 template <typename T>
 Sequence<T>& Sequence<T>::operator+=(const Sequence<T>& other) {
-    for (size_t i = 0; i < other.GetCount(); ++i) {
-        Append(other.Get(i));
+    if (this == &other) {
+        Sequence<T> copy = other;
+        for (size_t i = 0; i < copy.GetCount(); ++i) {
+            Append(copy.Get(i));
+        }
+    } else {
+        for (size_t i = 0; i < other.GetCount(); ++i) {
+            Append(other.Get(i));
+        }
     }
     return *this;
-}
+} 

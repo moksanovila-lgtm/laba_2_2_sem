@@ -75,7 +75,6 @@ void DynamicArray<T>::Set(size_t index, const T& value) {
 
 template <typename T>
 void DynamicArray<T>::Append(const T& item) {
-    // При каждом добавлении выделяем новую память
     T* newData = new T[size + 1];
     for (size_t i = 0; i < size; ++i) {
         newData[i] = data[i];
@@ -94,18 +93,14 @@ void DynamicArray<T>::InsertAt(const T& item, size_t index) {
             " > size " + std::to_string(size));
     }
     
-    // Выделяем новую память
     T* newData = new T[size + 1];
     
-    // Копируем элементы до index
     for (size_t i = 0; i < index; ++i) {
         newData[i] = data[i];
     }
     
-    // Вставляем новый элемент
     newData[index] = item;
     
-    // Копируем остальные элементы
     for (size_t i = index; i < size; ++i) {
         newData[i + 1] = data[i];
     }
@@ -130,15 +125,12 @@ void DynamicArray<T>::RemoveAt(size_t index) {
         return;
     }
     
-    // Выделяем новую память
     T* newData = new T[size - 1];
     
-    // Копируем элементы до index
     for (size_t i = 0; i < index; ++i) {
         newData[i] = data[i];
     }
     
-    // Копируем элементы после index
     for (size_t i = index + 1; i < size; ++i) {
         newData[i - 1] = data[i];
     }
