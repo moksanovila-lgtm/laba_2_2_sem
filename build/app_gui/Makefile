@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2
+CMAKE_SOURCE_DIR = D:\Lab_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2\build
+CMAKE_BINARY_DIR = D:\Lab_2\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -141,14 +141,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui\\CMakeFiles\progress.marks
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles 0
+	cd /d D:\Lab_2\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\Lab_2\build\CMakeFiles D:\Lab_2\build\app_gui\\CMakeFiles\progress.marks
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Lab_2\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/clean
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/clean
 .PHONY : clean
 
 # The main clean target
@@ -157,22 +157,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/preinstall
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/preinstall
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d D:\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 app_gui/CMakeFiles/SequenceGUI.dir/rule:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/CMakeFiles/SequenceGUI.dir/rule
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/CMakeFiles/SequenceGUI.dir/rule
 .PHONY : app_gui/CMakeFiles/SequenceGUI.dir/rule
 
 # Convenience name for target.
@@ -181,12 +181,12 @@ SequenceGUI: app_gui/CMakeFiles/SequenceGUI.dir/rule
 
 # fast build rule for target.
 SequenceGUI/fast:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/build
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/build
 .PHONY : SequenceGUI/fast
 
 # Convenience name for target.
 app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/rule:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/rule
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/rule
 .PHONY : app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
@@ -195,12 +195,12 @@ SequenceGUI_autogen_timestamp_deps: app_gui/CMakeFiles/SequenceGUI_autogen_times
 
 # fast build rule for target.
 SequenceGUI_autogen_timestamp_deps/fast:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI_autogen_timestamp_deps.dir\build.make app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/build
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI_autogen_timestamp_deps.dir\build.make app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/build
 .PHONY : SequenceGUI_autogen_timestamp_deps/fast
 
 # Convenience name for target.
 app_gui/CMakeFiles/SequenceGUI_autogen.dir/rule:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/CMakeFiles/SequenceGUI_autogen.dir/rule
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app_gui/CMakeFiles/SequenceGUI_autogen.dir/rule
 .PHONY : app_gui/CMakeFiles/SequenceGUI_autogen.dir/rule
 
 # Convenience name for target.
@@ -209,7 +209,7 @@ SequenceGUI_autogen: app_gui/CMakeFiles/SequenceGUI_autogen.dir/rule
 
 # fast build rule for target.
 SequenceGUI_autogen/fast:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI_autogen.dir\build.make app_gui/CMakeFiles/SequenceGUI_autogen.dir/build
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI_autogen.dir\build.make app_gui/CMakeFiles/SequenceGUI_autogen.dir/build
 .PHONY : SequenceGUI_autogen/fast
 
 SequenceGUI_autogen/mocs_compilation.obj: SequenceGUI_autogen/mocs_compilation.cpp.obj
@@ -217,7 +217,7 @@ SequenceGUI_autogen/mocs_compilation.obj: SequenceGUI_autogen/mocs_compilation.c
 
 # target to build an object file
 SequenceGUI_autogen/mocs_compilation.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj
 .PHONY : SequenceGUI_autogen/mocs_compilation.cpp.obj
 
 SequenceGUI_autogen/mocs_compilation.i: SequenceGUI_autogen/mocs_compilation.cpp.i
@@ -225,7 +225,7 @@ SequenceGUI_autogen/mocs_compilation.i: SequenceGUI_autogen/mocs_compilation.cpp
 
 # target to preprocess a source file
 SequenceGUI_autogen/mocs_compilation.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.i
 .PHONY : SequenceGUI_autogen/mocs_compilation.cpp.i
 
 SequenceGUI_autogen/mocs_compilation.s: SequenceGUI_autogen/mocs_compilation.cpp.s
@@ -233,7 +233,7 @@ SequenceGUI_autogen/mocs_compilation.s: SequenceGUI_autogen/mocs_compilation.cpp
 
 # target to generate assembly for a file
 SequenceGUI_autogen/mocs_compilation.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.s
 .PHONY : SequenceGUI_autogen/mocs_compilation.cpp.s
 
 src/MainWindow.obj: src/MainWindow.cpp.obj
@@ -241,7 +241,7 @@ src/MainWindow.obj: src/MainWindow.cpp.obj
 
 # target to build an object file
 src/MainWindow.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj
 .PHONY : src/MainWindow.cpp.obj
 
 src/MainWindow.i: src/MainWindow.cpp.i
@@ -249,7 +249,7 @@ src/MainWindow.i: src/MainWindow.cpp.i
 
 # target to preprocess a source file
 src/MainWindow.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.i
 .PHONY : src/MainWindow.cpp.i
 
 src/MainWindow.s: src/MainWindow.cpp.s
@@ -257,7 +257,7 @@ src/MainWindow.s: src/MainWindow.cpp.s
 
 # target to generate assembly for a file
 src/MainWindow.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.s
 .PHONY : src/MainWindow.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -265,7 +265,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -273,7 +273,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -281,7 +281,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -320,6 +320,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d D:\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

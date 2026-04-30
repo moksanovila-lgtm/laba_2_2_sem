@@ -391,29 +391,6 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
   C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake \
   C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/CMakeLists.txt \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/MainWindow.cpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/main.cpp \
-  app_gui/SequenceGUI_autogen/moc_predefs.h \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ICollection.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/IEnumerator.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableArraySequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableListSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/exceptions.hpp \
   C:/w64devkit/include/_mingw.h \
   C:/w64devkit/include/_mingw_mac.h \
   C:/w64devkit/include/_mingw_off_t.h \
@@ -643,7 +620,30 @@ app_gui/SequenceGUI_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  D:/Lab_2/app_gui/CMakeLists.txt \
+  D:/Lab_2/app_gui/include/MainWindow.hpp \
+  D:/Lab_2/app_gui/src/MainWindow.cpp \
+  D:/Lab_2/app_gui/src/main.cpp \
+  app_gui/SequenceGUI_autogen/moc_predefs.h \
+  D:/Lab_2/library/include/ArraySequence.hpp \
+  D:/Lab_2/library/include/ArraySequence.tpp \
+  D:/Lab_2/library/include/Bit.hpp \
+  D:/Lab_2/library/include/BitSequence.hpp \
+  D:/Lab_2/library/include/BitSequence.tpp \
+  D:/Lab_2/library/include/DynamicArray.hpp \
+  D:/Lab_2/library/include/DynamicArray.tpp \
+  D:/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_2/library/include/ImmutableArraySequence.hpp \
+  D:/Lab_2/library/include/ImmutableListSequence.hpp \
+  D:/Lab_2/library/include/LinkedList.hpp \
+  D:/Lab_2/library/include/LinkedList.tpp \
+  D:/Lab_2/library/include/ListSequence.hpp \
+  D:/Lab_2/library/include/ListSequence.tpp \
+  D:/Lab_2/library/include/Sequence.hpp \
+  D:/Lab_2/library/include/Sequence.tpp \
+  D:/Lab_2/library/include/exceptions.hpp
 
 app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj: app_gui/SequenceGUI_autogen/mocs_compilation.cpp \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
@@ -854,25 +854,6 @@ app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj:
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ICollection.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/IEnumerator.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableArraySequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableListSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/exceptions.hpp \
   C:/w64devkit/include/_mingw.h \
   C:/w64devkit/include/_mingw_mac.h \
   C:/w64devkit/include/_mingw_off_t.h \
@@ -1116,9 +1097,28 @@ app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj:
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  D:/Lab_2/app_gui/include/MainWindow.hpp \
+  D:/Lab_2/library/include/ArraySequence.hpp \
+  D:/Lab_2/library/include/ArraySequence.tpp \
+  D:/Lab_2/library/include/Bit.hpp \
+  D:/Lab_2/library/include/BitSequence.hpp \
+  D:/Lab_2/library/include/BitSequence.tpp \
+  D:/Lab_2/library/include/DynamicArray.hpp \
+  D:/Lab_2/library/include/DynamicArray.tpp \
+  D:/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_2/library/include/ImmutableArraySequence.hpp \
+  D:/Lab_2/library/include/ImmutableListSequence.hpp \
+  D:/Lab_2/library/include/LinkedList.hpp \
+  D:/Lab_2/library/include/LinkedList.tpp \
+  D:/Lab_2/library/include/ListSequence.hpp \
+  D:/Lab_2/library/include/ListSequence.tpp \
+  D:/Lab_2/library/include/Sequence.hpp \
+  D:/Lab_2/library/include/Sequence.tpp \
+  D:/Lab_2/library/include/exceptions.hpp \
   app_gui/SequenceGUI_autogen/6YEA5652QU/moc_MainWindow.cpp
 
-app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/MainWindow.cpp \
+app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: D:/Lab_2/app_gui/src/MainWindow.cpp \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20functional.h \
@@ -1330,25 +1330,6 @@ app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: C:/Users/ilamo/OneDri
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ICollection.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/IEnumerator.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableArraySequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableListSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/exceptions.hpp \
   C:/w64devkit/include/_mingw.h \
   C:/w64devkit/include/_mingw_mac.h \
   C:/w64devkit/include/_mingw_off_t.h \
@@ -1593,9 +1574,28 @@ app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: C:/Users/ilamo/OneDri
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  D:/Lab_2/app_gui/include/MainWindow.hpp \
+  D:/Lab_2/library/include/ArraySequence.hpp \
+  D:/Lab_2/library/include/ArraySequence.tpp \
+  D:/Lab_2/library/include/Bit.hpp \
+  D:/Lab_2/library/include/BitSequence.hpp \
+  D:/Lab_2/library/include/BitSequence.tpp \
+  D:/Lab_2/library/include/DynamicArray.hpp \
+  D:/Lab_2/library/include/DynamicArray.tpp \
+  D:/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_2/library/include/ImmutableArraySequence.hpp \
+  D:/Lab_2/library/include/ImmutableListSequence.hpp \
+  D:/Lab_2/library/include/LinkedList.hpp \
+  D:/Lab_2/library/include/LinkedList.tpp \
+  D:/Lab_2/library/include/ListSequence.hpp \
+  D:/Lab_2/library/include/ListSequence.tpp \
+  D:/Lab_2/library/include/Sequence.hpp \
+  D:/Lab_2/library/include/Sequence.tpp \
+  D:/Lab_2/library/include/exceptions.hpp
 
-app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/main.cpp \
+app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj: D:/Lab_2/app_gui/src/main.cpp \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20functional.h \
@@ -1816,25 +1816,6 @@ app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj: C:/Users/ilamo/OneDrive/Des
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ICollection.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/IEnumerator.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableArraySequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableListSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/exceptions.hpp \
   C:/w64devkit/include/_mingw.h \
   C:/w64devkit/include/_mingw_mac.h \
   C:/w64devkit/include/_mingw_off_t.h \
@@ -2077,7 +2058,26 @@ app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj: C:/Users/ilamo/OneDrive/Des
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  D:/Lab_2/app_gui/include/MainWindow.hpp \
+  D:/Lab_2/library/include/ArraySequence.hpp \
+  D:/Lab_2/library/include/ArraySequence.tpp \
+  D:/Lab_2/library/include/Bit.hpp \
+  D:/Lab_2/library/include/BitSequence.hpp \
+  D:/Lab_2/library/include/BitSequence.tpp \
+  D:/Lab_2/library/include/DynamicArray.hpp \
+  D:/Lab_2/library/include/DynamicArray.tpp \
+  D:/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_2/library/include/ImmutableArraySequence.hpp \
+  D:/Lab_2/library/include/ImmutableListSequence.hpp \
+  D:/Lab_2/library/include/LinkedList.hpp \
+  D:/Lab_2/library/include/LinkedList.tpp \
+  D:/Lab_2/library/include/ListSequence.hpp \
+  D:/Lab_2/library/include/ListSequence.tpp \
+  D:/Lab_2/library/include/Sequence.hpp \
+  D:/Lab_2/library/include/Sequence.tpp \
+  D:/Lab_2/library/include/exceptions.hpp
 
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
@@ -2132,8 +2132,6 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/q20bit.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake:
 
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.hpp:
-
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h:
@@ -2162,8 +2160,6 @@ C:/w64devkit/include/malloc.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h:
 
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.tpp:
-
 C:/Qt/6.11.0/mingw_64/include/QtCore/qbytearrayview.h:
 
 C:/Program\ Files/CMake/share/cmake-4.3/Modules/Internal/CheckFlagCommonConfig.cmake:
@@ -2182,11 +2178,11 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qconstructormacros.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qarraydataops.h:
 
-C:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h:
+C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h:
 
-C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h:
+C:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qfunctionpointer.h:
 
@@ -2222,8 +2218,6 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qcomparehelpers.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qrgba64.h:
 
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/exceptions.hpp:
-
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h:
@@ -2243,6 +2237,8 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qalgorithms.h:
 C:/Qt/6.11.0/mingw_64/include/QtCore/qarraydata.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake:
+
+D:/Lab_2/library/include/Bit.hpp:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qarraydatapointer.h:
 
@@ -2404,6 +2400,8 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qtypes.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qobject.h:
 
+D:/Lab_2/library/include/ImmutableListSequence.hpp:
+
 C:/Qt/6.11.0/mingw_64/include/QtCore/qobject_impl.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qobjectdefs.h:
@@ -2427,8 +2425,6 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hashtable.h:
 C:/Qt/6.11.0/mingw_64/include/QtCore/qpair.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/main.cpp:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qpoint.h:
 
@@ -2465,6 +2461,8 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h:
 C:/Qt/6.11.0/mingw_64/include/QtCore/qsharedpointer.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h:
+
+D:/Lab_2/library/include/ImmutableArraySequence.hpp:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qsize.h:
 
@@ -2517,8 +2515,6 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qsysinfo.h:
 C:/Qt/6.11.0/mingw_64/include/QtCore/qsystemdetection.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableListSequence.hpp:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qtclasshelpermacros.h:
 
@@ -2616,13 +2612,13 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qbrush.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h:
-
-C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
+C:/Qt/6.11.0/mingw_64/include/QtGui/qcolor.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_relops.h:
 
-C:/Qt/6.11.0/mingw_64/include/QtGui/qcolor.h:
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h:
+
+C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qfont.h:
 
@@ -2670,13 +2666,13 @@ C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qpixmap.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_map.h:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qpolygon.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/MainWindow.cpp:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare:
 
@@ -2720,9 +2716,9 @@ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_pair.h:
-
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_pair.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget:
 
@@ -2750,9 +2746,9 @@ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multimap.h:
-
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multimap.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h:
 
@@ -2771,8 +2767,6 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/exp_integral.tcc:
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.tpp:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qslider.h:
 
@@ -2818,9 +2812,9 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtFeature.cmake:
 
-C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake:
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h:
 
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.tpp:
+C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtInstallPaths.cmake:
 
@@ -2833,6 +2827,8 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake:
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
+
+D:/Lab_2/library/include/ListSequence.tpp:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:
 
@@ -2870,6 +2866,8 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake:
 
+D:/Lab_2/library/include/LinkedList.tpp:
+
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h:
@@ -2898,6 +2896,10 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/alloc_traits.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h:
+
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h:
@@ -2907,8 +2909,6 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.tpp:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake:
 
@@ -2988,6 +2988,8 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qnativeinterface.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_set.h:
+
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake:
@@ -3017,8 +3019,6 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake:
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake:
 
@@ -3052,6 +3052,8 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_funcs.h:
+
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargetsPrecheck.cmake:
@@ -3059,6 +3061,8 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargetsPreche
 C:/Qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_numeric.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
 
@@ -3079,6 +3083,8 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cm
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargetsPrecheck.cmake:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h:
+
+D:/Lab_2/library/include/exceptions.hpp:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
 
@@ -3108,40 +3114,6 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithde
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake:
 
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/CMakeLists.txt:
-
-app_gui/SequenceGUI_autogen/moc_predefs.h:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.hpp:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_function.h:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.hpp:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.tpp:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ICollection.hpp:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/IEnumerator.hpp:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableArraySequence.hpp:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multiset.h:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.hpp:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.hpp:
-
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.tpp:
-
 C:/w64devkit/include/sec_api/stdlib_s.h:
 
 C:/w64devkit/include/_mingw_mac.h:
@@ -3156,6 +3128,8 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h:
 
 C:/w64devkit/include/corecrt.h:
 
+D:/Lab_2/library/include/DynamicArray.hpp:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
 
 C:/w64devkit/include/corecrt_stdio_config.h:
@@ -3167,6 +3141,8 @@ C:/w64devkit/include/corecrt_wstdlib.h:
 C:/w64devkit/include/time.h:
 
 C:/w64devkit/include/crtdefs.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h:
 
 C:/w64devkit/include/errno.h:
 
@@ -3194,15 +3170,15 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/auto_ptr.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_init_exception.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bit:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_list.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_list.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/alloc_traits.h:
 
@@ -3210,9 +3186,9 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocated_ptr.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_types.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_types.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h:
 
@@ -3248,27 +3224,17 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/alloc_traits.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h:
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_construct.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h:
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_function.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_funcs.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_map.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_numeric.h:
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multiset.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_raw_storage_iter.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_set.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_tempbuf.h:
 
@@ -3380,6 +3346,8 @@ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/unordered_set:
 
+D:/Lab_2/library/include/LinkedList.hpp:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/variant:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/vector:
@@ -3402,7 +3370,39 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bi
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
+
+D:/Lab_2/app_gui/CMakeLists.txt:
+
+D:/Lab_2/app_gui/include/MainWindow.hpp:
+
+D:/Lab_2/app_gui/src/MainWindow.cpp:
+
+D:/Lab_2/app_gui/src/main.cpp:
+
+app_gui/SequenceGUI_autogen/moc_predefs.h:
+
+D:/Lab_2/library/include/ArraySequence.hpp:
+
+D:/Lab_2/library/include/ArraySequence.tpp:
+
+D:/Lab_2/library/include/BitSequence.hpp:
+
+D:/Lab_2/library/include/BitSequence.tpp:
+
+D:/Lab_2/library/include/DynamicArray.tpp:
+
+D:/Lab_2/library/include/ICollection.hpp:
+
+D:/Lab_2/library/include/IEnumerator.hpp:
+
+D:/Lab_2/library/include/ListSequence.hpp:
+
+D:/Lab_2/library/include/Sequence.hpp:
+
+D:/Lab_2/library/include/Sequence.tpp:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h:
 

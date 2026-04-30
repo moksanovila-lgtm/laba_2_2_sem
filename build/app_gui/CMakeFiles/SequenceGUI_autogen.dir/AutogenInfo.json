@@ -1,13 +1,13 @@
 {
 	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
-	"BUILD_DIR" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui",
+	"BUILD_DIR" : "D:/Lab_2/build/app_gui/SequenceGUI_autogen",
+	"CMAKE_BINARY_DIR" : "D:/Lab_2/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/Lab_2/build/app_gui",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/Lab_2/app_gui",
 	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/CMakeLists.txt",
+		"D:/Lab_2/app_gui/CMakeLists.txt",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -246,22 +246,22 @@
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
 		"C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2",
+	"CMAKE_SOURCE_DIR" : "D:/Lab_2",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/deps",
+	"DEP_FILE" : "D:/Lab_2/build/app_gui/SequenceGUI_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "SequenceGUI_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp",
+			"D:/Lab_2/app_gui/include/MainWindow.hpp",
 			"MU",
 			"6YEA5652QU/moc_MainWindow.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "D:/Lab_2/build/app_gui/SequenceGUI_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/Lab_2/build/app_gui/SequenceGUI_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
@@ -285,9 +285,9 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include",
-		"C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include",
-		"C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include",
+		"D:/Lab_2/app_gui/include",
+		"D:/Lab_2/library/include",
+		"D:/Lab_2/library/include",
 		"C:/Qt/6.11.0/mingw_64/include/QtWidgets",
 		"C:/Qt/6.11.0/mingw_64/include",
 		"C:/Qt/6.11.0/mingw_64/include/QtCore",
@@ -320,29 +320,21 @@
 		"-E",
 		"C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "D:/Lab_2/build/app_gui/SequenceGUI_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/CMakeFiles/SequenceGUI_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "D:/Lab_2/build/app_gui/CMakeFiles/SequenceGUI_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.11.0/mingw_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/6.11.0/mingw_64/bin/uic.exe",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 11,
-	"SETTINGS_FILE" : "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/CMakeFiles/SequenceGUI_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "D:/Lab_2/build/app_gui/CMakeFiles/SequenceGUI_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/MainWindow.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/main.cpp",
-			"MU",
-			null
-		]
+		[ "D:/Lab_2/app_gui/src/MainWindow.cpp", "MU", null ],
+		[ "D:/Lab_2/app_gui/src/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

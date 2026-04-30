@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2
+CMAKE_SOURCE_DIR = D:\Lab_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2\build
+CMAKE_BINARY_DIR = D:\Lab_2\build
 
 # Include any dependencies generated for this target.
 include app_gui/CMakeFiles/SequenceGUI.dir/depend.make
@@ -71,9 +71,9 @@ include app_gui/CMakeFiles/SequenceGUI.dir/flags.make
 app_gui/SequenceGUI_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/moc.exe
 app_gui/SequenceGUI_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/uic.exe
 app_gui/SequenceGUI_autogen/timestamp: app_gui/CMakeFiles/SequenceGUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target SequenceGUI"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/CMakeFiles/SequenceGUI_autogen.dir/AutogenInfo.json ""
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target SequenceGUI"
+	cd /d D:\Lab_2\build\app_gui && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/Lab_2/build/app_gui/CMakeFiles/SequenceGUI_autogen.dir/AutogenInfo.json ""
+	cd /d D:\Lab_2\build\app_gui && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Lab_2/build/app_gui/SequenceGUI_autogen/timestamp
 
 app_gui/CMakeFiles/SequenceGUI.dir/codegen:
 .PHONY : app_gui/CMakeFiles/SequenceGUI.dir/codegen
@@ -82,46 +82,46 @@ app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj:
 app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/includes_CXX.rsp
 app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj: app_gui/SequenceGUI_autogen/mocs_compilation.cpp
 app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\SequenceGUI.dir\SequenceGUI_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\SequenceGUI.dir\SequenceGUI_autogen\mocs_compilation.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui\SequenceGUI_autogen\mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj"
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\SequenceGUI.dir\SequenceGUI_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\SequenceGUI.dir\SequenceGUI_autogen\mocs_compilation.cpp.obj -c D:\Lab_2\build\app_gui\SequenceGUI_autogen\mocs_compilation.cpp
 
 app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui\SequenceGUI_autogen\mocs_compilation.cpp > CMakeFiles\SequenceGUI.dir\SequenceGUI_autogen\mocs_compilation.cpp.i
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\build\app_gui\SequenceGUI_autogen\mocs_compilation.cpp > CMakeFiles\SequenceGUI.dir\SequenceGUI_autogen\mocs_compilation.cpp.i
 
 app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui\SequenceGUI_autogen\mocs_compilation.cpp -o CMakeFiles\SequenceGUI.dir\SequenceGUI_autogen\mocs_compilation.cpp.s
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\build\app_gui\SequenceGUI_autogen\mocs_compilation.cpp -o CMakeFiles\SequenceGUI.dir\SequenceGUI_autogen\mocs_compilation.cpp.s
 
 app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/flags.make
 app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/includes_CXX.rsp
-app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/main.cpp
+app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj: D:/Lab_2/app_gui/src/main.cpp
 app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj -MF CMakeFiles\SequenceGUI.dir\src\main.cpp.obj.d -o CMakeFiles\SequenceGUI.dir\src\main.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\app_gui\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj"
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj -MF CMakeFiles\SequenceGUI.dir\src\main.cpp.obj.d -o CMakeFiles\SequenceGUI.dir\src\main.cpp.obj -c D:\Lab_2\app_gui\src\main.cpp
 
 app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SequenceGUI.dir/src/main.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\app_gui\src\main.cpp > CMakeFiles\SequenceGUI.dir\src\main.cpp.i
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\app_gui\src\main.cpp > CMakeFiles\SequenceGUI.dir\src\main.cpp.i
 
 app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SequenceGUI.dir/src/main.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\app_gui\src\main.cpp -o CMakeFiles\SequenceGUI.dir\src\main.cpp.s
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\app_gui\src\main.cpp -o CMakeFiles\SequenceGUI.dir\src\main.cpp.s
 
 app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/flags.make
 app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/includes_CXX.rsp
-app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/src/MainWindow.cpp
+app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: D:/Lab_2/app_gui/src/MainWindow.cpp
 app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj -MF CMakeFiles\SequenceGUI.dir\src\MainWindow.cpp.obj.d -o CMakeFiles\SequenceGUI.dir\src\MainWindow.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\app_gui\src\MainWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj"
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj -MF CMakeFiles\SequenceGUI.dir\src\MainWindow.cpp.obj.d -o CMakeFiles\SequenceGUI.dir\src\MainWindow.cpp.obj -c D:\Lab_2\app_gui\src\MainWindow.cpp
 
 app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\app_gui\src\MainWindow.cpp > CMakeFiles\SequenceGUI.dir\src\MainWindow.cpp.i
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\app_gui\src\MainWindow.cpp > CMakeFiles\SequenceGUI.dir\src\MainWindow.cpp.i
 
 app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\app_gui\src\MainWindow.cpp -o CMakeFiles\SequenceGUI.dir\src\MainWindow.cpp.s
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\app_gui\src\MainWindow.cpp -o CMakeFiles\SequenceGUI.dir\src\MainWindow.cpp.s
 
 # Object files for target SequenceGUI
 SequenceGUI_OBJECTS = \
@@ -142,18 +142,18 @@ app_gui/SequenceGUI.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Core.a
 app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/linkLibs.rsp
 app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/objects1.rsp
 app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SequenceGUI.exe"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SequenceGUI.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SequenceGUI.exe"
+	cd /d D:\Lab_2\build\app_gui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SequenceGUI.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 app_gui/CMakeFiles/SequenceGUI.dir/build: app_gui/SequenceGUI.exe
 .PHONY : app_gui/CMakeFiles/SequenceGUI.dir/build
 
 app_gui/CMakeFiles/SequenceGUI.dir/clean:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && $(CMAKE_COMMAND) -P CMakeFiles\SequenceGUI.dir\cmake_clean.cmake
+	cd /d D:\Lab_2\build\app_gui && $(CMAKE_COMMAND) -P CMakeFiles\SequenceGUI.dir\cmake_clean.cmake
 .PHONY : app_gui/CMakeFiles/SequenceGUI.dir/clean
 
 app_gui/CMakeFiles/SequenceGUI.dir/depend: app_gui/SequenceGUI_autogen/timestamp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ilamo\OneDrive\Desktop\Lab_2 C:\Users\ilamo\OneDrive\Desktop\Lab_2\app_gui C:\Users\ilamo\OneDrive\Desktop\Lab_2\build C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui\CMakeFiles\SequenceGUI.dir\DependInfo.cmake "--color=$(COLOR)" SequenceGUI
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Lab_2 D:\Lab_2\app_gui D:\Lab_2\build D:\Lab_2\build\app_gui D:\Lab_2\build\app_gui\CMakeFiles\SequenceGUI.dir\DependInfo.cmake "--color=$(COLOR)" SequenceGUI
 .PHONY : app_gui/CMakeFiles/SequenceGUI.dir/depend
 

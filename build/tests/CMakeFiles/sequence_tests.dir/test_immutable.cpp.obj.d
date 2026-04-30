@@ -1,6 +1,6 @@
 tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: \
- C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_immutable.cpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
+ D:\Lab_2\tests\test_immutable.cpp \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstddef \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -165,9 +165,9 @@ tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_vector.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/vector.tcc \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ciso646 \
  C:/w64devkit/include/string.h C:/w64devkit/include/sec_api/string_s.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
@@ -180,8 +180,8 @@ tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h \
  C:/w64devkit/include/sys/stat.h C:/w64devkit/include/io.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h \
  C:/w64devkit/include/direct.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/condition_variable \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
@@ -195,9 +195,9 @@ tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/enable_special_members.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/variant \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/monostate.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
@@ -207,44 +207,44 @@ tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hashtable_policy.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/array \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/utility \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_relops.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/float.h \
  C:/w64devkit/include/float.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_map.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multimap.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cxxabi.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/cxxabi_tweaks.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stream_iterator.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cassert \
  C:/w64devkit/include/assert.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableArraySequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ICollection.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/IEnumerator.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.tpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/exceptions.hpp \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
+ D:/Lab_2/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
+ D:/Lab_2/library/include/ImmutableArraySequence.hpp \
+ D:/Lab_2/library/include/ArraySequence.hpp \
+ D:/Lab_2/library/include/Sequence.hpp \
+ D:/Lab_2/library/include/ICollection.hpp \
+ D:/Lab_2/library/include/IEnumerator.hpp \
+ D:/Lab_2/library/include/Sequence.tpp \
+ D:/Lab_2/library/include/exceptions.hpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.tpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.tpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableListSequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.tpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.tpp
+ D:/Lab_2/library/include/DynamicArray.hpp \
+ D:/Lab_2/library/include/DynamicArray.tpp \
+ D:/Lab_2/library/include/ArraySequence.tpp \
+ D:/Lab_2/library/include/ImmutableListSequence.hpp \
+ D:/Lab_2/library/include/ListSequence.hpp \
+ D:/Lab_2/library/include/LinkedList.hpp \
+ D:/Lab_2/library/include/LinkedList.tpp \
+ D:/Lab_2/library/include/ListSequence.tpp

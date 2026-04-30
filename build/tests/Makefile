@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2
+CMAKE_SOURCE_DIR = D:\Lab_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2\build
+CMAKE_BINARY_DIR = D:\Lab_2\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -141,14 +141,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests\\CMakeFiles\progress.marks
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles 0
+	cd /d D:\Lab_2\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\Lab_2\build\CMakeFiles D:\Lab_2\build\tests\\CMakeFiles\progress.marks
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Lab_2\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/clean
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -157,22 +157,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d D:\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/sequence_tests.dir/rule:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/CMakeFiles/sequence_tests.dir/rule
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/CMakeFiles/sequence_tests.dir/rule
 .PHONY : tests/CMakeFiles/sequence_tests.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ sequence_tests: tests/CMakeFiles/sequence_tests.dir/rule
 
 # fast build rule for target.
 sequence_tests/fast:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/build
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/build
 .PHONY : sequence_tests/fast
 
 test_array_sequence.obj: test_array_sequence.cpp.obj
@@ -189,7 +189,7 @@ test_array_sequence.obj: test_array_sequence.cpp.obj
 
 # target to build an object file
 test_array_sequence.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj
 .PHONY : test_array_sequence.cpp.obj
 
 test_array_sequence.i: test_array_sequence.cpp.i
@@ -197,7 +197,7 @@ test_array_sequence.i: test_array_sequence.cpp.i
 
 # target to preprocess a source file
 test_array_sequence.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.i
 .PHONY : test_array_sequence.cpp.i
 
 test_array_sequence.s: test_array_sequence.cpp.s
@@ -205,7 +205,7 @@ test_array_sequence.s: test_array_sequence.cpp.s
 
 # target to generate assembly for a file
 test_array_sequence.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.s
 .PHONY : test_array_sequence.cpp.s
 
 test_bit_sequence.obj: test_bit_sequence.cpp.obj
@@ -213,7 +213,7 @@ test_bit_sequence.obj: test_bit_sequence.cpp.obj
 
 # target to build an object file
 test_bit_sequence.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj
 .PHONY : test_bit_sequence.cpp.obj
 
 test_bit_sequence.i: test_bit_sequence.cpp.i
@@ -221,7 +221,7 @@ test_bit_sequence.i: test_bit_sequence.cpp.i
 
 # target to preprocess a source file
 test_bit_sequence.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.i
 .PHONY : test_bit_sequence.cpp.i
 
 test_bit_sequence.s: test_bit_sequence.cpp.s
@@ -229,7 +229,7 @@ test_bit_sequence.s: test_bit_sequence.cpp.s
 
 # target to generate assembly for a file
 test_bit_sequence.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.s
 .PHONY : test_bit_sequence.cpp.s
 
 test_dynamic_array.obj: test_dynamic_array.cpp.obj
@@ -237,7 +237,7 @@ test_dynamic_array.obj: test_dynamic_array.cpp.obj
 
 # target to build an object file
 test_dynamic_array.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj
 .PHONY : test_dynamic_array.cpp.obj
 
 test_dynamic_array.i: test_dynamic_array.cpp.i
@@ -245,7 +245,7 @@ test_dynamic_array.i: test_dynamic_array.cpp.i
 
 # target to preprocess a source file
 test_dynamic_array.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.i
 .PHONY : test_dynamic_array.cpp.i
 
 test_dynamic_array.s: test_dynamic_array.cpp.s
@@ -253,7 +253,7 @@ test_dynamic_array.s: test_dynamic_array.cpp.s
 
 # target to generate assembly for a file
 test_dynamic_array.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.s
 .PHONY : test_dynamic_array.cpp.s
 
 test_exceptions.obj: test_exceptions.cpp.obj
@@ -261,7 +261,7 @@ test_exceptions.obj: test_exceptions.cpp.obj
 
 # target to build an object file
 test_exceptions.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj
 .PHONY : test_exceptions.cpp.obj
 
 test_exceptions.i: test_exceptions.cpp.i
@@ -269,7 +269,7 @@ test_exceptions.i: test_exceptions.cpp.i
 
 # target to preprocess a source file
 test_exceptions.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.i
 .PHONY : test_exceptions.cpp.i
 
 test_exceptions.s: test_exceptions.cpp.s
@@ -277,7 +277,7 @@ test_exceptions.s: test_exceptions.cpp.s
 
 # target to generate assembly for a file
 test_exceptions.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.s
 .PHONY : test_exceptions.cpp.s
 
 test_immutable.obj: test_immutable.cpp.obj
@@ -285,7 +285,7 @@ test_immutable.obj: test_immutable.cpp.obj
 
 # target to build an object file
 test_immutable.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj
 .PHONY : test_immutable.cpp.obj
 
 test_immutable.i: test_immutable.cpp.i
@@ -293,7 +293,7 @@ test_immutable.i: test_immutable.cpp.i
 
 # target to preprocess a source file
 test_immutable.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.i
 .PHONY : test_immutable.cpp.i
 
 test_immutable.s: test_immutable.cpp.s
@@ -301,7 +301,7 @@ test_immutable.s: test_immutable.cpp.s
 
 # target to generate assembly for a file
 test_immutable.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.s
 .PHONY : test_immutable.cpp.s
 
 test_linked_list.obj: test_linked_list.cpp.obj
@@ -309,7 +309,7 @@ test_linked_list.obj: test_linked_list.cpp.obj
 
 # target to build an object file
 test_linked_list.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj
 .PHONY : test_linked_list.cpp.obj
 
 test_linked_list.i: test_linked_list.cpp.i
@@ -317,7 +317,7 @@ test_linked_list.i: test_linked_list.cpp.i
 
 # target to preprocess a source file
 test_linked_list.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.i
 .PHONY : test_linked_list.cpp.i
 
 test_linked_list.s: test_linked_list.cpp.s
@@ -325,7 +325,7 @@ test_linked_list.s: test_linked_list.cpp.s
 
 # target to generate assembly for a file
 test_linked_list.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.s
 .PHONY : test_linked_list.cpp.s
 
 test_list_sequence.obj: test_list_sequence.cpp.obj
@@ -333,7 +333,7 @@ test_list_sequence.obj: test_list_sequence.cpp.obj
 
 # target to build an object file
 test_list_sequence.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj
 .PHONY : test_list_sequence.cpp.obj
 
 test_list_sequence.i: test_list_sequence.cpp.i
@@ -341,7 +341,7 @@ test_list_sequence.i: test_list_sequence.cpp.i
 
 # target to preprocess a source file
 test_list_sequence.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.i
 .PHONY : test_list_sequence.cpp.i
 
 test_list_sequence.s: test_list_sequence.cpp.s
@@ -349,7 +349,7 @@ test_list_sequence.s: test_list_sequence.cpp.s
 
 # target to generate assembly for a file
 test_list_sequence.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.s
 .PHONY : test_list_sequence.cpp.s
 
 test_map_reduce.obj: test_map_reduce.cpp.obj
@@ -357,7 +357,7 @@ test_map_reduce.obj: test_map_reduce.cpp.obj
 
 # target to build an object file
 test_map_reduce.cpp.obj:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj
 .PHONY : test_map_reduce.cpp.obj
 
 test_map_reduce.i: test_map_reduce.cpp.i
@@ -365,7 +365,7 @@ test_map_reduce.i: test_map_reduce.cpp.i
 
 # target to preprocess a source file
 test_map_reduce.cpp.i:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.i
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.i
 .PHONY : test_map_reduce.cpp.i
 
 test_map_reduce.s: test_map_reduce.cpp.s
@@ -373,7 +373,7 @@ test_map_reduce.s: test_map_reduce.cpp.s
 
 # target to generate assembly for a file
 test_map_reduce.cpp.s:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.s
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.s
 .PHONY : test_map_reduce.cpp.s
 
 # Help Target
@@ -425,6 +425,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d D:\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

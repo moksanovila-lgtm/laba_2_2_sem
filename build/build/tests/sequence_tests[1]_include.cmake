@@ -1,5 +1,0 @@
-if(EXISTS "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/tests/sequence_tests[1]_tests.cmake")
-  include("C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/tests/sequence_tests[1]_tests.cmake")
-else()
-  add_test(sequence_tests_NOT_BUILT sequence_tests_NOT_BUILT)
-endif()

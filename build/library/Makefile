@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2
+CMAKE_SOURCE_DIR = D:\Lab_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2\build
+CMAKE_BINARY_DIR = D:\Lab_2\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -141,14 +141,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\library\\CMakeFiles\progress.marks
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 library/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles 0
+	cd /d D:\Lab_2\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\Lab_2\build\CMakeFiles D:\Lab_2\build\library\\CMakeFiles\progress.marks
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 library/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Lab_2\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 library/clean
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 library/clean
 .PHONY : clean
 
 # The main clean target
@@ -157,17 +157,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 library/preinstall
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 library/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 library/preinstall
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 library/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d D:\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -194,6 +194,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d D:\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

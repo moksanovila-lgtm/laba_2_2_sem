@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-subbuild/cmake_install.cmake"
+		"D:/Lab_2/build/_deps/googletest-subbuild/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

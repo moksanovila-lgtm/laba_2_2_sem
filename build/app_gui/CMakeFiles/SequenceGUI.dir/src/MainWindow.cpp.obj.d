@@ -1,6 +1,6 @@
 app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: \
- C:\Users\ilamo\OneDrive\Desktop\Lab_2\app_gui\src\MainWindow.cpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp \
+ D:\Lab_2\app_gui\src\MainWindow.cpp \
+ D:/Lab_2/app_gui/include/MainWindow.hpp \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -415,23 +415,23 @@ app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QGridLayout \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ICollection.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/IEnumerator.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.tpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/exceptions.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.tpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.tpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableArraySequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.tpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.tpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableListSequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.hpp \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp \
+ D:/Lab_2/library/include/Sequence.hpp \
+ D:/Lab_2/library/include/ICollection.hpp \
+ D:/Lab_2/library/include/IEnumerator.hpp \
+ D:/Lab_2/library/include/Sequence.tpp \
+ D:/Lab_2/library/include/exceptions.hpp \
+ D:/Lab_2/library/include/ArraySequence.hpp \
+ D:/Lab_2/library/include/DynamicArray.hpp \
+ D:/Lab_2/library/include/DynamicArray.tpp \
+ D:/Lab_2/library/include/ArraySequence.tpp \
+ D:/Lab_2/library/include/ImmutableArraySequence.hpp \
+ D:/Lab_2/library/include/ListSequence.hpp \
+ D:/Lab_2/library/include/LinkedList.hpp \
+ D:/Lab_2/library/include/LinkedList.tpp \
+ D:/Lab_2/library/include/ListSequence.tpp \
+ D:/Lab_2/library/include/ImmutableListSequence.hpp \
+ D:/Lab_2/library/include/BitSequence.hpp \
+ D:/Lab_2/library/include/Bit.hpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.h \
@@ -447,7 +447,7 @@ app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/istream \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
- C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.tpp \
+ D:/Lab_2/library/include/BitSequence.tpp \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \

@@ -1,5 +1,5 @@
-C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652QU/moc_MainWindow.cpp: C:/Users/ilamo/OneDrive/Desktop/Lab_2/app_gui/include/MainWindow.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/moc_predefs.h \
+D:/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652QU/moc_MainWindow.cpp: D:/Lab_2/app_gui/include/MainWindow.hpp \
+  D:/Lab_2/build/app_gui/SequenceGUI_autogen/moc_predefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20functional.h \
@@ -205,24 +205,6 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ArraySequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Bit.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/DynamicArray.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ICollection.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/IEnumerator.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableArraySequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ImmutableListSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/LinkedList.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/ListSequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.hpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/Sequence.tpp \
-  C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/exceptions.hpp \
   C:/w64devkit/include/_mingw.h \
   C:/w64devkit/include/_mingw_mac.h \
   C:/w64devkit/include/_mingw_off_t.h \
@@ -452,4 +434,22 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  D:/Lab_2/library/include/ArraySequence.hpp \
+  D:/Lab_2/library/include/ArraySequence.tpp \
+  D:/Lab_2/library/include/Bit.hpp \
+  D:/Lab_2/library/include/BitSequence.hpp \
+  D:/Lab_2/library/include/BitSequence.tpp \
+  D:/Lab_2/library/include/DynamicArray.hpp \
+  D:/Lab_2/library/include/DynamicArray.tpp \
+  D:/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_2/library/include/ImmutableArraySequence.hpp \
+  D:/Lab_2/library/include/ImmutableListSequence.hpp \
+  D:/Lab_2/library/include/LinkedList.hpp \
+  D:/Lab_2/library/include/LinkedList.tpp \
+  D:/Lab_2/library/include/ListSequence.hpp \
+  D:/Lab_2/library/include/ListSequence.tpp \
+  D:/Lab_2/library/include/Sequence.hpp \
+  D:/Lab_2/library/include/Sequence.tpp \
+  D:/Lab_2/library/include/exceptions.hpp

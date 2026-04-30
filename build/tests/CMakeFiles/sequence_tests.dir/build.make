@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2
+CMAKE_SOURCE_DIR = D:\Lab_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2\build
+CMAKE_BINARY_DIR = D:\Lab_2\build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/sequence_tests.dir/depend.make
@@ -73,123 +73,123 @@ tests/CMakeFiles/sequence_tests.dir/codegen:
 
 tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj: tests/CMakeFiles/sequence_tests.dir/flags.make
 tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj: tests/CMakeFiles/sequence_tests.dir/includes_CXX.rsp
-tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/tests/test_dynamic_array.cpp
+tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj: D:/Lab_2/tests/test_dynamic_array.cpp
 tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj: tests/CMakeFiles/sequence_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_dynamic_array.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_dynamic_array.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_dynamic_array.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj"
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_dynamic_array.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_dynamic_array.cpp.obj -c D:\Lab_2\tests\test_dynamic_array.cpp
 
 tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_dynamic_array.cpp > CMakeFiles\sequence_tests.dir\test_dynamic_array.cpp.i
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\tests\test_dynamic_array.cpp > CMakeFiles\sequence_tests.dir\test_dynamic_array.cpp.i
 
 tests/CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sequence_tests.dir/test_dynamic_array.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_dynamic_array.cpp -o CMakeFiles\sequence_tests.dir\test_dynamic_array.cpp.s
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\tests\test_dynamic_array.cpp -o CMakeFiles\sequence_tests.dir\test_dynamic_array.cpp.s
 
 tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj: tests/CMakeFiles/sequence_tests.dir/flags.make
 tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj: tests/CMakeFiles/sequence_tests.dir/includes_CXX.rsp
-tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/tests/test_linked_list.cpp
+tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj: D:/Lab_2/tests/test_linked_list.cpp
 tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj: tests/CMakeFiles/sequence_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_linked_list.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_linked_list.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_linked_list.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj"
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_linked_list.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_linked_list.cpp.obj -c D:\Lab_2\tests\test_linked_list.cpp
 
 tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sequence_tests.dir/test_linked_list.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_linked_list.cpp > CMakeFiles\sequence_tests.dir\test_linked_list.cpp.i
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\tests\test_linked_list.cpp > CMakeFiles\sequence_tests.dir\test_linked_list.cpp.i
 
 tests/CMakeFiles/sequence_tests.dir/test_linked_list.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sequence_tests.dir/test_linked_list.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_linked_list.cpp -o CMakeFiles\sequence_tests.dir\test_linked_list.cpp.s
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\tests\test_linked_list.cpp -o CMakeFiles\sequence_tests.dir\test_linked_list.cpp.s
 
 tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj: tests/CMakeFiles/sequence_tests.dir/flags.make
 tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj: tests/CMakeFiles/sequence_tests.dir/includes_CXX.rsp
-tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/tests/test_array_sequence.cpp
+tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj: D:/Lab_2/tests/test_array_sequence.cpp
 tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj: tests/CMakeFiles/sequence_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_array_sequence.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_array_sequence.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_array_sequence.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj"
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_array_sequence.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_array_sequence.cpp.obj -c D:\Lab_2\tests\test_array_sequence.cpp
 
 tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_array_sequence.cpp > CMakeFiles\sequence_tests.dir\test_array_sequence.cpp.i
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\tests\test_array_sequence.cpp > CMakeFiles\sequence_tests.dir\test_array_sequence.cpp.i
 
 tests/CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sequence_tests.dir/test_array_sequence.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_array_sequence.cpp -o CMakeFiles\sequence_tests.dir\test_array_sequence.cpp.s
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\tests\test_array_sequence.cpp -o CMakeFiles\sequence_tests.dir\test_array_sequence.cpp.s
 
 tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj: tests/CMakeFiles/sequence_tests.dir/flags.make
 tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj: tests/CMakeFiles/sequence_tests.dir/includes_CXX.rsp
-tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/tests/test_list_sequence.cpp
+tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj: D:/Lab_2/tests/test_list_sequence.cpp
 tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj: tests/CMakeFiles/sequence_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_list_sequence.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_list_sequence.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_list_sequence.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj"
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_list_sequence.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_list_sequence.cpp.obj -c D:\Lab_2\tests\test_list_sequence.cpp
 
 tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_list_sequence.cpp > CMakeFiles\sequence_tests.dir\test_list_sequence.cpp.i
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\tests\test_list_sequence.cpp > CMakeFiles\sequence_tests.dir\test_list_sequence.cpp.i
 
 tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_list_sequence.cpp -o CMakeFiles\sequence_tests.dir\test_list_sequence.cpp.s
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\tests\test_list_sequence.cpp -o CMakeFiles\sequence_tests.dir\test_list_sequence.cpp.s
 
 tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj: tests/CMakeFiles/sequence_tests.dir/flags.make
 tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj: tests/CMakeFiles/sequence_tests.dir/includes_CXX.rsp
-tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/tests/test_bit_sequence.cpp
+tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj: D:/Lab_2/tests/test_bit_sequence.cpp
 tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj: tests/CMakeFiles/sequence_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_bit_sequence.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_bit_sequence.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_bit_sequence.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj"
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_bit_sequence.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_bit_sequence.cpp.obj -c D:\Lab_2\tests\test_bit_sequence.cpp
 
 tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_bit_sequence.cpp > CMakeFiles\sequence_tests.dir\test_bit_sequence.cpp.i
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\tests\test_bit_sequence.cpp > CMakeFiles\sequence_tests.dir\test_bit_sequence.cpp.i
 
 tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_bit_sequence.cpp -o CMakeFiles\sequence_tests.dir\test_bit_sequence.cpp.s
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\tests\test_bit_sequence.cpp -o CMakeFiles\sequence_tests.dir\test_bit_sequence.cpp.s
 
 tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: tests/CMakeFiles/sequence_tests.dir/flags.make
 tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: tests/CMakeFiles/sequence_tests.dir/includes_CXX.rsp
-tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/tests/test_immutable.cpp
+tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: D:/Lab_2/tests/test_immutable.cpp
 tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: tests/CMakeFiles/sequence_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_immutable.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_immutable.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_immutable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj"
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_immutable.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_immutable.cpp.obj -c D:\Lab_2\tests\test_immutable.cpp
 
 tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sequence_tests.dir/test_immutable.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_immutable.cpp > CMakeFiles\sequence_tests.dir\test_immutable.cpp.i
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\tests\test_immutable.cpp > CMakeFiles\sequence_tests.dir\test_immutable.cpp.i
 
 tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sequence_tests.dir/test_immutable.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_immutable.cpp -o CMakeFiles\sequence_tests.dir\test_immutable.cpp.s
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\tests\test_immutable.cpp -o CMakeFiles\sequence_tests.dir\test_immutable.cpp.s
 
 tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj: tests/CMakeFiles/sequence_tests.dir/flags.make
 tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj: tests/CMakeFiles/sequence_tests.dir/includes_CXX.rsp
-tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/tests/test_map_reduce.cpp
+tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj: D:/Lab_2/tests/test_map_reduce.cpp
 tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj: tests/CMakeFiles/sequence_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_map_reduce.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_map_reduce.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_map_reduce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj"
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_map_reduce.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_map_reduce.cpp.obj -c D:\Lab_2\tests\test_map_reduce.cpp
 
 tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_map_reduce.cpp > CMakeFiles\sequence_tests.dir\test_map_reduce.cpp.i
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\tests\test_map_reduce.cpp > CMakeFiles\sequence_tests.dir\test_map_reduce.cpp.i
 
 tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_map_reduce.cpp -o CMakeFiles\sequence_tests.dir\test_map_reduce.cpp.s
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\tests\test_map_reduce.cpp -o CMakeFiles\sequence_tests.dir\test_map_reduce.cpp.s
 
 tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj: tests/CMakeFiles/sequence_tests.dir/flags.make
 tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj: tests/CMakeFiles/sequence_tests.dir/includes_CXX.rsp
-tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj: C:/Users/ilamo/OneDrive/Desktop/Lab_2/tests/test_exceptions.cpp
+tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj: D:/Lab_2/tests/test_exceptions.cpp
 tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj: tests/CMakeFiles/sequence_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_exceptions.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_exceptions.cpp.obj -c C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_exceptions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj"
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj -MF CMakeFiles\sequence_tests.dir\test_exceptions.cpp.obj.d -o CMakeFiles\sequence_tests.dir\test_exceptions.cpp.obj -c D:\Lab_2\tests\test_exceptions.cpp
 
 tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sequence_tests.dir/test_exceptions.cpp.i"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_exceptions.cpp > CMakeFiles\sequence_tests.dir\test_exceptions.cpp.i
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\tests\test_exceptions.cpp > CMakeFiles\sequence_tests.dir\test_exceptions.cpp.i
 
 tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sequence_tests.dir/test_exceptions.cpp.s"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests\test_exceptions.cpp -o CMakeFiles\sequence_tests.dir\test_exceptions.cpp.s
+	cd /d D:\Lab_2\build\tests && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\tests\test_exceptions.cpp -o CMakeFiles\sequence_tests.dir\test_exceptions.cpp.s
 
 # Object files for target sequence_tests
 sequence_tests_OBJECTS = \
@@ -219,19 +219,19 @@ tests/sequence_tests.exe: lib/libgtest.a
 tests/sequence_tests.exe: tests/CMakeFiles/sequence_tests.dir/linkLibs.rsp
 tests/sequence_tests.exe: tests/CMakeFiles/sequence_tests.dir/objects1.rsp
 tests/sequence_tests.exe: tests/CMakeFiles/sequence_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable sequence_tests.exe"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\sequence_tests.dir\link.txt --verbose=$(VERBOSE)
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && "C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=sequence_tests -D TEST_EXECUTABLE=C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/tests/sequence_tests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=sequence_tests_TESTS -D CTEST_FILE=C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/tests/sequence_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-4.3/Modules/GoogleTestAddTests.cmake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable sequence_tests.exe"
+	cd /d D:\Lab_2\build\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\sequence_tests.dir\link.txt --verbose=$(VERBOSE)
+	cd /d D:\Lab_2\build\tests && "C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=sequence_tests -D TEST_EXECUTABLE=D:/Lab_2/build/tests/sequence_tests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=D:/Lab_2/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=sequence_tests_TESTS -D CTEST_FILE=D:/Lab_2/build/tests/sequence_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-4.3/Modules/GoogleTestAddTests.cmake"
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/sequence_tests.dir/build: tests/sequence_tests.exe
 .PHONY : tests/CMakeFiles/sequence_tests.dir/build
 
 tests/CMakeFiles/sequence_tests.dir/clean:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests && $(CMAKE_COMMAND) -P CMakeFiles\sequence_tests.dir\cmake_clean.cmake
+	cd /d D:\Lab_2\build\tests && $(CMAKE_COMMAND) -P CMakeFiles\sequence_tests.dir\cmake_clean.cmake
 .PHONY : tests/CMakeFiles/sequence_tests.dir/clean
 
 tests/CMakeFiles/sequence_tests.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ilamo\OneDrive\Desktop\Lab_2 C:\Users\ilamo\OneDrive\Desktop\Lab_2\tests C:\Users\ilamo\OneDrive\Desktop\Lab_2\build C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\tests\CMakeFiles\sequence_tests.dir\DependInfo.cmake "--color=$(COLOR)" sequence_tests
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Lab_2 D:\Lab_2\tests D:\Lab_2\build D:\Lab_2\build\tests D:\Lab_2\build\tests\CMakeFiles\sequence_tests.dir\DependInfo.cmake "--color=$(COLOR)" sequence_tests
 .PHONY : tests/CMakeFiles/sequence_tests.dir/depend
 

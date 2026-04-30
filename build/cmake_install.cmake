@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ilamo/OneDrive/Desktop/Lab_2
+# Install script for directory: D:/Lab_2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,28 +39,28 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/library/cmake_install.cmake")
+  include("D:/Lab_2/build/library/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/cmake_install.cmake")
+  include("D:/Lab_2/build/app_gui/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/_deps/googletest-build/cmake_install.cmake")
+  include("D:/Lab_2/build/_deps/googletest-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/tests/cmake_install.cmake")
+  include("D:/Lab_2/build/tests/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/install_local_manifest.txt"
+  file(WRITE "D:/Lab_2/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -76,6 +76,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/Lab_2/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

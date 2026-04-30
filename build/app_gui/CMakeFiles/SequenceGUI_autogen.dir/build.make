@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2
+CMAKE_SOURCE_DIR = D:\Lab_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2\build
+CMAKE_BINARY_DIR = D:\Lab_2\build
 
 # Utility rule file for SequenceGUI_autogen.
 
@@ -70,9 +70,9 @@ app_gui/CMakeFiles/SequenceGUI_autogen: app_gui/SequenceGUI_autogen/timestamp
 app_gui/SequenceGUI_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/moc.exe
 app_gui/SequenceGUI_autogen/timestamp: C:/Qt/6.11.0/mingw_64/bin/uic.exe
 app_gui/SequenceGUI_autogen/timestamp: app_gui/CMakeFiles/SequenceGUI_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target SequenceGUI"
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/CMakeFiles/SequenceGUI_autogen.dir/AutogenInfo.json ""
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/ilamo/OneDrive/Desktop/Lab_2/build/app_gui/SequenceGUI_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target SequenceGUI"
+	cd /d D:\Lab_2\build\app_gui && "C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/Lab_2/build/app_gui/CMakeFiles/SequenceGUI_autogen.dir/AutogenInfo.json ""
+	cd /d D:\Lab_2\build\app_gui && "C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Lab_2/build/app_gui/SequenceGUI_autogen/timestamp
 
 app_gui/CMakeFiles/SequenceGUI_autogen.dir/codegen:
 .PHONY : app_gui/CMakeFiles/SequenceGUI_autogen.dir/codegen
@@ -87,10 +87,10 @@ app_gui/CMakeFiles/SequenceGUI_autogen.dir/build: SequenceGUI_autogen
 .PHONY : app_gui/CMakeFiles/SequenceGUI_autogen.dir/build
 
 app_gui/CMakeFiles/SequenceGUI_autogen.dir/clean:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && $(CMAKE_COMMAND) -P CMakeFiles\SequenceGUI_autogen.dir\cmake_clean.cmake
+	cd /d D:\Lab_2\build\app_gui && $(CMAKE_COMMAND) -P CMakeFiles\SequenceGUI_autogen.dir\cmake_clean.cmake
 .PHONY : app_gui/CMakeFiles/SequenceGUI_autogen.dir/clean
 
 app_gui/CMakeFiles/SequenceGUI_autogen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ilamo\OneDrive\Desktop\Lab_2 C:\Users\ilamo\OneDrive\Desktop\Lab_2\app_gui C:\Users\ilamo\OneDrive\Desktop\Lab_2\build C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui\CMakeFiles\SequenceGUI_autogen.dir\DependInfo.cmake "--color=$(COLOR)" SequenceGUI_autogen
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Lab_2 D:\Lab_2\app_gui D:\Lab_2\build D:\Lab_2\build\app_gui D:\Lab_2\build\app_gui\CMakeFiles\SequenceGUI_autogen.dir\DependInfo.cmake "--color=$(COLOR)" SequenceGUI_autogen
 .PHONY : app_gui/CMakeFiles/SequenceGUI_autogen.dir/depend
 

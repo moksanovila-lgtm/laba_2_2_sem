@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2
+CMAKE_SOURCE_DIR = D:\Lab_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ilamo\OneDrive\Desktop\Lab_2\build
+CMAKE_BINARY_DIR = D:\Lab_2\build
 
 # Utility rule file for SequenceGUI_autogen_timestamp_deps.
 
@@ -76,10 +76,10 @@ app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/build: SequenceGUI_aut
 .PHONY : app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/build
 
 app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/clean:
-	cd /d C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui && $(CMAKE_COMMAND) -P CMakeFiles\SequenceGUI_autogen_timestamp_deps.dir\cmake_clean.cmake
+	cd /d D:\Lab_2\build\app_gui && $(CMAKE_COMMAND) -P CMakeFiles\SequenceGUI_autogen_timestamp_deps.dir\cmake_clean.cmake
 .PHONY : app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/clean
 
 app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ilamo\OneDrive\Desktop\Lab_2 C:\Users\ilamo\OneDrive\Desktop\Lab_2\app_gui C:\Users\ilamo\OneDrive\Desktop\Lab_2\build C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui C:\Users\ilamo\OneDrive\Desktop\Lab_2\build\app_gui\CMakeFiles\SequenceGUI_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)" SequenceGUI_autogen_timestamp_deps
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Lab_2 D:\Lab_2\app_gui D:\Lab_2\build D:\Lab_2\build\app_gui D:\Lab_2\build\app_gui\CMakeFiles\SequenceGUI_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)" SequenceGUI_autogen_timestamp_deps
 .PHONY : app_gui/CMakeFiles/SequenceGUI_autogen_timestamp_deps.dir/depend
 
