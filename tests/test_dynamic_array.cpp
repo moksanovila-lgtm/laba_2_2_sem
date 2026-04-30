@@ -1,7 +1,6 @@
 #include <gtest/gtest.h>
 #include "DynamicArray.hpp"
 
-// ====================  ŒÕ—“–” “Œ–€ ====================
 
 TEST(DynamicArrayTest, DefaultConstructor) {
     DynamicArray<int> arr;
@@ -31,7 +30,6 @@ TEST(DynamicArrayTest, CopyConstructor) {
     EXPECT_EQ(arr2.Get(2), 30) << "Copy constructor: third element should be 30";
 }
 
-// ==================== GET » SET ====================
 
 TEST(DynamicArrayTest, GetReturnsCorrectValue) {
     DynamicArray<int> arr(3);
@@ -58,7 +56,6 @@ TEST(DynamicArrayTest, SetThrowsOnInvalidIndex) {
         << "Set(3,10) on array of size 3 should throw IndexOutOfRangeException";
 }
 
-// ==================== APPEND ====================
 
 TEST(DynamicArrayTest, AppendIncreasesSize) {
     DynamicArray<int> arr;
@@ -80,7 +77,6 @@ TEST(DynamicArrayTest, AppendManyElements) {
     EXPECT_EQ(arr.Get(99), 99) << "Element at index 99 should be 99";
 }
 
-// ==================== INSERTAT ====================
 
 TEST(DynamicArrayTest, InsertAtBeginning) {
     DynamicArray<int> arr;
@@ -123,7 +119,6 @@ TEST(DynamicArrayTest, InsertAtThrowsOnInvalidIndex) {
         << "InsertAt(20,2) into array of size 1 should throw IndexOutOfRangeException";
 }
 
-// ==================== REMOVEAT ====================
 
 TEST(DynamicArrayTest, RemoveAtBeginning) {
     DynamicArray<int> arr;
@@ -168,7 +163,6 @@ TEST(DynamicArrayTest, RemoveAtThrowsOnInvalidIndex) {
         << "RemoveAt(1) on array of size 1 should throw IndexOutOfRangeException";
 }
 
-// ==================== CLEAR ====================
 
 TEST(DynamicArrayTest, ClearEmptiesArray) {
     DynamicArray<int> arr;

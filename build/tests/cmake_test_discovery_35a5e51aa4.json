@@ -9,72 +9,72 @@
         {
           "name": "GetThrowsIndexOutOfRange",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 9
+          "line": 8
         },
         {
           "name": "InsertAtThrowsIndexOutOfRange",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 20
+          "line": 19
         },
         {
           "name": "GetFirstThrowsEmptySequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 31
+          "line": 30
         },
         {
           "name": "GetLastThrowsEmptySequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 37
+          "line": 36
         },
         {
           "name": "ImmutableArraySequenceAppendThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 45
+          "line": 43
         },
         {
           "name": "ImmutableArraySequencePrependThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 51
+          "line": 49
         },
         {
           "name": "ImmutableArraySequenceInsertAtThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 57
+          "line": 55
         },
         {
           "name": "ImmutableArraySequenceClearThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 63
+          "line": 61
         },
         {
           "name": "ConcatWithNullptrThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 71
+          "line": 68
         },
         {
           "name": "MapWithNullptrThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 77
+          "line": 74
         },
         {
           "name": "WhereWithNullptrThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 83
+          "line": 80
         },
         {
           "name": "ReduceWithNullptrThrows",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 89
+          "line": 86
         },
         {
           "name": "BitSequenceGetSubsequenceInvalidBounds",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 97
+          "line": 93
         },
         {
           "name": "BitSequenceAndDifferentSizes",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 107
+          "line": 103
         }
       ]
     },
@@ -85,57 +85,57 @@
         {
           "name": "MapOnArraySequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 7
+          "line": 6
         },
         {
           "name": "MapOnListSequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 28
+          "line": 27
         },
         {
           "name": "MapOnEmptySequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 45
+          "line": 44
         },
         {
           "name": "WhereFiltersEvenNumbers",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 57
+          "line": 55
         },
         {
           "name": "WhereFiltersGreaterThan",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 77
+          "line": 75
         },
         {
           "name": "WhereOnEmptySequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 95
+          "line": 93
         },
         {
           "name": "ReduceSum",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 107
+          "line": 104
         },
         {
           "name": "ReduceProduct",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 121
+          "line": 118
         },
         {
           "name": "ReduceMax",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 134
+          "line": 131
         },
         {
           "name": "ReduceOnEmptySequenceReturnsInitial",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 148
+          "line": 145
         },
         {
           "name": "ChainMapWhereReduce",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 158
+          "line": 154
         }
       ]
     },
@@ -146,37 +146,37 @@
         {
           "name": "AppendThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 7
+          "line": 6
         },
         {
           "name": "PrependThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 13
+          "line": 12
         },
         {
           "name": "InsertAtThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 19
+          "line": 18
         },
         {
           "name": "ClearThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 25
+          "line": 24
         },
         {
           "name": "GetWorksCorrectly",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 31
+          "line": 30
         },
         {
           "name": "ConcatReturnsNewSequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 44
+          "line": 43
         },
         {
           "name": "IsMutableReturnsFalse",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 104
+          "line": 101
         }
       ]
     },
@@ -187,22 +187,22 @@
         {
           "name": "AppendThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 73
+          "line": 70
         },
         {
           "name": "PrependThrowsException",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 79
+          "line": 76
         },
         {
           "name": "GetWorksCorrectly",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 85
+          "line": 82
         },
         {
           "name": "IsMutableReturnsFalse",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 98
+          "line": 95
         }
       ]
     },
@@ -213,67 +213,67 @@
         {
           "name": "DefaultConstructor",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 6
+          "line": 4
         },
         {
           "name": "ConstructorWithSize",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 11
+          "line": 9
         },
         {
           "name": "ConstructorWithArray",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 19
+          "line": 17
         },
         {
           "name": "AppendAddsBit",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 33
+          "line": 29
         },
         {
           "name": "GetFirstReturnsFirstBit",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 47
+          "line": 41
         },
         {
           "name": "GetLastReturnsLastBit",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 56
+          "line": 50
         },
         {
           "name": "AndOperation",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 67
+          "line": 59
         },
         {
           "name": "OrOperation",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 85
+          "line": 77
         },
         {
           "name": "XorOperation",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 103
+          "line": 95
         },
         {
           "name": "NotOperation",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 121
+          "line": 113
         },
         {
           "name": "MapInvertsBits",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 138
+          "line": 128
         },
         {
           "name": "WhereFiltersOnes",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 156
+          "line": 144
         },
         {
           "name": "ReduceXorOfAllBits",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 173
+          "line": 159
         }
       ]
     },
@@ -284,52 +284,52 @@
         {
           "name": "DefaultConstructor",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 6
+          "line": 5
         },
         {
           "name": "AppendIncreasesSize",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 13
+          "line": 11
         },
         {
           "name": "PrependAddsToBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 22
+          "line": 19
         },
         {
           "name": "InsertAtBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 36
+          "line": 32
         },
         {
           "name": "InsertAtMiddle",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 46
+          "line": 42
         },
         {
           "name": "GetFirstReturnsFirstElement",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 58
+          "line": 53
         },
         {
           "name": "GetLastReturnsLastElement",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 65
+          "line": 60
         },
         {
           "name": "GetSubsequenceReturnsCorrectSubsequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 75
+          "line": 69
         },
         {
           "name": "ConcatCombinesTwoSequences",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 91
+          "line": 84
         },
         {
           "name": "ClearEmptiesSequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 108
+          "line": 100
         }
       ]
     },
@@ -340,77 +340,77 @@
         {
           "name": "DefaultConstructor",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 6
+          "line": 5
         },
         {
           "name": "ConstructorWithArray",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 11
+          "line": 10
         },
         {
           "name": "AppendIncreasesSize",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 26
+          "line": 24
         },
         {
           "name": "PrependAddsToBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 40
+          "line": 37
         },
         {
           "name": "InsertAtBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 54
+          "line": 50
         },
         {
           "name": "InsertAtMiddle",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 66
+          "line": 62
         },
         {
           "name": "InsertAtEnd",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 78
+          "line": 74
         },
         {
           "name": "InsertAtThrowsOnInvalidIndex",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 88
+          "line": 84
         },
         {
           "name": "GetFirstReturnsFirstElement",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 96
+          "line": 91
         },
         {
           "name": "GetFirstThrowsOnEmptySequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 104
+          "line": 99
         },
         {
           "name": "GetLastReturnsLastElement",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 110
+          "line": 105
         },
         {
           "name": "GetSubsequenceReturnsCorrectSubsequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 120
+          "line": 114
         },
         {
           "name": "GetSubsequenceThrowsOnInvalidBounds",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 136
+          "line": 130
         },
         {
           "name": "ConcatCombinesTwoSequences",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 151
+          "line": 144
         },
         {
           "name": "ClearEmptiesSequence",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 174
+          "line": 166
         }
       ]
     },
@@ -421,72 +421,72 @@
         {
           "name": "DefaultConstructor",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 6
+          "line": 5
         },
         {
           "name": "CopyConstructor",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 11
+          "line": 10
         },
         {
           "name": "AppendIncreasesSize",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 26
+          "line": 24
         },
         {
           "name": "PrependAddsToBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 39
+          "line": 36
         },
         {
           "name": "InsertAtBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 53
+          "line": 49
         },
         {
           "name": "InsertAtMiddle",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 65
+          "line": 61
         },
         {
           "name": "InsertAtEnd",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 77
+          "line": 73
         },
         {
           "name": "GetFirstReturnsFirstElement",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 89
+          "line": 84
         },
         {
           "name": "GetFirstThrowsOnEmptyList",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 97
+          "line": 92
         },
         {
           "name": "GetLastReturnsLastElement",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 103
+          "line": 98
         },
         {
           "name": "RemoveAtBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 113
+          "line": 107
         },
         {
           "name": "RemoveAtMiddle",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 125
+          "line": 119
         },
         {
           "name": "RemoveAtEnd",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 137
+          "line": 131
         },
         {
           "name": "ClearEmptiesList",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 151
+          "line": 144
         }
       ]
     },
@@ -497,92 +497,92 @@
         {
           "name": "DefaultConstructor",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 6
+          "line": 5
         },
         {
           "name": "ConstructorWithSize",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 11
+          "line": 10
         },
         {
           "name": "ConstructorWithZeroSize",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 16
+          "line": 15
         },
         {
           "name": "CopyConstructor",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 21
+          "line": 20
         },
         {
           "name": "GetReturnsCorrectValue",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 36
+          "line": 34
         },
         {
           "name": "GetThrowsOnInvalidIndex",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 47
+          "line": 45
         },
         {
           "name": "SetThrowsOnInvalidIndex",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 55
+          "line": 53
         },
         {
           "name": "AppendIncreasesSize",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 63
+          "line": 60
         },
         {
           "name": "AppendManyElements",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 74
+          "line": 71
         },
         {
           "name": "InsertAtBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 85
+          "line": 81
         },
         {
           "name": "InsertAtMiddle",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 97
+          "line": 93
         },
         {
           "name": "InsertAtEnd",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 109
+          "line": 105
         },
         {
           "name": "InsertAtThrowsOnInvalidIndex",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 119
+          "line": 115
         },
         {
           "name": "RemoveAtBeginning",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 128
+          "line": 123
         },
         {
           "name": "RemoveAtMiddle",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 140
+          "line": 135
         },
         {
           "name": "RemoveAtEnd",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 152
+          "line": 147
         },
         {
           "name": "RemoveAtThrowsOnInvalidIndex",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 164
+          "line": 159
         },
         {
           "name": "ClearEmptiesArray",
           "file": "C:\\Users\\ilamo\\OneDrive\\Desktop\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 173
+          "line": 167
         }
       ]
     }

@@ -2,7 +2,6 @@
 #include "ImmutableArraySequence.hpp"
 #include "ImmutableListSequence.hpp"
 
-// ==================== IMMUTABLE ARRAY SEQUENCE ====================
 
 TEST(ImmutableArraySequenceTest, AppendThrowsException) {
     ImmutableArraySequence<int> seq;
@@ -61,14 +60,12 @@ TEST(ImmutableArraySequenceTest, ConcatReturnsNewSequence) {
     EXPECT_EQ(result->Get(2), 3) << "Concat: third element should be 3";
     EXPECT_EQ(result->Get(3), 4) << "Concat: fourth element should be 4";
     
-    // Исходные не изменились
     EXPECT_EQ(seq1.GetCount(), 2) << "Original seq1 should still have size 2 (immutable)";
     EXPECT_EQ(seq2.GetCount(), 2) << "Original seq2 should still have size 2 (immutable)";
     
     delete result;
 }
 
-// ==================== IMMUTABLE LIST SEQUENCE ====================
 
 TEST(ImmutableListSequenceTest, AppendThrowsException) {
     ImmutableListSequence<int> seq;

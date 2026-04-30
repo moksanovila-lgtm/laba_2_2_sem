@@ -4,7 +4,6 @@
 #include "Bit.hpp"           
 #include "BitSequence.hpp"
 
-// ==================== INDEX OUT OF RANGE ====================
 
 TEST(ExceptionTest, GetThrowsIndexOutOfRange) {
     ArraySequence<int> seq;
@@ -40,7 +39,6 @@ TEST(ExceptionTest, GetLastThrowsEmptySequence) {
         << "GetLast() on empty sequence should throw EmptySequenceException";
 }
 
-// ==================== IMMUTABLE MODIFICATION ====================
 
 TEST(ExceptionTest, ImmutableArraySequenceAppendThrows) {
     ImmutableArraySequence<int> seq;
@@ -66,7 +64,6 @@ TEST(ExceptionTest, ImmutableArraySequenceClearThrows) {
         << "Clear() on immutable sequence should throw ImmutableModificationException";
 }
 
-// ==================== INVALID ARGUMENT ====================
 
 TEST(ExceptionTest, ConcatWithNullptrThrows) {
     ArraySequence<int> seq;
@@ -92,7 +89,6 @@ TEST(ExceptionTest, ReduceWithNullptrThrows) {
         << "Reduce(nullptr,0) should throw InvalidArgumentException";
 }
 
-// ==================== BIT SEQUENCE EXCEPTIONS ====================
 
 TEST(ExceptionTest, BitSequenceGetSubsequenceInvalidBounds) {
     Bit bits[] = {Bit(1), Bit(0), Bit(1), Bit(1), Bit(0)};

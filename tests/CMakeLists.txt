@@ -4,10 +4,7 @@ project(SequenceTests)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# НЕ ДОБАВЛЯТЬ library заново!
-# add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../library ...)  # ? УДАЛИТЬ!
 
-# Подключаем Google Test
 include(FetchContent)
 FetchContent_Declare(
     googletest
@@ -16,7 +13,6 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-# Тестовые файлы
 set(TEST_SOURCES
     test_dynamic_array.cpp
     test_linked_list.cpp
@@ -30,7 +26,6 @@ set(TEST_SOURCES
 
 add_executable(sequence_tests ${TEST_SOURCES})
 
-# Линкуемся к существующей библиотеке
 target_link_libraries(sequence_tests
     SequenceLibrary
     GTest::gtest_main

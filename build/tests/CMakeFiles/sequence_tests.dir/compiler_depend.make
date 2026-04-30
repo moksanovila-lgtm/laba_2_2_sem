@@ -340,14 +340,12 @@ tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj: C:/Users/ilamo/On
   C:/w64devkit/include/vadefs.h \
   C:/w64devkit/include/wchar.h \
   C:/w64devkit/include/wctype.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/any \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/array \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/auto_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/binders.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bit \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/align.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/alloc_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocated_ptr.h \
@@ -411,12 +409,10 @@ tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj: C:/Users/ilamo/On
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_construct.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_function.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_types.h \
@@ -436,7 +432,6 @@ tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj: C:/Users/ilamo/On
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_lock.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
@@ -488,7 +483,6 @@ tests/CMakeFiles/sequence_tests.dir/test_bit_sequence.cpp.obj: C:/Users/ilamo/On
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
@@ -867,14 +861,12 @@ tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj: C:/Users/ilamo/OneD
   C:/w64devkit/include/vadefs.h \
   C:/w64devkit/include/wchar.h \
   C:/w64devkit/include/wctype.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/any \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/array \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/auto_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/binders.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bit \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/align.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/alloc_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocated_ptr.h \
@@ -938,12 +930,10 @@ tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj: C:/Users/ilamo/OneD
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_construct.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_function.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_types.h \
@@ -963,7 +953,6 @@ tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj: C:/Users/ilamo/OneD
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_lock.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
@@ -1015,7 +1004,6 @@ tests/CMakeFiles/sequence_tests.dir/test_exceptions.cpp.obj: C:/Users/ilamo/OneD
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h \
-  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
@@ -2309,8 +2297,6 @@ C:/w64devkit/include/sys/stat.h:
 
 C:/w64devkit/include/sys/timeb.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h:
-
 C:/w64devkit/include/sys/types.h:
 
 C:/w64devkit/include/vadefs.h:
@@ -2646,16 +2632,6 @@ C:/Users/ilamo/OneDrive/Desktop/Lab_2/tests/test_bit_sequence.cpp:
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.hpp:
 
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/library/include/BitSequence.tpp:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_algorithm_defs.h:
 
 C:/Users/ilamo/OneDrive/Desktop/Lab_2/tests/test_dynamic_array.cpp:
 

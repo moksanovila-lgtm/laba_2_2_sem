@@ -1,5 +1,4 @@
 #include <cstring>
-#include <algorithm>
 
 inline size_t BitSequence::getByteCount() const {
     return (bitCount + 7) / 8;
@@ -37,7 +36,7 @@ inline void BitSequence::resize(size_t newBitCount) {
     size_t newByteCount = (newBitCount + 7) / 8;
     size_t oldByteCount = getByteCount();
     unsigned char* newData = new unsigned char[newByteCount]();
-    size_t copyBytes = std::min(oldByteCount, newByteCount);
+    size_t copyBytes = (oldByteCount < newByteCount) ? oldByteCount : newByteCount;
     for (size_t i = 0; i < copyBytes; ++i) {
         newData[i] = data[i];
     }
@@ -51,6 +50,7 @@ inline void BitSequence::ensureMutable() const {
         throw ImmutableModificationException("BitSequence is immutable");
     }
 }
+
 
 inline BitSequence::BitSequence(bool mutableFlag) 
     : data(nullptr), bitCount(0), isMutable(mutableFlag) {}
@@ -74,7 +74,7 @@ inline BitSequence::BitSequence(const Bit* bits, size_t count, bool mutableFlag)
     size_t byteCount = getByteCount();
     data = new unsigned char[byteCount]();
     for (size_t i = 0; i < count; ++i) {
-        setBit(i, bits[i].toBool());
+        setBit(i, bits[i]);
     }
 }
 
@@ -89,9 +89,11 @@ inline BitSequence::BitSequence(const BitSequence& other)
     std::memcpy(data, other.data, byteCount);
 }
 
+
 inline BitSequence::~BitSequence() {
     delete[] data;
 }
+
 
 inline BitSequence& BitSequence::operator=(const BitSequence& other) {
     if (this != &other) {
@@ -109,11 +111,12 @@ inline BitSequence& BitSequence::operator=(const BitSequence& other) {
     return *this;
 }
 
+
 inline Bit BitSequence::Get(size_t index) const {
     if (index >= bitCount) {
         throw IndexOutOfRangeException("BitSequence::Get(): index out of range");
     }
-    return Bit(getBit(index));
+    return getBit(index);
 }
 
 inline size_t BitSequence::GetCount() const {
@@ -124,18 +127,18 @@ inline Bit BitSequence::GetFirst() const {
     if (bitCount == 0) {
         throw EmptySequenceException("BitSequence::GetFirst(): sequence is empty");
     }
-    return Bit(getBit(0));
+    return getBit(0);
 }
 
 inline Bit BitSequence::GetLast() const {
     if (bitCount == 0) {
         throw EmptySequenceException("BitSequence::GetLast(): sequence is empty");
     }
-    return Bit(getBit(bitCount - 1));
+    return getBit(bitCount - 1);
 }
 
+
 inline Sequence<Bit>* BitSequence::GetSubsequence(size_t start, size_t end) const {
-    // Исправлено: разделяем проверки
     if (start > end) {
         throw InvalidArgumentException(
             "BitSequence::GetSubsequence(): start > end");
@@ -155,13 +158,13 @@ inline Sequence<Bit>* BitSequence::GetSubsequence(size_t start, size_t end) cons
 inline void BitSequence::Append(const Bit& item) {
     ensureMutable();
     resize(bitCount + 1);
-    setBit(bitCount - 1, item.toBool());
+    setBit(bitCount - 1, item);
 }
 
 inline void BitSequence::Prepend(const Bit& item) {
     ensureMutable();
     BitSequence newSeq(bitCount + 1, isMutable);
-    newSeq.setBit(0, item.toBool());
+    newSeq.setBit(0, item);
     for (size_t i = 0; i < bitCount; ++i) {
         newSeq.setBit(i + 1, getBit(i));
     }
@@ -178,7 +181,7 @@ inline void BitSequence::InsertAt(const Bit& item, size_t index) {
     for (size_t i = 0; i < index; ++i) {
         newSeq.setBit(i, getBit(i));
     }
-    newSeq.setBit(index, item.toBool());
+    newSeq.setBit(index, item);
     for (size_t i = index; i < bitCount; ++i) {
         newSeq.setBit(i + 1, getBit(i));
     }
@@ -193,10 +196,11 @@ inline void BitSequence::Clear() {
     bitCount = 0;
 }
 
-inline void BitSequence::Set(size_t index, const Bit& value) {
+inline void BitSequence::Set(size_t index, Bit value) {
     ensureMutable();
-    setBit(index, value.toBool());
+    setBit(index, value);
 }
+
 
 inline Sequence<Bit>* BitSequence::Concat(Sequence<Bit>* other) const {
     if (!other) {
@@ -207,10 +211,11 @@ inline Sequence<Bit>* BitSequence::Concat(Sequence<Bit>* other) const {
         result->setBit(i, getBit(i));
     }
     for (size_t i = 0; i < other->GetCount(); ++i) {
-        result->setBit(bitCount + i, other->Get(i).toBool());
+        result->setBit(bitCount + i, other->Get(i));
     }
     return result;
 }
+
 
 inline Sequence<Bit>* BitSequence::Map(Bit (*func)(const Bit&)) const {
     if (!func) {
@@ -218,7 +223,7 @@ inline Sequence<Bit>* BitSequence::Map(Bit (*func)(const Bit&)) const {
     }
     BitSequence* result = new BitSequence(bitCount, isMutable);
     for (size_t i = 0; i < bitCount; ++i) {
-        result->setBit(i, func(Bit(getBit(i))).toBool());
+        result->setBit(i, func(Bit(getBit(i))));
     }
     return result;
 }
@@ -251,6 +256,7 @@ inline Bit BitSequence::Reduce(Bit (*func)(const Bit&, const Bit&), const Bit& i
     }
     return result;
 }
+
 
 inline BitSequence* BitSequence::And(const BitSequence& other) const {
     if (bitCount != other.bitCount) {
@@ -293,6 +299,7 @@ inline BitSequence* BitSequence::Not() const {
     return result;
 }
 
+
 inline bool BitSequence::operator==(const BitSequence& other) const {
     if (bitCount != other.bitCount) return false;
     for (size_t i = 0; i < bitCount; ++i) {
@@ -304,6 +311,7 @@ inline bool BitSequence::operator==(const BitSequence& other) const {
 inline bool BitSequence::operator!=(const BitSequence& other) const {
     return !(*this == other);
 }
+
 
 inline BitSequence::BitEnumerator::BitEnumerator(const BitSequence* sequence)
     : seq(sequence), currentPos(0) {}

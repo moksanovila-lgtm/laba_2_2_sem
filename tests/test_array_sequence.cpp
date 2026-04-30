@@ -1,7 +1,6 @@
 #include <gtest/gtest.h>
 #include "ArraySequence.hpp"
 
-// ====================  ŒÕ—“–” “Œ–€ ====================
 
 TEST(ArraySequenceTest, DefaultConstructor) {
     ArraySequence<int> seq;
@@ -21,7 +20,6 @@ TEST(ArraySequenceTest, ConstructorWithArray) {
     EXPECT_EQ(seq.Get(2), 30) << "Constructor with array: third element should be 30";
 }
 
-// ==================== APPEND ====================
 
 TEST(ArraySequenceTest, AppendIncreasesSize) {
     ArraySequence<int> seq;
@@ -35,7 +33,6 @@ TEST(ArraySequenceTest, AppendIncreasesSize) {
     EXPECT_EQ(seq.Get(1), 20) << "After Append(20): second element should be 20";
 }
 
-// ==================== PREPEND ====================
 
 TEST(ArraySequenceTest, PrependAddsToBeginning) {
     ArraySequence<int> seq;
@@ -49,7 +46,6 @@ TEST(ArraySequenceTest, PrependAddsToBeginning) {
     EXPECT_EQ(seq.Get(2), 30) << "After Prepend(10): third element should be 30";
 }
 
-// ==================== INSERTAT ====================
 
 TEST(ArraySequenceTest, InsertAtBeginning) {
     ArraySequence<int> seq;
@@ -91,7 +87,6 @@ TEST(ArraySequenceTest, InsertAtThrowsOnInvalidIndex) {
         << "InsertAt(10,1) on empty sequence should throw IndexOutOfRangeException";
 }
 
-// ==================== GETFIRST / GETLAST ====================
 
 TEST(ArraySequenceTest, GetFirstReturnsFirstElement) {
     ArraySequence<int> seq;
@@ -115,7 +110,6 @@ TEST(ArraySequenceTest, GetLastReturnsLastElement) {
     EXPECT_EQ(seq.GetLast(), 30) << "GetLast() on [10,20,30] should return 30";
 }
 
-// ==================== GETSUBSEQUENCE ====================
 
 TEST(ArraySequenceTest, GetSubsequenceReturnsCorrectSubsequence) {
     ArraySequence<int> seq;
@@ -146,7 +140,6 @@ TEST(ArraySequenceTest, GetSubsequenceThrowsOnInvalidBounds) {
         << "GetSubsequence(3,4): end out of range should throw IndexOutOfRangeException";
 }
 
-// ==================== CONCAT ====================
 
 TEST(ArraySequenceTest, ConcatCombinesTwoSequences) {
     ArraySequence<int> seq1;
@@ -169,7 +162,6 @@ TEST(ArraySequenceTest, ConcatCombinesTwoSequences) {
     delete result;
 }
 
-// ==================== CLEAR ====================
 
 TEST(ArraySequenceTest, ClearEmptiesSequence) {
     ArraySequence<int> seq;

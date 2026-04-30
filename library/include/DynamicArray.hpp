@@ -16,7 +16,6 @@ public:
     DynamicArray& operator=(const DynamicArray& other);
     ~DynamicArray();
 
-    //ICollection методы
     T Get(size_t index) const override;
     size_t GetCount() const override;
 

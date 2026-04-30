@@ -47,7 +47,8 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "onPrepend",
         "onInsert",
         "onGet",
-        "onSet",
+        "onGetFirst",
+        "onGetLast",
         "onClear",
         "onGetSubsequence",
         "onConcat",
@@ -76,34 +77,36 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onGet'
         QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onSet'
+        // Slot 'onGetFirst'
         QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onClear'
+        // Slot 'onGetLast'
         QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onGetSubsequence'
+        // Slot 'onClear'
         QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onConcat'
+        // Slot 'onGetSubsequence'
         QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onMap'
+        // Slot 'onConcat'
         QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onWhere'
+        // Slot 'onMap'
         QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onReduce'
+        // Slot 'onWhere'
         QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onIterator'
+        // Slot 'onReduce'
         QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitAnd'
+        // Slot 'onIterator'
         QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitOr'
+        // Slot 'onBitAnd'
         QtMocHelpers::SlotData<void()>(17, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitXor'
+        // Slot 'onBitOr'
         QtMocHelpers::SlotData<void()>(18, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitNot'
+        // Slot 'onBitXor'
         QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitSet'
+        // Slot 'onBitNot'
         QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitGet'
+        // Slot 'onBitSet'
         QtMocHelpers::SlotData<void()>(21, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onBitGet'
+        QtMocHelpers::SlotData<void()>(22, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -133,20 +136,21 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 3: _t->onPrepend(); break;
         case 4: _t->onInsert(); break;
         case 5: _t->onGet(); break;
-        case 6: _t->onSet(); break;
-        case 7: _t->onClear(); break;
-        case 8: _t->onGetSubsequence(); break;
-        case 9: _t->onConcat(); break;
-        case 10: _t->onMap(); break;
-        case 11: _t->onWhere(); break;
-        case 12: _t->onReduce(); break;
-        case 13: _t->onIterator(); break;
-        case 14: _t->onBitAnd(); break;
-        case 15: _t->onBitOr(); break;
-        case 16: _t->onBitXor(); break;
-        case 17: _t->onBitNot(); break;
-        case 18: _t->onBitSet(); break;
-        case 19: _t->onBitGet(); break;
+        case 6: _t->onGetFirst(); break;
+        case 7: _t->onGetLast(); break;
+        case 8: _t->onClear(); break;
+        case 9: _t->onGetSubsequence(); break;
+        case 10: _t->onConcat(); break;
+        case 11: _t->onMap(); break;
+        case 12: _t->onWhere(); break;
+        case 13: _t->onReduce(); break;
+        case 14: _t->onIterator(); break;
+        case 15: _t->onBitAnd(); break;
+        case 16: _t->onBitOr(); break;
+        case 17: _t->onBitXor(); break;
+        case 18: _t->onBitNot(); break;
+        case 19: _t->onBitSet(); break;
+        case 20: _t->onBitGet(); break;
         default: ;
         }
     }
@@ -172,14 +176,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 20)
+        if (_id < 21)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 20;
+        _id -= 21;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 20)
+        if (_id < 21)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 20;
+        _id -= 21;
     }
     return _id;
 }

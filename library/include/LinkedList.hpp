@@ -23,7 +23,6 @@ public:
     LinkedList& operator=(const LinkedList& other);
     ~LinkedList();
 
-    // ICollection методы
     T Get(size_t index) const override;
     size_t GetCount() const override;
     

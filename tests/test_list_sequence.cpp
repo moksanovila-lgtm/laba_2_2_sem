@@ -1,14 +1,12 @@
 #include <gtest/gtest.h>
 #include "ListSequence.hpp"
 
-// ====================  ŒÕ—“–” “Œ–€ ====================
 
 TEST(ListSequenceTest, DefaultConstructor) {
     ListSequence<int> seq;
     EXPECT_EQ(seq.GetCount(), 0) << "Default constructor: sequence should be empty, count=0";
 }
 
-// ==================== APPEND ====================
 
 TEST(ListSequenceTest, AppendIncreasesSize) {
     ListSequence<int> seq;
@@ -17,7 +15,6 @@ TEST(ListSequenceTest, AppendIncreasesSize) {
     EXPECT_EQ(seq.Get(0), 10) << "After Append(10): first element should be 10";
 }
 
-// ==================== PREPEND ====================
 
 TEST(ListSequenceTest, PrependAddsToBeginning) {
     ListSequence<int> seq;
@@ -31,7 +28,6 @@ TEST(ListSequenceTest, PrependAddsToBeginning) {
     EXPECT_EQ(seq.Get(2), 30) << "After Prepend(10): third element should be 30";
 }
 
-// ==================== INSERTAT ====================
 
 TEST(ListSequenceTest, InsertAtBeginning) {
     ListSequence<int> seq;
@@ -53,7 +49,6 @@ TEST(ListSequenceTest, InsertAtMiddle) {
     EXPECT_EQ(seq.Get(1), 20) << "InsertAt(20,1): element at index 1 should be 20";
 }
 
-// ==================== GETFIRST / GETLAST ====================
 
 TEST(ListSequenceTest, GetFirstReturnsFirstElement) {
     ListSequence<int> seq;
@@ -70,7 +65,6 @@ TEST(ListSequenceTest, GetLastReturnsLastElement) {
     EXPECT_EQ(seq.GetLast(), 30) << "GetLast() on [10,20,30] should return 30";
 }
 
-// ==================== GETSUBSEQUENCE ====================
 
 TEST(ListSequenceTest, GetSubsequenceReturnsCorrectSubsequence) {
     ListSequence<int> seq;
@@ -86,7 +80,6 @@ TEST(ListSequenceTest, GetSubsequenceReturnsCorrectSubsequence) {
     delete sub;
 }
 
-// ==================== CONCAT ====================
 
 TEST(ListSequenceTest, ConcatCombinesTwoSequences) {
     ListSequence<int> seq1;
@@ -103,7 +96,6 @@ TEST(ListSequenceTest, ConcatCombinesTwoSequences) {
     delete result;
 }
 
-// ==================== CLEAR ====================
 
 TEST(ListSequenceTest, ClearEmptiesSequence) {
     ListSequence<int> seq;

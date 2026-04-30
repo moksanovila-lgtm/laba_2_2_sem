@@ -2,7 +2,6 @@
 #include "ArraySequence.hpp"
 #include "ListSequence.hpp"
 
-// ==================== MAP ====================
 
 TEST(MapReduceTest, MapOnArraySequence) {
     ArraySequence<int> seq;
@@ -52,7 +51,6 @@ TEST(MapReduceTest, MapOnEmptySequence) {
     delete result;
 }
 
-// ==================== WHERE ====================
 
 TEST(MapReduceTest, WhereFiltersEvenNumbers) {
     ArraySequence<int> seq;
@@ -102,7 +100,6 @@ TEST(MapReduceTest, WhereOnEmptySequence) {
     delete result;
 }
 
-// ==================== REDUCE ====================
 
 TEST(MapReduceTest, ReduceSum) {
     ArraySequence<int> seq;
@@ -153,7 +150,6 @@ TEST(MapReduceTest, ReduceOnEmptySequenceReturnsInitial) {
     EXPECT_EQ(result, 0) << "Reduce on empty sequence should return initial value 0";
 }
 
-// ==================== ÷≈ѕќ„ ј MAP + WHERE + REDUCE ====================
 
 TEST(MapReduceTest, ChainMapWhereReduce) {
     ArraySequence<int> seq;
@@ -167,12 +163,10 @@ TEST(MapReduceTest, ChainMapWhereReduce) {
     auto isEven = [](const int& x) { return x % 2 == 0; };
     auto sum = [](const int& a, const int& b) { return a + b; };
     
-    // ”двоить, оставить чЄтные, сложить
     Sequence<int>* mapped = seq.Map(doubleFunc);
     Sequence<int>* filtered = mapped->Where(isEven);
     int result = filtered->Reduce(sum, 0);
     
-    // 2,4,6,8,10 ? 2,4,6,8,10 (все чЄтные) ? 2+4+6+8+10 = 30
     EXPECT_EQ(result, 30) << "Chain: Map(x*2)->Where(even)->Reduce(sum) on [1,2,3,4,5] should be 30";
     
     delete mapped;

@@ -1,7 +1,6 @@
 #include <gtest/gtest.h>
 #include "LinkedList.hpp"
 
-// ====================  ŒÕ—“–” “Œ–€ ====================
 
 TEST(LinkedListTest, DefaultConstructor) {
     LinkedList<int> list;
@@ -21,7 +20,6 @@ TEST(LinkedListTest, CopyConstructor) {
     EXPECT_EQ(list2.Get(2), 30) << "Copy constructor: third element should be 30";
 }
 
-// ==================== APPEND ====================
 
 TEST(LinkedListTest, AppendIncreasesSize) {
     LinkedList<int> list;
@@ -34,7 +32,6 @@ TEST(LinkedListTest, AppendIncreasesSize) {
     EXPECT_EQ(list.Get(1), 20) << "After Append(20): second element should be 20";
 }
 
-// ==================== PREPEND ====================
 
 TEST(LinkedListTest, PrependAddsToBeginning) {
     LinkedList<int> list;
@@ -48,7 +45,6 @@ TEST(LinkedListTest, PrependAddsToBeginning) {
     EXPECT_EQ(list.Get(2), 30) << "After Prepend(10): third element should be 30";
 }
 
-// ==================== INSERTAT ====================
 
 TEST(LinkedListTest, InsertAtBeginning) {
     LinkedList<int> list;
@@ -84,7 +80,6 @@ TEST(LinkedListTest, InsertAtEnd) {
     EXPECT_EQ(list.Get(2), 30) << "InsertAt(30,2): element at index 2 should be 30";
 }
 
-// ==================== GETFIRST / GETLAST ====================
 
 TEST(LinkedListTest, GetFirstReturnsFirstElement) {
     LinkedList<int> list;
@@ -108,7 +103,6 @@ TEST(LinkedListTest, GetLastReturnsLastElement) {
     EXPECT_EQ(list.GetLast(), 30) << "GetLast() on [10,20,30] should return 30";
 }
 
-// ==================== REMOVEAT ====================
 
 TEST(LinkedListTest, RemoveAtBeginning) {
     LinkedList<int> list;
@@ -146,7 +140,6 @@ TEST(LinkedListTest, RemoveAtEnd) {
     EXPECT_EQ(list.Get(1), 20) << "RemoveAt(2): element at index 1 should be 20";
 }
 
-// ==================== CLEAR ====================
 
 TEST(LinkedListTest, ClearEmptiesList) {
     LinkedList<int> list;

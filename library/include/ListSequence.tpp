@@ -1,7 +1,6 @@
 #include "ListSequence.hpp"
 #include "exceptions.hpp"
 
-// ====================  ŒÕ—“–” “Œ–€ ====================
 template <typename T>
 ListSequence<T>::ListSequence(bool mutableFlag) : isMutable(mutableFlag) {}
 
@@ -13,7 +12,6 @@ template <typename T>
 ListSequence<T>::ListSequence(const ListSequence& other)
     : data(other.data), isMutable(other.isMutable) {}
 
-// ==================== ICollection Ã≈“Œƒ€ ====================
 template <typename T>
 T ListSequence<T>::Get(size_t index) const {
     return data.Get(index);
@@ -24,7 +22,6 @@ size_t ListSequence<T>::GetCount() const {
     return data.GetCount();
 }
 
-// ==================== ƒŒœŒÀÕ»“≈À‹Õ€≈ Ã≈“Œƒ€ ====================
 template <typename T>
 T ListSequence<T>::GetFirst() const {
     if (data.GetCount() == 0) {
@@ -63,7 +60,6 @@ Sequence<T>* ListSequence<T>::GetSubsequence(size_t start, size_t end) const {
     return new ListSequence<T>(newData, isMutable);
 }
 
-// ==================== Œœ≈–¿÷»» ÃŒƒ»‘» ¿÷»» ====================
 template <typename T>
 void ListSequence<T>::Append(const T& item) {
     if (!isMutable) {
@@ -101,7 +97,6 @@ void ListSequence<T>::Clear() {
     data.Clear();
 }
 
-// ==================== CONCAT ====================
 template <typename T>
 Sequence<T>* ListSequence<T>::Concat(Sequence<T>* other) const {
     if (!other) {
@@ -115,7 +110,6 @@ Sequence<T>* ListSequence<T>::Concat(Sequence<T>* other) const {
     return new ListSequence<T>(newData, isMutable);
 }
 
-// ==================== MAP ====================
 template <typename T>
 Sequence<T>* ListSequence<T>::Map(T (*func)(const T&)) const {
     if (!func) {
@@ -129,7 +123,6 @@ Sequence<T>* ListSequence<T>::Map(T (*func)(const T&)) const {
     return new ListSequence<T>(newData, isMutable);
 }
 
-// ==================== WHERE ====================
 template <typename T>
 Sequence<T>* ListSequence<T>::Where(bool (*predicate)(const T&)) const {
     if (!predicate) {
@@ -145,7 +138,6 @@ Sequence<T>* ListSequence<T>::Where(bool (*predicate)(const T&)) const {
     return new ListSequence<T>(newData, isMutable);
 }
 
-// ==================== REDUCE ====================
 template <typename T>
 T ListSequence<T>::Reduce(T (*func)(const T&, const T&), const T& initial) const {
     if (!func) {
@@ -159,7 +151,6 @@ T ListSequence<T>::Reduce(T (*func)(const T&, const T&), const T& initial) const
     return result;
 }
 
-// ==================== »“≈–¿“Œ– ====================
 template <typename T>
 ListSequence<T>::Iterator::Iterator(const ListSequence* sequence)
     : seq(sequence), current(nullptr) {}

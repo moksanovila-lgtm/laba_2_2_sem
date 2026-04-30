@@ -24,22 +24,18 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 private:
-    // Текущая последовательность
     Sequence<int>* currentSeq;
     BitSequence* currentBitSeq;
-    int currentType;  // 0=Array, 1=List, 2=Bit
+    int currentType;  
     
-    // Виджеты
     QTabWidget* tabWidget;
     QTextEdit* outputArea;
     QLabel* statusLabel;
     
-    // Создание
     QComboBox* typeCombo;
     QComboBox* mutabilityCombo;
     QPushButton* createBtn;
     
-    // Операции
     QLineEdit* valueInput;
     QLineEdit* indexInput;
     QLineEdit* startInput;
@@ -53,21 +49,21 @@ private:
     QPushButton* showBtn;
     QPushButton* subsequenceBtn;
     QPushButton* concatBtn;
+
+    QPushButton* getFirstBtn;   
+    QPushButton* getLastBtn;
     
-    // Map-Reduce
     QPushButton* mapBtn;
     QPushButton* whereBtn;
     QPushButton* reduceBtn;
     QPushButton* iteratorBtn;
     
-    // Bit операции
     QPushButton* andBtn;
     QPushButton* orBtn;
     QPushButton* xorBtn;
     QPushButton* notBtn;
     QLineEdit* bitInput;
     
-    // Методы
     void setupUI();
     void createTabCreation();
     void createTabOperations();
@@ -86,7 +82,8 @@ private slots:
     void onPrepend();
     void onInsert();
     void onGet();
-    void onSet();
+    void onGetFirst();   
+    void onGetLast();
     void onClear();
     void onGetSubsequence();
     void onConcat();
