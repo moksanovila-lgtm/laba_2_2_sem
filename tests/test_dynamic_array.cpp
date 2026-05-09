@@ -32,7 +32,7 @@ TEST(DynamicArrayTest, CopyConstructor) {
 
 
 TEST(DynamicArrayTest, GetReturnsCorrectValue) {
-    DynamicArray<int> arr(3);
+    DynamicArray<int> arr(3); ////arr{1,2,3,4};
     arr.Set(0, 100);
     arr.Set(1, 200);
     arr.Set(2, 300);

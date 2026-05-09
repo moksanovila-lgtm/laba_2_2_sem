@@ -57,7 +57,7 @@ public:
         for (size_t i = 0; i < this->GetCount(); i++) {
             newData.Append(func(this->Get(i)));
         }
-        return new ImmutableListSequence<T>(newData);
+        return new ImmutableListSequence<T>(newData);  
     }
     
     Sequence<T>* Where(bool (*predicate)(const T&)) const override {

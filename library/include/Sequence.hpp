@@ -22,12 +22,24 @@ public:
 
     virtual Sequence<T>* Map(T (*func)(const T&)) const = 0;
     virtual Sequence<T>* Where(bool (*predicate)(const T&)) const = 0;
+    //virtual Sequence<T>* Where(std::function<const T&(bool)> predicate) const = 0;
     virtual T Reduce(T (*func)(const T&, const T&), const T& initial) const = 0;
 
     virtual bool IsMutable() const = 0;
 
     Sequence<T>& operator+=(const T& item);
     Sequence<T>& operator+=(const Sequence<T>& other);
+
+    // operator std::string ( const Sequence<T>& seq) const {
+    //     std::ostringstream os;
+    //     os << "[";
+    //     for (size_t i = 0; i < seq.GetCount(); ++i) {
+    //         os << seq.Get(i);
+    //         if (i != seq.GetCount() - 1) os << ", ";
+    //     }
+    //     os << "]";
+    //     return os.str();
+    // }
 
     virtual ~Sequence() = default;
 };

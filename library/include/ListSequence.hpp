@@ -17,7 +17,6 @@ public:
     ListSequence(const LinkedList<T>& list, bool mutableFlag = true);
     ListSequence(const ListSequence& other);
     
-    //ICollection методы
     T Get(size_t index) const override;
     size_t GetCount() const override;
     

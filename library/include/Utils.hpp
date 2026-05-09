@@ -13,3 +13,4 @@ std::ostream& operator<<(std::ostream& os, const Sequence<T>& seq) {
     os << "]";
     return os;
 }
+

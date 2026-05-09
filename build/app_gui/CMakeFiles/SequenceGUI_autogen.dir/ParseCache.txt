@@ -456,5 +456,5 @@ D:/Lab_2/app_gui/include/MainWindow.hpp
  mdp:D:/Lab_2/library/include/Sequence.hpp
  mdp:D:/Lab_2/library/include/Sequence.tpp
  mdp:D:/Lab_2/library/include/exceptions.hpp
-D:/Lab_2/app_gui/src/MainWindow.cpp
 D:/Lab_2/app_gui/src/main.cpp
+D:/Lab_2/app_gui/src/MainWindow.cpp

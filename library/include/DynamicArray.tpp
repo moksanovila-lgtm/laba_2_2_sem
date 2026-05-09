@@ -53,7 +53,8 @@ T DynamicArray<T>::Get(size_t index) const {
     if (index >= size) {
         throw IndexOutOfRangeException(
             "DynamicArray::Get(): index " + std::to_string(index) + 
-            " >= size " + std::to_string(size));
+            " >= size " + std::to_string(size)
+        );
     }
     return data[index];
 }

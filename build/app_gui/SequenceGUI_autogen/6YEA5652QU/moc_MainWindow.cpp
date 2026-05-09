@@ -51,11 +51,10 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "onGetLast",
         "onClear",
         "onGetSubsequence",
-        "onConcat",
+        "onConcatCustom",
         "onMap",
         "onWhere",
         "onReduce",
-        "onIterator",
         "onBitAnd",
         "onBitOr",
         "onBitXor",
@@ -85,7 +84,7 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onGetSubsequence'
         QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onConcat'
+        // Slot 'onConcatCustom'
         QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onMap'
         QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
@@ -93,20 +92,18 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onReduce'
         QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onIterator'
-        QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onBitAnd'
-        QtMocHelpers::SlotData<void()>(17, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onBitOr'
-        QtMocHelpers::SlotData<void()>(18, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(17, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onBitXor'
-        QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(18, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onBitNot'
-        QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onBitSet'
-        QtMocHelpers::SlotData<void()>(21, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onBitGet'
-        QtMocHelpers::SlotData<void()>(22, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(21, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -140,17 +137,16 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 7: _t->onGetLast(); break;
         case 8: _t->onClear(); break;
         case 9: _t->onGetSubsequence(); break;
-        case 10: _t->onConcat(); break;
+        case 10: _t->onConcatCustom(); break;
         case 11: _t->onMap(); break;
         case 12: _t->onWhere(); break;
         case 13: _t->onReduce(); break;
-        case 14: _t->onIterator(); break;
-        case 15: _t->onBitAnd(); break;
-        case 16: _t->onBitOr(); break;
-        case 17: _t->onBitXor(); break;
-        case 18: _t->onBitNot(); break;
-        case 19: _t->onBitSet(); break;
-        case 20: _t->onBitGet(); break;
+        case 14: _t->onBitAnd(); break;
+        case 15: _t->onBitOr(); break;
+        case 16: _t->onBitXor(); break;
+        case 17: _t->onBitNot(); break;
+        case 18: _t->onBitSet(); break;
+        case 19: _t->onBitGet(); break;
         default: ;
         }
     }
@@ -176,14 +172,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 21)
+        if (_id < 20)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 21;
+        _id -= 20;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 21)
+        if (_id < 20)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 21;
+        _id -= 20;
     }
     return _id;
 }

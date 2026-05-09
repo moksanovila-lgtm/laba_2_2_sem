@@ -1,4 +1,8 @@
 #include "MainWindow.hpp"
+#include "ImmutableArraySequence.hpp"
+#include "ImmutableListSequence.hpp"
+#include "exceptions.hpp"
+#include "BitSequence.hpp"  
 #include <QMessageBox>
 #include <QScrollBar>
 #include <sstream>
@@ -91,11 +95,10 @@ void MainWindow::setupUI()
     connect(getBtn, &QPushButton::clicked, this, &MainWindow::onGet);
     connect(clearBtn, &QPushButton::clicked, this, &MainWindow::onClear);
     connect(subsequenceBtn, &QPushButton::clicked, this, &MainWindow::onGetSubsequence);
-    connect(concatBtn, &QPushButton::clicked, this, &MainWindow::onConcat);
+    connect(concatCustomBtn, &QPushButton::clicked, this, &MainWindow::onConcatCustom);
     connect(mapBtn, &QPushButton::clicked, this, &MainWindow::onMap);
     connect(whereBtn, &QPushButton::clicked, this, &MainWindow::onWhere);
     connect(reduceBtn, &QPushButton::clicked, this, &MainWindow::onReduce);
-    connect(iteratorBtn, &QPushButton::clicked, this, &MainWindow::onIterator);
     connect(andBtn, &QPushButton::clicked, this, &MainWindow::onBitAnd);
     connect(orBtn, &QPushButton::clicked, this, &MainWindow::onBitOr);
     connect(xorBtn, &QPushButton::clicked, this, &MainWindow::onBitXor);
@@ -145,15 +148,11 @@ void MainWindow::createTabOperations()
     showBtn = new QPushButton("Show Sequence");
     layout->addWidget(showBtn, row++, 0, 1, 2);
     
-
-
     getFirstBtn = new QPushButton("Get First Element");
     getLastBtn = new QPushButton("Get Last Element");
     layout->addWidget(getFirstBtn, row++, 0, 1, 2);
     layout->addWidget(getLastBtn, row++, 0, 1, 2);
-
-
-
+    
     QLabel* valueLabel = new QLabel("Value:");
     valueInput = new QLineEdit();
     valueInput->setPlaceholderText("Enter value...");
@@ -173,46 +172,52 @@ void MainWindow::createTabOperations()
     
     insertBtn = new QPushButton("Insert At Index");
     getBtn = new QPushButton("Get Element");
-    clearBtn = new QPushButton("Clear Sequence");
-    
     layout->addWidget(insertBtn, row++, 0, 1, 2);
     layout->addWidget(getBtn, row++, 0, 1, 2);
+    
+    clearBtn = new QPushButton("Clear Sequence");
     clearBtn->setStyleSheet("QPushButton { background-color: #f44336; color: white; }");
     layout->addWidget(clearBtn, row++, 0, 1, 2);
+  
+    QLabel* secondSeqLabel = new QLabel("Second sequence (comma separated):");
+    secondSeqInput = new QLineEdit();
+    secondSeqInput->setPlaceholderText("Example: 1 2 3 or 1 0 1");
+    concatCustomBtn = new QPushButton("Concat with Custom Sequence");
+    
+    layout->addWidget(secondSeqLabel, row, 0);
+    layout->addWidget(secondSeqInput, row++, 1);
+    layout->addWidget(concatCustomBtn, row++, 0, 1, 2);
     
     QLabel* startLabel = new QLabel("Start:");
     QLabel* endLabel = new QLabel("End:");
     startInput = new QLineEdit();
     endInput = new QLineEdit();
     subsequenceBtn = new QPushButton("Get Subsequence");
-    concatBtn = new QPushButton("Concat with Test Sequence");
     
     layout->addWidget(startLabel, row, 0);
     layout->addWidget(startInput, row++, 1);
     layout->addWidget(endLabel, row, 0);
     layout->addWidget(endInput, row++, 1);
     layout->addWidget(subsequenceBtn, row++, 0, 1, 2);
-    layout->addWidget(concatBtn, row++, 0, 1, 2);
     
     layout->setRowStretch(row, 1);
     
     tabWidget->addTab(tab, "Operations");
 }
 
+
 void MainWindow::createTabMapReduce()
 {
     QWidget* tab = new QWidget();
     QVBoxLayout* layout = new QVBoxLayout(tab);
     
-    mapBtn = new QPushButton("Map (x ? x * 2)");
+    mapBtn = new QPushButton("Map (x * 2)");
     whereBtn = new QPushButton("Where (filter even numbers)");
     reduceBtn = new QPushButton("Reduce (sum of all elements)");
-    iteratorBtn = new QPushButton("Test Iterator");
     
     layout->addWidget(mapBtn);
     layout->addWidget(whereBtn);
     layout->addWidget(reduceBtn);
-    layout->addWidget(iteratorBtn);
     layout->addStretch();
     
     tabWidget->addTab(tab, "Map-Reduce");
@@ -224,11 +229,17 @@ void MainWindow::createTabBit()
     QGridLayout* layout = new QGridLayout(tab);
     
     int row = 0;
-    
-    andBtn = new QPushButton("AND with test sequence (11010)");
-    orBtn = new QPushButton("OR with test sequence (11010)");
-    xorBtn = new QPushButton("XOR with test sequence (11010)");
-    notBtn = new QPushButton("NOT ");
+
+    QLabel* secondBitLabel = new QLabel("Second bit sequence (example: 11010):");
+    secondBitSeqInput = new QLineEdit();
+    secondBitSeqInput->setPlaceholderText("Enter bits (0 and 1 only), example: 11010");
+    layout->addWidget(secondBitLabel, row, 0);
+    layout->addWidget(secondBitSeqInput, row++, 1);
+
+    andBtn = new QPushButton("AND");
+    orBtn = new QPushButton("OR");
+    xorBtn = new QPushButton("XOR");
+    notBtn = new QPushButton("NOT");
     
     layout->addWidget(andBtn, row++, 0, 1, 2);
     layout->addWidget(orBtn, row++, 0, 1, 2);
@@ -433,99 +444,96 @@ void MainWindow::onReduce()
     }
 }
 
-void MainWindow::onIterator()
-{
-    if (currentType == 2 && currentBitSeq) {
-        try {
-            IEnumerator<Bit>* it = currentBitSeq->GetEnumerator();
-            QString elements;
-            while (it->MoveNext()) {
-                elements += QString::number(it->Current() ? 1 : 0) + " ";  
-            }
-            appendOutput(QString(" Iterator: [%1]").arg(elements.trimmed()));
-            delete it;
-        } catch (const std::exception& e) {
-            appendOutput(QString(" Ошибка: %1").arg(e.what()));
-        }
-    } else if (currentSeq) {
-        try {
-            IEnumerator<int>* it = currentSeq->GetEnumerator();
-            QString elements;
-            while (it->MoveNext()) {
-                elements += QString::number(it->Current()) + " ";
-            }
-            appendOutput(QString(" Iterator: [%1]").arg(elements.trimmed()));
-            delete it;
-        } catch (const std::exception& e) {
-            appendOutput(QString(" Ошибка: %1").arg(e.what()));
-        }
-    } else {
-        appendOutput(" Последовательность не создана");
-    }
-}
-
 void MainWindow::onBitAnd()
 {
     if (!currentBitSeq) {
-        appendOutput(" Битовая последовательность не создана");
+        appendOutput(" BitSequence не создана");
         return;
     }
     
-    try {
-        bool bits[] = {true, true, false, true, false};  
-        BitSequence other(bits, 5, false);
-        
-        if (currentBitSeq->GetCount() != other.GetCount()) {
-            appendOutput(QString(" Не удаётся выполнить AND: sizes differ (%1 vs %2)")
-                .arg(currentBitSeq->GetCount()).arg(other.GetCount()));
-            appendOutput("   Пожалуйста, создайте битовую последовательность ровно из 5 бит");
+    QString inputText = secondBitSeqInput->text().trimmed();
+    if (inputText.isEmpty()) {
+        appendOutput(" Введите вторую битовую последовательность (например: 11010)");
+        return;
+    }
+    
+    if (inputText.size() != currentBitSeq->GetCount()) {
+        appendOutput(QString(" Размеры не совпадают: текущая последовательность имеет %1 битов, введено %2")
+            .arg(currentBitSeq->GetCount()).arg(inputText.size()));
+        return;
+    }
+   
+    BitSequence other;
+    for (QChar ch : inputText) {
+        if (ch == '0') {
+            other.Append(Bit(0));
+        } else if (ch == '1') {
+            other.Append(Bit(1));
+        } else {
+            appendOutput(QString(" Некорректный символ: '%1' (допустимы только 0 и 1)").arg(ch));
             return;
         }
-        
+    }
+    
+    try {
         BitSequence* result = currentBitSeq->And(other);
+        
         QString resultBits;
         for (size_t i = 0; i < result->GetCount(); ++i) {
             resultBits += QString::number(result->Get(i) ? 1 : 0);
         }
-        appendOutput(QString(" AND with 11010: %1").arg(resultBits));
+        appendOutput(QString(" AND с [%1]: %2").arg(inputText).arg(resultBits));
         delete result;
-        
+        secondBitSeqInput->clear();
     } catch (const IncompatibleSizesException& e) {
-        appendOutput(QString(" Несоответствие размеров: %1").arg(e.what()));
+        appendOutput(QString(" Ошибка: %1").arg(e.what()));
     } catch (const std::exception& e) {
         appendOutput(QString(" Ошибка: %1").arg(e.what()));
-    } catch (...) {
-        appendOutput(" Неизвестная ошибка во время операции AND");
     }
 }
+
 
 void MainWindow::onBitOr()
 {
     if (!currentBitSeq) {
-        appendOutput(" Битовая последовательность не создана");
+        appendOutput(" BitSequence не создана");
         return;
     }
     
-    try {
-        bool bits[] = {true, true, false, true, false};  
-        BitSequence other(bits, 5, false);
-        
-        if (currentBitSeq->GetCount() != other.GetCount()) {
-            appendOutput(QString(" Не удаётся выполнить OR: размеры различаются (%1 vs %2)")
-                .arg(currentBitSeq->GetCount()).arg(other.GetCount()));
+    QString inputText = secondBitSeqInput->text().trimmed();
+    if (inputText.isEmpty()) {
+        appendOutput(" Введите вторую битовую последовательность (например: 11010)");
+        return;
+    }
+    
+    if (inputText.size() != currentBitSeq->GetCount()) {
+        appendOutput(QString(" Размеры не совпадают: текущая последовательность имеет %1 битов, введено %2")
+            .arg(currentBitSeq->GetCount()).arg(inputText.size()));
+        return;
+    }
+  
+    BitSequence other;
+    for (QChar ch : inputText) {
+        if (ch == '0') {
+            other.Append(Bit(0));
+        } else if (ch == '1') {
+            other.Append(Bit(1));
+        } else {
+            appendOutput(QString(" Некорректный символ: '%1' (допустимы только 0 и 1)").arg(ch));
             return;
         }
-        
+    }
+    
+    try {
         BitSequence* result = currentBitSeq->Or(other);
+        
         QString resultBits;
         for (size_t i = 0; i < result->GetCount(); ++i) {
             resultBits += QString::number(result->Get(i) ? 1 : 0);
         }
-        appendOutput(QString(" OR with 11010: %1").arg(resultBits));
+        appendOutput(QString(" OR с [%1]: %2").arg(inputText).arg(resultBits));
         delete result;
-        
-    } catch (const IncompatibleSizesException& e) {
-        appendOutput(QString(" Несоответствие размеров: %1").arg(e.what()));
+        secondBitSeqInput->clear();
     } catch (const std::exception& e) {
         appendOutput(QString(" Ошибка: %1").arg(e.what()));
     }
@@ -534,30 +542,42 @@ void MainWindow::onBitOr()
 void MainWindow::onBitXor()
 {
     if (!currentBitSeq) {
-        appendOutput(" Битовая последовательность не создана");
+        appendOutput(" BitSequence не создана");
         return;
     }
     
-    try {
-        bool bits[] = {true, true, false, true, false};  
-        BitSequence other(bits, 5, false);
-        
-        if (currentBitSeq->GetCount() != other.GetCount()) {
-            appendOutput(QString(" Не удается выполнить XOR: размеры различаются (%1 vs %2)")
-                .arg(currentBitSeq->GetCount()).arg(other.GetCount()));
+    QString inputText = secondBitSeqInput->text().trimmed();
+    if (inputText.isEmpty()) {
+        appendOutput(" Введите вторую битовую последовательность (например: 11010)");
+        return;
+    }
+    
+    if (inputText.size() != currentBitSeq->GetCount()) {
+        appendOutput(QString(" Размеры не совпадают: текущая последовательность имеет %1 битов, введено %2")
+            .arg(currentBitSeq->GetCount()).arg(inputText.size()));
+        return;
+    }
+
+    BitSequence other;
+    for (QChar ch : inputText) {
+        if (ch == '0') other.Append(Bit(0));
+        else if (ch == '1') other.Append(Bit(1));
+        else {
+            appendOutput(QString(" Некорректный символ: '%1' (допустимы только 0 и 1)").arg(ch));
             return;
         }
-        
+    }
+    
+    try {
         BitSequence* result = currentBitSeq->Xor(other);
+        
         QString resultBits;
         for (size_t i = 0; i < result->GetCount(); ++i) {
             resultBits += QString::number(result->Get(i) ? 1 : 0);
         }
-        appendOutput(QString(" XOR with 11010: %1").arg(resultBits));
+        appendOutput(QString(" XOR с [%1]: %2").arg(inputText).arg(resultBits));
         delete result;
-        
-    } catch (const IncompatibleSizesException& e) {
-        appendOutput(QString(" Несоответствие размеров: %1").arg(e.what()));
+        secondBitSeqInput->clear();
     } catch (const std::exception& e) {
         appendOutput(QString(" Ошибка: %1").arg(e.what()));
     }
@@ -600,7 +620,6 @@ void MainWindow::onPrepend()
             currentBitSeq->Prepend(val == 1);
             appendOutput(QString(" Prepended bit %1").arg(val));
             updateStatus();
-            onShow();
         } catch (const std::exception& e) {
             appendOutput(QString(" Ошибка: %1").arg(e.what()));
         }
@@ -618,7 +637,6 @@ void MainWindow::onPrepend()
             currentSeq->Prepend(val);
             appendOutput(QString(" Prepended %1").arg(val));
             updateStatus();
-            onShow();
         } catch (const std::exception& e) {
             appendOutput(QString(" Ошибка: %1").arg(e.what()));
         }
@@ -630,6 +648,7 @@ void MainWindow::onPrepend()
 void MainWindow::onInsert()
 {
     if (currentType == 2 && currentBitSeq) {
+    } else if (currentSeq) {
         bool ok1, ok2;
         int index = indexInput->text().toInt(&ok1);
         int val = valueInput->text().toInt(&ok2);
@@ -642,22 +661,18 @@ void MainWindow::onInsert()
             return;
         }
         
-        if (val != 0 && val != 1) {
-            appendOutput(QString(" Бит должен быть равен 0 или 1 (получено значение% 1)").arg(val));
-            return;
-        }
-        
         try {
-            currentBitSeq->InsertAt(val == 1, index);
-            appendOutput(QString(" Вставлен бит %1 с индексом %2").arg(val).arg(index));
+            currentSeq->InsertAt(val, index);
+            appendOutput(QString(" Вставлен элемент %1 на позицию %2").arg(val).arg(index));
             updateStatus();
-            onShow();
         } catch (const IndexOutOfRangeException& e) {
-            appendOutput(QString("Индекс вне диапазона: %1").arg(e.what()));
+            appendOutput(QString(" Индекс вне диапазона: %1").arg(e.what()));
+        } catch (const ImmutableModificationException& e) {
+            appendOutput(QString(" Нельзя изменить неизменяемую последовательность: %1").arg(e.what()));
         } catch (const std::exception& e) {
             appendOutput(QString(" Ошибка: %1").arg(e.what()));
         }
-    } else if (currentSeq) {
+        
     } else {
         appendOutput(" Последовательность не создана");
     }
@@ -711,28 +726,6 @@ void MainWindow::onGetSubsequence()
         delete sub;
         startInput->clear();
         endInput->clear();
-    } catch (const std::exception& e) {
-        appendOutput(QString(" Ошибка: %1").arg(e.what()));
-    }
-}
-
-void MainWindow::onConcat()
-{
-    if (!currentSeq || currentType == 2) {
-        appendOutput(" Объединение работает только для последовательности (int), а не для BitSequence");
-        return;
-    }
-    
-    try {
-        ArraySequence<int> tempSeq;
-        tempSeq.Append(100);
-        tempSeq.Append(200);
-        tempSeq.Append(300);
-        
-        Sequence<int>* result = currentSeq->Concat(&tempSeq);
-        appendOutput(QString(" Concat with [100,200,300]: %1")
-            .arg(sequenceToString(result)));
-        delete result;
     } catch (const std::exception& e) {
         appendOutput(QString(" Ошибка: %1").arg(e.what()));
     }
@@ -844,4 +837,73 @@ void MainWindow::onGetLast()
     } else {
         appendOutput(" Последовательность не создана");
     }
+}
+
+void MainWindow::onConcatCustom()
+{
+    QString text = secondSeqInput->text().trimmed();
+    if (text.isEmpty()) {
+        appendOutput(" Введите числа через пробел (например: 1 0 1)");
+        return;
+    }
+    
+    QStringList parts = text.split(' ', Qt::SkipEmptyParts);
+    if (parts.isEmpty()) {
+        appendOutput(" Нет данных для конкатенации");
+        return;
+    }
+    
+    if (currentType == 2 && currentBitSeq) {
+        BitSequence tempSeq;
+        for (const QString& part : parts) {
+            bool ok;
+            int val = part.trimmed().toInt(&ok);
+            if (!ok || (val != 0 && val != 1)) {
+                appendOutput(QString(" Бит должен быть 0 или 1: '%1'").arg(part));
+                return;
+            }
+            tempSeq.Append(Bit(val == 1)); 
+        }
+        
+        try {
+            Sequence<Bit>* result = currentBitSeq->Concat(&tempSeq);
+            
+            QString bits;
+            for (size_t i = 0; i < result->GetCount(); ++i) {
+                bits += QString::number(result->Get(i) ? 1 : 0);
+            }
+            appendOutput(QString(" Concat с [%1]: %2").arg(text).arg(bits));
+            delete result;
+            secondSeqInput->clear();
+        } catch (const std::exception& e) {
+            appendOutput(QString(" Ошибка: %1").arg(e.what()));
+        }
+        return;
+    }
+    
+    if (currentSeq) {
+        ArraySequence<int> tempSeq;
+        for (const QString& part : parts) {
+            bool ok;
+            int val = part.trimmed().toInt(&ok);
+            if (!ok) {
+                appendOutput(QString(" Некорректное число: '%1'").arg(part));
+                return;
+            }
+            tempSeq.Append(val);
+        }
+        
+        try {
+            Sequence<int>* result = currentSeq->Concat(&tempSeq);
+            appendOutput(QString(" Concat с [%1]: %2")
+                .arg(text).arg(sequenceToString(result)));
+            delete result;
+            secondSeqInput->clear();
+        } catch (const std::exception& e) {
+            appendOutput(QString(" Ошибка: %1").arg(e.what()));
+        }
+        return;
+    }
+    
+    appendOutput(" Последовательность не создана");
 }

@@ -9,14 +9,13 @@ template <typename T>
 class ArraySequence : public Sequence<T> {
 protected:
     DynamicArray<T> data;
-    bool isMutable;
+    bool isMutable;////////////
 
 public:
     ArraySequence(bool mutableFlag = true);
     ArraySequence(const DynamicArray<T>& arr, bool mutableFlag = true);
     ArraySequence(const ArraySequence& other);
     
-    // ICollection методы
     T Get(size_t index) const override;      
     size_t GetCount() const override;
     

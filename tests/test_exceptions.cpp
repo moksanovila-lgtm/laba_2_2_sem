@@ -17,7 +17,7 @@ TEST(ExceptionTest, GetThrowsIndexOutOfRange) {
 }
 
 TEST(ExceptionTest, InsertAtThrowsIndexOutOfRange) {
-    ArraySequence<int> seq;
+    ArraySequence<int> seq;//// = {1,2};
     seq.Append(1);
     seq.Append(2);
     

@@ -63,6 +63,10 @@ private:
     QPushButton* xorBtn;
     QPushButton* notBtn;
     QLineEdit* bitInput;
+
+    QLineEdit* secondSeqInput;     
+    QPushButton* concatCustomBtn;
+    QLineEdit* secondBitSeqInput;
     
     void setupUI();
     void createTabCreation();
@@ -86,11 +90,10 @@ private slots:
     void onGetLast();
     void onClear();
     void onGetSubsequence();
-    void onConcat();
+    void onConcatCustom();
     void onMap();
     void onWhere();
     void onReduce();
-    void onIterator();
     void onBitAnd();
     void onBitOr();
     void onBitXor();

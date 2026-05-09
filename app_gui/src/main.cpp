@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     app.setStyle(QStyleFactory::create("Fusion"));
     
     MainWindow window;
-    window.setWindowTitle("Sequence System - Laboratory Work 2");
+    window.setWindowTitle("Sequence System - Assignment 2");
     window.setMinimumSize(900, 700);
     window.show();
     

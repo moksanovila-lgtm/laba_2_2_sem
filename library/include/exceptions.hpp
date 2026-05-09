@@ -15,7 +15,7 @@ public:
     }
     
     virtual ~SequenceException() = default;
-};
+};                                                                            
 
 class IndexOutOfRangeException : public SequenceException {
 public:
