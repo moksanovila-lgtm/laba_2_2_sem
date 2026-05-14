@@ -1,152 +1,123 @@
 #include <gtest/gtest.h>
 #include "LinkedList.hpp"
 
+struct Point {
+    int x, y;
+    Point(int x = 0, int y = 0) : x(x), y(y) {}
+    bool operator==(const Point& other) const { return x == other.x && y == other.y; }
+    friend std::ostream& operator<<(std::ostream& os, const Point& p) {
+        os << "(" << p.x << "," << p.y << ")"; return os;
+    }
+};
 
-TEST(LinkedListTest, DefaultConstructor) {
-    LinkedList<int> list;
-    EXPECT_EQ(list.GetCount(), 0) << "Default constructor: list should be empty, count=0";
-}
-
-TEST(LinkedListTest, CopyConstructor) {
-    LinkedList<int> list1;
-    list1.Append(10);
-    list1.Append(20);
-    list1.Append(30);
+class LinkedListTest : public ::testing::Test {
+protected:
+    void SetUp() override {
+        empty = new LinkedList<int>();
+        seq = new LinkedList<int>{10, 20, 30};
+        large = new LinkedList<int>();
+        for (int i = 1; i <= 10; ++i) large->Append(i);
+    }
+    void TearDown() override { delete empty; delete seq; delete large; }
     
-    LinkedList<int> list2(list1);
-    EXPECT_EQ(list2.GetCount(), 3) << "Copy constructor: size should be 3";
-    EXPECT_EQ(list2.Get(0), 10) << "Copy constructor: first element should be 10";
-    EXPECT_EQ(list2.Get(1), 20) << "Copy constructor: second element should be 20";
-    EXPECT_EQ(list2.Get(2), 30) << "Copy constructor: third element should be 30";
-}
-
-
-TEST(LinkedListTest, AppendIncreasesSize) {
-    LinkedList<int> list;
-    list.Append(10);
-    EXPECT_EQ(list.GetCount(), 1) << "After first Append(10): size should be 1";
-    EXPECT_EQ(list.Get(0), 10) << "After Append(10): first element should be 10";
+    void expectCount(LinkedList<int>* s, size_t exp, const std::string& ctx = "") {
+        size_t act = s->GetCount();
+        EXPECT_EQ(act, exp) << ctx << ": expected=" << exp << ", actual=" << act;
+    }
     
-    list.Append(20);
-    EXPECT_EQ(list.GetCount(), 2) << "After second Append(20): size should be 2";
-    EXPECT_EQ(list.Get(1), 20) << "After Append(20): second element should be 20";
-}
-
-
-TEST(LinkedListTest, PrependAddsToBeginning) {
-    LinkedList<int> list;
-    list.Append(20);
-    list.Append(30);
-    list.Prepend(10);
+    void expectSeq(LinkedList<int>* s, std::initializer_list<int> exp, const std::string& ctx = "") {
+        expectCount(s, exp.size(), ctx);
+        size_t i = 0;
+        for (int v : exp) {
+            int act = s->Get(i);
+            EXPECT_EQ(act, v) << ctx << "[" << i << "]: expected=" << v << ", actual=" << act;
+            ++i;
+        }
+    }
     
-    EXPECT_EQ(list.GetCount(), 3) << "After Prepend(10) to [20,30]: size should be 3";
-    EXPECT_EQ(list.Get(0), 10) << "After Prepend(10): first element should be 10";
-    EXPECT_EQ(list.Get(1), 20) << "After Prepend(10): second element should be 20";
-    EXPECT_EQ(list.Get(2), 30) << "After Prepend(10): third element should be 30";
-}
-
-
-TEST(LinkedListTest, InsertAtBeginning) {
-    LinkedList<int> list;
-    list.Append(20);
-    list.Append(30);
-    list.InsertAt(10, 0);
+    template<typename Ex, typename F>
+    void expectThrow(F f, const std::string& ctx = "") {
+        EXPECT_THROW(f(), Ex) << ctx << " should throw " << typeid(Ex).name();
+    }
     
-    EXPECT_EQ(list.GetCount(), 3) << "InsertAt(10,0) into [20,30]: size should be 3";
-    EXPECT_EQ(list.Get(0), 10) << "InsertAt(10,0): element at index 0 should be 10";
-    EXPECT_EQ(list.Get(1), 20) << "InsertAt(10,0): element at index 1 should be 20";
-    EXPECT_EQ(list.Get(2), 30) << "InsertAt(10,0): element at index 2 should be 30";
+    LinkedList<int>* empty;
+    LinkedList<int>* seq;
+    LinkedList<int>* large;
+};
+
+TEST_F(LinkedListTest, DefaultConstructor) { expectCount(empty, 0, "Default"); }
+TEST_F(LinkedListTest, InitializerList) { LinkedList<int> s{1,2,3}; expectSeq(&s, {1,2,3}, "InitList"); }
+TEST_F(LinkedListTest, CopyConstructor) { LinkedList<int> s2(*seq); expectSeq(&s2, {10,20,30}, "Copy"); }
+
+TEST_F(LinkedListTest, Append) { 
+    empty->Append(10); 
+    expectSeq(empty, {10}, "Append"); 
+    empty->Append(20); 
+    expectSeq(empty, {10,20}, "Append2"); 
 }
 
-TEST(LinkedListTest, InsertAtMiddle) {
-    LinkedList<int> list;
-    list.Append(10);
-    list.Append(30);
-    list.InsertAt(20, 1);
-    
-    EXPECT_EQ(list.GetCount(), 3) << "InsertAt(20,1) into [10,30]: size should be 3";
-    EXPECT_EQ(list.Get(0), 10) << "InsertAt(20,1): element at index 0 should be 10";
-    EXPECT_EQ(list.Get(1), 20) << "InsertAt(20,1): element at index 1 should be 20";
-    EXPECT_EQ(list.Get(2), 30) << "InsertAt(20,1): element at index 2 should be 30";
+TEST_F(LinkedListTest, Prepend) { 
+    LinkedList<int> s{20,30}; 
+    s.Prepend(10); 
+    expectSeq(&s, {10,20,30}, "Prepend"); 
 }
 
-TEST(LinkedListTest, InsertAtEnd) {
-    LinkedList<int> list;
-    list.Append(10);
-    list.Append(20);
-    list.InsertAt(30, 2);
-    
-    EXPECT_EQ(list.GetCount(), 3) << "InsertAt(30,2) into [10,20]: size should be 3";
-    EXPECT_EQ(list.Get(2), 30) << "InsertAt(30,2): element at index 2 should be 30";
+TEST_F(LinkedListTest, InsertAt) {
+    LinkedList<int> s{10,30};
+    s.InsertAt(20, 1);
+    expectSeq(&s, {10,20,30}, "InsertAt");
+}
+TEST_F(LinkedListTest, InsertAtThrows) {
+    LinkedList<int> s{10};
+    expectThrow<IndexOutOfRangeException>([&]() { s.InsertAt(20, 2); }, "InsertAt invalid");
 }
 
+TEST_F(LinkedListTest, GetFirst) { EXPECT_EQ(seq->GetFirst(), 10) << "GetFirst: expected=10, actual=" << seq->GetFirst(); }
 
-TEST(LinkedListTest, GetFirstReturnsFirstElement) {
-    LinkedList<int> list;
-    list.Append(10);
-    list.Append(20);
-    list.Append(30);
-    EXPECT_EQ(list.GetFirst(), 10) << "GetFirst() on [10,20,30] should return 10";
+TEST_F(LinkedListTest, GetFirstThrows) { expectThrow<EmptySequenceException>([this]() { empty->GetFirst(); }, "GetFirst on empty"); }
+
+TEST_F(LinkedListTest, GetLast) { EXPECT_EQ(seq->GetLast(), 30) << "GetLast: expected=30, actual=" << seq->GetLast(); }
+
+TEST_F(LinkedListTest, GetLastThrows) { expectThrow<EmptySequenceException>([this]() { empty->GetLast(); }, "GetLast on empty"); }
+
+TEST_F(LinkedListTest, GetThrows) { expectThrow<IndexOutOfRangeException>([this]() { seq->Get(3); }, "Get invalid"); }
+
+TEST_F(LinkedListTest, RemoveAt) {
+    LinkedList<int> s{10,20,30};
+    s.RemoveAt(1);
+    expectSeq(&s, {10,30}, "RemoveAt");
+}
+TEST_F(LinkedListTest, RemoveAtThrows) {
+    LinkedList<int> s{10};
+    expectThrow<IndexOutOfRangeException>([&]() { s.RemoveAt(1); }, "RemoveAt invalid");
 }
 
-TEST(LinkedListTest, GetFirstThrowsOnEmptyList) {
-    LinkedList<int> list;
-    EXPECT_THROW(list.GetFirst(), EmptySequenceException) 
-        << "GetFirst() on empty list should throw EmptySequenceException";
+TEST_F(LinkedListTest, Clear) { seq->Clear(); expectCount(seq, 0, "Clear"); }
+
+TEST_F(LinkedListTest, GetSubList) {
+    auto* sub = seq->GetSubList(1, 2);
+    expectSeq(sub, {20,30}, "GetSubList");
+    delete sub;
+}
+TEST_F(LinkedListTest, GetSubListThrows) {
+    expectThrow<IndexOutOfRangeException>([this]() { seq->GetSubList(2, 1); }, "GetSubList start>end");
 }
 
-TEST(LinkedListTest, GetLastReturnsLastElement) {
-    LinkedList<int> list;
-    list.Append(10);
-    list.Append(20);
-    list.Append(30);
-    EXPECT_EQ(list.GetLast(), 30) << "GetLast() on [10,20,30] should return 30";
+TEST_F(LinkedListTest, Assignment) {
+    LinkedList<int> s2;
+    s2 = *seq;
+    expectSeq(&s2, {10,20,30}, "Assignment");
 }
 
-
-TEST(LinkedListTest, RemoveAtBeginning) {
-    LinkedList<int> list;
-    list.Append(10);
-    list.Append(20);
-    list.Append(30);
-    list.RemoveAt(0);
-    
-    EXPECT_EQ(list.GetCount(), 2) << "RemoveAt(0): size should become 2";
-    EXPECT_EQ(list.Get(0), 20) << "RemoveAt(0): new first element should be 20";
-    EXPECT_EQ(list.Get(1), 30) << "RemoveAt(0): new second element should be 30";
+TEST_F(LinkedListTest, FluentInterface) {
+    LinkedList<int> s;
+    s.Append(1)->Append(2)->InsertAt(3,2)->Append(4)->Prepend(0);
+    expectSeq(&s, {0,1,2,3,4}, "Fluent");
 }
 
-TEST(LinkedListTest, RemoveAtMiddle) {
-    LinkedList<int> list;
-    list.Append(10);
-    list.Append(20);
-    list.Append(30);
-    list.RemoveAt(1);
-    
-    EXPECT_EQ(list.GetCount(), 2) << "RemoveAt(1): size should become 2";
-    EXPECT_EQ(list.Get(0), 10) << "RemoveAt(1): element at index 0 should be 10";
-    EXPECT_EQ(list.Get(1), 30) << "RemoveAt(1): element at index 1 should be 30";
-}
-
-TEST(LinkedListTest, RemoveAtEnd) {
-    LinkedList<int> list;
-    list.Append(10);
-    list.Append(20);
-    list.Append(30);
-    list.RemoveAt(2);
-    
-    EXPECT_EQ(list.GetCount(), 2) << "RemoveAt(2): size should become 2";
-    EXPECT_EQ(list.Get(0), 10) << "RemoveAt(2): element at index 0 should be 10";
-    EXPECT_EQ(list.Get(1), 20) << "RemoveAt(2): element at index 1 should be 20";
-}
-
-
-TEST(LinkedListTest, ClearEmptiesList) {
-    LinkedList<int> list;
-    list.Append(10);
-    list.Append(20);
-    list.Append(30);
-    list.Clear();
-    
-    EXPECT_EQ(list.GetCount(), 0) << "After Clear(): list should be empty, count=0";
+TEST(LinkedListPointTest, PointWorks) {
+    LinkedList<Point> s{Point(1,2), Point(3,4)};
+    EXPECT_EQ(s.GetCount(), 2);
+    EXPECT_EQ(s.Get(0).x, 1);
+    EXPECT_EQ(s.Get(1).y, 4);
 }

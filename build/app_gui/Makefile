@@ -260,6 +260,54 @@ src/MainWindow.cpp.s:
 	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.s
 .PHONY : src/MainWindow.cpp.s
 
+src/SequenceController.obj: src/SequenceController.cpp.obj
+.PHONY : src/SequenceController.obj
+
+# target to build an object file
+src/SequenceController.cpp.obj:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj
+.PHONY : src/SequenceController.cpp.obj
+
+src/SequenceController.i: src/SequenceController.cpp.i
+.PHONY : src/SequenceController.i
+
+# target to preprocess a source file
+src/SequenceController.cpp.i:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.i
+.PHONY : src/SequenceController.cpp.i
+
+src/SequenceController.s: src/SequenceController.cpp.s
+.PHONY : src/SequenceController.s
+
+# target to generate assembly for a file
+src/SequenceController.cpp.s:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.s
+.PHONY : src/SequenceController.cpp.s
+
+src/SequenceWidget.obj: src/SequenceWidget.cpp.obj
+.PHONY : src/SequenceWidget.obj
+
+# target to build an object file
+src/SequenceWidget.cpp.obj:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj
+.PHONY : src/SequenceWidget.cpp.obj
+
+src/SequenceWidget.i: src/SequenceWidget.cpp.i
+.PHONY : src/SequenceWidget.i
+
+# target to preprocess a source file
+src/SequenceWidget.cpp.i:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.i
+.PHONY : src/SequenceWidget.cpp.i
+
+src/SequenceWidget.s: src/SequenceWidget.cpp.s
+.PHONY : src/SequenceWidget.s
+
+# target to generate assembly for a file
+src/SequenceWidget.cpp.s:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f app_gui\CMakeFiles\SequenceGUI.dir\build.make app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.s
+.PHONY : src/SequenceWidget.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -306,6 +354,12 @@ help:
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s
+	@echo ... src/SequenceController.obj
+	@echo ... src/SequenceController.i
+	@echo ... src/SequenceController.s
+	@echo ... src/SequenceWidget.obj
+	@echo ... src/SequenceWidget.i
+	@echo ... src/SequenceWidget.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

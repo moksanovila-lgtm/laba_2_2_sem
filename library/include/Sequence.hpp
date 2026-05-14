@@ -1,5 +1,8 @@
 #pragma once
 
+#include <sstream>
+#include <string>
+#include <functional>
 #include "ICollection.hpp"
 #include "IEnumerator.hpp"
 
@@ -8,40 +11,29 @@ class Sequence : public ICollection<T>, public IEnumerable<T> {
 public:
     virtual T Get(size_t index) const = 0;
     virtual size_t GetCount() const = 0;
-
     virtual T GetFirst() const = 0;
     virtual T GetLast() const = 0;
     virtual Sequence<T>* GetSubsequence(size_t start, size_t end) const = 0;
 
-    virtual void Append(const T& item) = 0;
-    virtual void Prepend(const T& item) = 0;
-    virtual void InsertAt(const T& item, size_t index) = 0;
-    virtual void Clear() = 0;
+    virtual Sequence<T>* Append(const T& item) = 0;
+    virtual Sequence<T>* Prepend(const T& item) = 0;
+    virtual Sequence<T>* InsertAt(const T& item, size_t index) = 0;
 
     virtual Sequence<T>* Concat(Sequence<T>* other) const = 0;
+    virtual Sequence<T>* Map(std::function<T(const T&)> func) const = 0;
+    virtual Sequence<T>* Where(std::function<bool(const T&)> predicate) const = 0;
+    virtual T Reduce(std::function<T(const T&, const T&)> func, const T& initial) const = 0;
 
-    virtual Sequence<T>* Map(T (*func)(const T&)) const = 0;
-    virtual Sequence<T>* Where(bool (*predicate)(const T&)) const = 0;
-    //virtual Sequence<T>* Where(std::function<const T&(bool)> predicate) const = 0;
-    virtual T Reduce(T (*func)(const T&, const T&), const T& initial) const = 0;
-
-    virtual bool IsMutable() const = 0;
-
-    Sequence<T>& operator+=(const T& item);
-    Sequence<T>& operator+=(const Sequence<T>& other);
-
-    // operator std::string ( const Sequence<T>& seq) const {
-    //     std::ostringstream os;
-    //     os << "[";
-    //     for (size_t i = 0; i < seq.GetCount(); ++i) {
-    //         os << seq.Get(i);
-    //         if (i != seq.GetCount() - 1) os << ", ";
-    //     }
-    //     os << "]";
-    //     return os.str();
-    // }
-
+    operator std::string() const {
+        std::ostringstream os;
+        os << "[";
+        for (size_t i = 0; i < GetCount(); ++i) {
+            os << Get(i);
+            if (i != GetCount() - 1) os << ", ";
+        }
+        os << "]";
+        return os.str();
+    }
+    
     virtual ~Sequence() = default;
 };
-
-#include "Sequence.tpp"

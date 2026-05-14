@@ -1,40 +1,47 @@
 #pragma once
 
+#include <initializer_list>
+#include <functional>
 #include "Sequence.hpp"
 #include "DynamicArray.hpp"
-#include "IEnumerator.hpp"
 #include "exceptions.hpp"
 
 template <typename T>
 class ArraySequence : public Sequence<T> {
 protected:
     DynamicArray<T> data;
-    bool isMutable;////////////
 
 public:
-    ArraySequence(bool mutableFlag = true);
-    ArraySequence(const DynamicArray<T>& arr, bool mutableFlag = true);
+   ArraySequence(std::initializer_list<T> list) {
+        data.Resize(list.size());  
+        size_t i = 0;
+        for (const T& item : list) {
+            data.Set(i++, item);  
+        }
+    }
+
+    ArraySequence();
+    explicit ArraySequence(size_t size);
+    ArraySequence(const T* items, size_t count);
+    ArraySequence(const DynamicArray<T>& arr);
     ArraySequence(const ArraySequence& other);
     
-    T Get(size_t index) const override;      
+    T Get(size_t index) const override;
     size_t GetCount() const override;
-    
     T GetFirst() const override;
     T GetLast() const override;
     Sequence<T>* GetSubsequence(size_t start, size_t end) const override;
-    
-    void Append(const T& item) override;
-    void Prepend(const T& item) override;
-    void InsertAt(const T& item, size_t index) override;
-    void Clear() override;
+
+    virtual ArraySequence<T>* Append(const T& item);
+    virtual ArraySequence<T>* Prepend(const T& item);
+    virtual ArraySequence<T>* InsertAt(const T& item, size_t index);
+    ArraySequence<T>* Set(size_t index, const T& value);
+    ArraySequence<T>* Clear();
     
     Sequence<T>* Concat(Sequence<T>* other) const override;
-    
-    Sequence<T>* Map(T (*func)(const T&)) const override;
-    Sequence<T>* Where(bool (*predicate)(const T&)) const override;
-    T Reduce(T (*func)(const T&, const T&), const T& initial) const override;
-    
-    bool IsMutable() const override { return isMutable; }
+    Sequence<T>* Map(std::function<T(const T&)> func) const override;
+    Sequence<T>* Where(std::function<bool(const T&)> predicate) const override;
+    T Reduce(std::function<T(const T&, const T&)> func, const T& initial) const override;
     
     IEnumerator<T>* GetEnumerator() const override;
     
@@ -51,8 +58,6 @@ public:
         const T& Current() const override;
         void Reset() override;
     };
-    
-    template <typename U> friend class ImmutableArraySequence;
 };
 
 #include "ArraySequence.tpp"

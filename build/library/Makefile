@@ -170,6 +170,68 @@ depend:
 	cd /d D:\Lab_2\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+library/CMakeFiles/SequenceLibrary.dir/rule:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 library/CMakeFiles/SequenceLibrary.dir/rule
+.PHONY : library/CMakeFiles/SequenceLibrary.dir/rule
+
+# Convenience name for target.
+SequenceLibrary: library/CMakeFiles/SequenceLibrary.dir/rule
+.PHONY : SequenceLibrary
+
+# fast build rule for target.
+SequenceLibrary/fast:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f library\CMakeFiles\SequenceLibrary.dir\build.make library/CMakeFiles/SequenceLibrary.dir/build
+.PHONY : SequenceLibrary/fast
+
+src/BitSequence.obj: src/BitSequence.cpp.obj
+.PHONY : src/BitSequence.obj
+
+# target to build an object file
+src/BitSequence.cpp.obj:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f library\CMakeFiles\SequenceLibrary.dir\build.make library/CMakeFiles/SequenceLibrary.dir/src/BitSequence.cpp.obj
+.PHONY : src/BitSequence.cpp.obj
+
+src/BitSequence.i: src/BitSequence.cpp.i
+.PHONY : src/BitSequence.i
+
+# target to preprocess a source file
+src/BitSequence.cpp.i:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f library\CMakeFiles\SequenceLibrary.dir\build.make library/CMakeFiles/SequenceLibrary.dir/src/BitSequence.cpp.i
+.PHONY : src/BitSequence.cpp.i
+
+src/BitSequence.s: src/BitSequence.cpp.s
+.PHONY : src/BitSequence.s
+
+# target to generate assembly for a file
+src/BitSequence.cpp.s:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f library\CMakeFiles\SequenceLibrary.dir\build.make library/CMakeFiles/SequenceLibrary.dir/src/BitSequence.cpp.s
+.PHONY : src/BitSequence.cpp.s
+
+src/ImmutableBitSequence.obj: src/ImmutableBitSequence.cpp.obj
+.PHONY : src/ImmutableBitSequence.obj
+
+# target to build an object file
+src/ImmutableBitSequence.cpp.obj:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f library\CMakeFiles\SequenceLibrary.dir\build.make library/CMakeFiles/SequenceLibrary.dir/src/ImmutableBitSequence.cpp.obj
+.PHONY : src/ImmutableBitSequence.cpp.obj
+
+src/ImmutableBitSequence.i: src/ImmutableBitSequence.cpp.i
+.PHONY : src/ImmutableBitSequence.i
+
+# target to preprocess a source file
+src/ImmutableBitSequence.cpp.i:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f library\CMakeFiles\SequenceLibrary.dir\build.make library/CMakeFiles/SequenceLibrary.dir/src/ImmutableBitSequence.cpp.i
+.PHONY : src/ImmutableBitSequence.cpp.i
+
+src/ImmutableBitSequence.s: src/ImmutableBitSequence.cpp.s
+.PHONY : src/ImmutableBitSequence.s
+
+# target to generate assembly for a file
+src/ImmutableBitSequence.cpp.s:
+	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f library\CMakeFiles\SequenceLibrary.dir\build.make library/CMakeFiles/SequenceLibrary.dir/src/ImmutableBitSequence.cpp.s
+.PHONY : src/ImmutableBitSequence.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -183,6 +245,13 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
+	@echo ... SequenceLibrary
+	@echo ... src/BitSequence.obj
+	@echo ... src/BitSequence.i
+	@echo ... src/BitSequence.s
+	@echo ... src/ImmutableBitSequence.obj
+	@echo ... src/ImmutableBitSequence.i
+	@echo ... src/ImmutableBitSequence.s
 .PHONY : help
 
 

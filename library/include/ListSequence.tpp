@@ -1,16 +1,29 @@
+#include <functional>
 #include "ListSequence.hpp"
 #include "exceptions.hpp"
 
 template <typename T>
-ListSequence<T>::ListSequence(bool mutableFlag) : isMutable(mutableFlag) {}
+ListSequence<T>::ListSequence() = default;
 
 template <typename T>
-ListSequence<T>::ListSequence(const LinkedList<T>& list, bool mutableFlag)
-    : data(list), isMutable(mutableFlag) {}
+ListSequence<T>::ListSequence(size_t size) {
+    for (size_t i = 0; i < size; ++i) {
+        data.Append(T());
+    }
+}
 
 template <typename T>
-ListSequence<T>::ListSequence(const ListSequence& other)
-    : data(other.data), isMutable(other.isMutable) {}
+ListSequence<T>::ListSequence(const T* items, size_t count) {
+    for (size_t i = 0; i < count; ++i) {
+        data.Append(items[i]);
+    }
+}
+
+template <typename T>
+ListSequence<T>::ListSequence(const LinkedList<T>& list) : data(list) {}
+
+template <typename T>
+ListSequence<T>::ListSequence(const ListSequence& other) : data(other.data) {}
 
 template <typename T>
 T ListSequence<T>::Get(size_t index) const {
@@ -27,7 +40,7 @@ T ListSequence<T>::GetFirst() const {
     if (data.GetCount() == 0) {
         throw EmptySequenceException("ListSequence::GetFirst(): sequence is empty");
     }
-    return data.Get(0);
+    return data.GetFirst();
 }
 
 template <typename T>
@@ -35,111 +48,114 @@ T ListSequence<T>::GetLast() const {
     if (data.GetCount() == 0) {
         throw EmptySequenceException("ListSequence::GetLast(): sequence is empty");
     }
-    return data.Get(data.GetCount() - 1);
+    return data.GetLast();
 }
 
 template <typename T>
 Sequence<T>* ListSequence<T>::GetSubsequence(size_t start, size_t end) const {
     if (start > end) {
         throw InvalidArgumentException(
-            "ListSequence::GetSubsequence(): start > end");
-    }
-    if (start >= data.GetCount()) {
-        throw IndexOutOfRangeException(
-            "ListSequence::GetSubsequence(): start >= size");
+            "ListSequence::GetSubsequence(): start=" + std::to_string(start) + 
+            " > end=" + std::to_string(end)
+        );
     }
     if (end >= data.GetCount()) {
         throw IndexOutOfRangeException(
-            "ListSequence::GetSubsequence(): end >= size");
+            "ListSequence::GetSubsequence(): end=" + std::to_string(end) + 
+            " >= size=" + std::to_string(data.GetCount())
+        );
     }
     
     LinkedList<T> newData;
     for (size_t i = start; i <= end; ++i) {
         newData.Append(data.Get(i));
     }
-    return new ListSequence<T>(newData, isMutable);
+    return new ListSequence<T>(newData);
 }
 
 template <typename T>
-void ListSequence<T>::Append(const T& item) {
-    if (!isMutable) {
-        throw ImmutableModificationException("ListSequence::Append(): cannot modify immutable sequence");
-    }
+ListSequence<T>* ListSequence<T>::Append(const T& item) {
     data.Append(item);
+    return this;
 }
 
 template <typename T>
-void ListSequence<T>::Prepend(const T& item) {
-    if (!isMutable) {
-        throw ImmutableModificationException("ListSequence::Prepend(): cannot modify immutable sequence");
-    }
+ListSequence<T>* ListSequence<T>::Prepend(const T& item) {
     data.Prepend(item);
+    return this;
 }
 
 template <typename T>
-void ListSequence<T>::InsertAt(const T& item, size_t index) {
-    if (!isMutable) {
-        throw ImmutableModificationException("ListSequence::InsertAt(): cannot modify immutable sequence");
-    }
+ListSequence<T>* ListSequence<T>::InsertAt(const T& item, size_t index) {
     if (index > data.GetCount()) {
         throw IndexOutOfRangeException(
-            "ListSequence::InsertAt(): index " + std::to_string(index) + 
-            " > size " + std::to_string(data.GetCount()));
+            "ListSequence::InsertAt(): index=" + std::to_string(index) + 
+            " > size=" + std::to_string(data.GetCount())
+        );
     }
     data.InsertAt(item, index);
+    return this;
 }
 
 template <typename T>
-void ListSequence<T>::Clear() {
-    if (!isMutable) {
-        throw ImmutableModificationException("ListSequence::Clear(): cannot modify immutable sequence");
-    }
+ListSequence<T>* ListSequence<T>::Set(size_t index, const T& value) {
+    data.RemoveAt(index);
+    data.InsertAt(value, index);
+    return this;
+}
+
+template <typename T>
+ListSequence<T>* ListSequence<T>::Clear() {
     data.Clear();
+    return this;
 }
 
 template <typename T>
 Sequence<T>* ListSequence<T>::Concat(Sequence<T>* other) const {
     if (!other) {
-        throw InvalidArgumentException("ListSequence::Concat(): other sequence is nullptr");
+        throw InvalidArgumentException("ListSequence::Concat(): other is nullptr");
     }
     
-    LinkedList<T> newData(data);
-    for (size_t i = 0; i < other->GetCount(); ++i) {
-        newData.Append(other->Get(i));
+    ListSequence<T>* result = new ListSequence<T>();
+    for (size_t i = 0; i < data.GetCount(); ++i) {
+        result->Append(data.Get(i));
     }
-    return new ListSequence<T>(newData, isMutable);
+    for (size_t i = 0; i < other->GetCount(); ++i) {
+        result->Append(other->Get(i));
+    }
+    return result;
 }
 
 template <typename T>
-Sequence<T>* ListSequence<T>::Map(T (*func)(const T&)) const {
+Sequence<T>* ListSequence<T>::Map(std::function<T(const T&)> func) const {
     if (!func) {
         throw InvalidArgumentException("ListSequence::Map(): function pointer is nullptr");
     }
     
-    LinkedList<T> newData;
+    ListSequence<T>* result = new ListSequence<T>();
     for (size_t i = 0; i < data.GetCount(); ++i) {
-        newData.Append(func(data.Get(i)));
+        result->Append(func(data.Get(i)));
     }
-    return new ListSequence<T>(newData, isMutable);
+    return result;
 }
 
 template <typename T>
-Sequence<T>* ListSequence<T>::Where(bool (*predicate)(const T&)) const {
+Sequence<T>* ListSequence<T>::Where(std::function<bool(const T&)> predicate) const {
     if (!predicate) {
-        throw InvalidArgumentException("ListSequence::Where(): predicate pointer is nullptr");
+        throw InvalidArgumentException("ListSequence::Where(): predicate is nullptr");
     }
     
-    LinkedList<T> newData;
+    ListSequence<T>* result = new ListSequence<T>();
     for (size_t i = 0; i < data.GetCount(); ++i) {
         if (predicate(data.Get(i))) {
-            newData.Append(data.Get(i));
+            result->Append(data.Get(i));
         }
     }
-    return new ListSequence<T>(newData, isMutable);
+    return result;
 }
 
 template <typename T>
-T ListSequence<T>::Reduce(T (*func)(const T&, const T&), const T& initial) const {
+T ListSequence<T>::Reduce(std::function<T(const T&, const T&)> func, const T& initial) const {
     if (!func) {
         throw InvalidArgumentException("ListSequence::Reduce(): function pointer is nullptr");
     }
@@ -158,7 +174,7 @@ ListSequence<T>::Iterator::Iterator(const ListSequence* sequence)
 template <typename T>
 bool ListSequence<T>::Iterator::MoveNext() {
     if (!current) {
-        current = const_cast<typename LinkedList<T>::Node*>(seq->data.GetHead());
+        current = seq->data.GetHead();
     } else {
         current = current->next;
     }
@@ -168,7 +184,7 @@ bool ListSequence<T>::Iterator::MoveNext() {
 template <typename T>
 T& ListSequence<T>::Iterator::Current() {
     if (!current) {
-        throw IteratorStateException("ListSequence::Iterator::Current(): iterator not started or finished");
+        throw IteratorStateException("Iterator not started or finished");
     }
     currentValue = current->data;
     return currentValue;
@@ -177,7 +193,7 @@ T& ListSequence<T>::Iterator::Current() {
 template <typename T>
 const T& ListSequence<T>::Iterator::Current() const {
     if (!current) {
-        throw IteratorStateException("ListSequence::Iterator::Current() const: iterator not started or finished");
+        throw IteratorStateException("Iterator not started or finished");
     }
     currentValue = current->data;
     return currentValue;

@@ -1,5 +1,6 @@
+#pragma once
+
 #include "DynamicArray.hpp"
-#include "exceptions.hpp"
 
 template <typename T>
 DynamicArray<T>::DynamicArray() : data(nullptr), size(0) {}
@@ -14,8 +15,7 @@ DynamicArray<T>::DynamicArray(size_t initialSize) : size(initialSize) {
 }
 
 template <typename T>
-DynamicArray<T>::DynamicArray(const DynamicArray& other) 
-    : size(other.size) {
+DynamicArray<T>::DynamicArray(const DynamicArray& other) : size(other.size) {
     if (size == 0) {
         data = nullptr;
         return;
@@ -75,70 +75,18 @@ void DynamicArray<T>::Set(size_t index, const T& value) {
 }
 
 template <typename T>
-void DynamicArray<T>::Append(const T& item) {
-    T* newData = new T[size + 1];
-    for (size_t i = 0; i < size; ++i) {
-        newData[i] = data[i];
+void DynamicArray<T>::Resize(size_t newSize) {
+    T* newData = nullptr;
+    if (newSize > 0) {
+        newData = new T[newSize]();  
+        size_t copyCount = (newSize < size) ? newSize : size;
+        for (size_t i = 0; i < copyCount; ++i) {
+            newData[i] = data[i];
+        }
     }
-    newData[size] = item;
     delete[] data;
     data = newData;
-    ++size;
-}
-
-template <typename T>
-void DynamicArray<T>::InsertAt(const T& item, size_t index) {
-    if (index > size) {
-        throw IndexOutOfRangeException(
-            "DynamicArray::InsertAt(): index " + std::to_string(index) + 
-            " > size " + std::to_string(size));
-    }
-    
-    T* newData = new T[size + 1];
-    
-    for (size_t i = 0; i < index; ++i) {
-        newData[i] = data[i];
-    }
-    
-    newData[index] = item;
-    
-    for (size_t i = index; i < size; ++i) {
-        newData[i + 1] = data[i];
-    }
-    
-    delete[] data;
-    data = newData;
-    ++size;
-}
-
-template <typename T>
-void DynamicArray<T>::RemoveAt(size_t index) {
-    if (index >= size) {
-        throw IndexOutOfRangeException(
-            "DynamicArray::RemoveAt(): index " + std::to_string(index) + 
-            " >= size " + std::to_string(size));
-    }
-    
-    if (size == 1) {
-        delete[] data;
-        data = nullptr;
-        size = 0;
-        return;
-    }
-    
-    T* newData = new T[size - 1];
-    
-    for (size_t i = 0; i < index; ++i) {
-        newData[i] = data[i];
-    }
-    
-    for (size_t i = index + 1; i < size; ++i) {
-        newData[i - 1] = data[i];
-    }
-    
-    delete[] data;
-    data = newData;
-    --size;
+    size = newSize;
 }
 
 template <typename T>

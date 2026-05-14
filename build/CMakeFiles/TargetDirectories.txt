@@ -5,6 +5,7 @@ D:/Lab_2/build/CMakeFiles/list_install_components.dir
 D:/Lab_2/build/CMakeFiles/install.dir
 D:/Lab_2/build/CMakeFiles/install/local.dir
 D:/Lab_2/build/CMakeFiles/install/strip.dir
+D:/Lab_2/build/library/CMakeFiles/SequenceLibrary.dir
 D:/Lab_2/build/library/CMakeFiles/test.dir
 D:/Lab_2/build/library/CMakeFiles/edit_cache.dir
 D:/Lab_2/build/library/CMakeFiles/rebuild_cache.dir

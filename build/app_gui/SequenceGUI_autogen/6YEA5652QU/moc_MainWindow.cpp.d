@@ -1,5 +1,7 @@
 D:/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652QU/moc_MainWindow.cpp: D:/Lab_2/app_gui/include/MainWindow.hpp \
   D:/Lab_2/build/app_gui/SequenceGUI_autogen/moc_predefs.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q20functional.h \
@@ -54,6 +56,7 @@ D:/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652QU/moc_MainWindow.cpp: D:/Lab
   C:/Qt/6.11.0/mingw_64/include/QtCore/qhashfunctions.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/qitemselectionmodel.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qiterator.h \
   C:/Qt/6.11.0/mingw_64/include/QtCore/qlatin1stringview.h \
@@ -167,31 +170,38 @@ D:/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652QU/moc_MainWindow.cpp: D:/Lab
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QGridLayout \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QGroupBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QInputDialog \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemview.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qcombobox.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qinputdialog.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlistview.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlistwidget.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -200,7 +210,6 @@ D:/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652QU/moc_MainWindow.cpp: D:/Lab
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
-  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -306,6 +315,7 @@ D:/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652QU/moc_MainWindow.cpp: D:/Lab
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
@@ -391,6 +401,7 @@ D:/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652QU/moc_MainWindow.cpp: D:/Lab
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/streambuf \
@@ -435,21 +446,24 @@ D:/Lab_2/build/app_gui/SequenceGUI_autogen/6YEA5652QU/moc_MainWindow.cpp: D:/Lab
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
+  D:/Lab_2/app_gui/include/SequenceController.hpp \
+  D:/Lab_2/app_gui/include/SequenceWidget.hpp \
   D:/Lab_2/library/include/ArraySequence.hpp \
   D:/Lab_2/library/include/ArraySequence.tpp \
   D:/Lab_2/library/include/Bit.hpp \
   D:/Lab_2/library/include/BitSequence.hpp \
-  D:/Lab_2/library/include/BitSequence.tpp \
   D:/Lab_2/library/include/DynamicArray.hpp \
   D:/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_2/library/include/ICollection.hpp \
   D:/Lab_2/library/include/IEnumerator.hpp \
   D:/Lab_2/library/include/ImmutableArraySequence.hpp \
+  D:/Lab_2/library/include/ImmutableArraySequence.tpp \
+  D:/Lab_2/library/include/ImmutableBitSequence.hpp \
   D:/Lab_2/library/include/ImmutableListSequence.hpp \
+  D:/Lab_2/library/include/ImmutableListSequence.tpp \
   D:/Lab_2/library/include/LinkedList.hpp \
   D:/Lab_2/library/include/LinkedList.tpp \
   D:/Lab_2/library/include/ListSequence.hpp \
   D:/Lab_2/library/include/ListSequence.tpp \
   D:/Lab_2/library/include/Sequence.hpp \
-  D:/Lab_2/library/include/Sequence.tpp \
   D:/Lab_2/library/include/exceptions.hpp

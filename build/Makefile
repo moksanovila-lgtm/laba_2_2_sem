@@ -171,6 +171,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named SequenceLibrary
+
+# Build rule for target.
+SequenceLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SequenceLibrary
+.PHONY : SequenceLibrary
+
+# fast build rule for target.
+SequenceLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f library\CMakeFiles\SequenceLibrary.dir\build.make library/CMakeFiles/SequenceLibrary.dir/build
+.PHONY : SequenceLibrary/fast
+
+#=============================================================================
 # Target rules for targets named SequenceGUI
 
 # Build rule for target.
@@ -290,6 +303,7 @@ help:
 	@echo ... SequenceGUI_autogen
 	@echo ... SequenceGUI_autogen_timestamp_deps
 	@echo ... SequenceGUI
+	@echo ... SequenceLibrary
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest

@@ -123,11 +123,43 @@ app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.s"
 	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\app_gui\src\MainWindow.cpp -o CMakeFiles\SequenceGUI.dir\src\MainWindow.cpp.s
 
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/flags.make
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/includes_CXX.rsp
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj: D:/Lab_2/app_gui/src/SequenceController.cpp
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj"
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj -MF CMakeFiles\SequenceGUI.dir\src\SequenceController.cpp.obj.d -o CMakeFiles\SequenceGUI.dir\src\SequenceController.cpp.obj -c D:\Lab_2\app_gui\src\SequenceController.cpp
+
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.i"
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\app_gui\src\SequenceController.cpp > CMakeFiles\SequenceGUI.dir\src\SequenceController.cpp.i
+
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.s"
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\app_gui\src\SequenceController.cpp -o CMakeFiles\SequenceGUI.dir\src\SequenceController.cpp.s
+
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/flags.make
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/includes_CXX.rsp
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj: D:/Lab_2/app_gui/src/SequenceWidget.cpp
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj: app_gui/CMakeFiles/SequenceGUI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj"
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj -MF CMakeFiles\SequenceGUI.dir\src\SequenceWidget.cpp.obj.d -o CMakeFiles\SequenceGUI.dir\src\SequenceWidget.cpp.obj -c D:\Lab_2\app_gui\src\SequenceWidget.cpp
+
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.i"
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Lab_2\app_gui\src\SequenceWidget.cpp > CMakeFiles\SequenceGUI.dir\src\SequenceWidget.cpp.i
+
+app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.s"
+	cd /d D:\Lab_2\build\app_gui && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Lab_2\app_gui\src\SequenceWidget.cpp -o CMakeFiles\SequenceGUI.dir\src\SequenceWidget.cpp.s
+
 # Object files for target SequenceGUI
 SequenceGUI_OBJECTS = \
 "CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/SequenceGUI.dir/src/main.cpp.obj" \
-"CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj"
+"CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj" \
+"CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj" \
+"CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj"
 
 # External object files for target SequenceGUI
 SequenceGUI_EXTERNAL_OBJECTS =
@@ -135,14 +167,17 @@ SequenceGUI_EXTERNAL_OBJECTS =
 app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj
 app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj
 app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj
+app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj
+app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj
 app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/build.make
+app_gui/SequenceGUI.exe: library/libSequenceLibrary.a
 app_gui/SequenceGUI.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Widgets.a
 app_gui/SequenceGUI.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Gui.a
 app_gui/SequenceGUI.exe: C:/Qt/6.11.0/mingw_64/lib/libQt6Core.a
 app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/linkLibs.rsp
 app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/objects1.rsp
 app_gui/SequenceGUI.exe: app_gui/CMakeFiles/SequenceGUI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SequenceGUI.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Lab_2\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable SequenceGUI.exe"
 	cd /d D:\Lab_2\build\app_gui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SequenceGUI.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

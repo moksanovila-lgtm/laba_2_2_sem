@@ -1,588 +1,693 @@
 {
-  "tests": 106,
+  "tests": 121,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "ExceptionTest",
-      "tests": 14,
+      "tests": 15,
       "testsuite": [
         {
-          "name": "GetThrowsIndexOutOfRange",
+          "name": "GetThrowsWhenIndexOutOfRange",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 8
+          "line": 37
         },
         {
-          "name": "InsertAtThrowsIndexOutOfRange",
+          "name": "InsertAtThrowsWhenIndexOutOfRange",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 19
+          "line": 41
         },
         {
-          "name": "GetFirstThrowsEmptySequence",
+          "name": "GetSubsequenceThrowsWhenStartGreaterThanEnd",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 30
+          "line": 45
         },
         {
-          "name": "GetLastThrowsEmptySequence",
-          "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 36
-        },
-        {
-          "name": "ImmutableArraySequenceAppendThrows",
-          "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 43
-        },
-        {
-          "name": "ImmutableArraySequencePrependThrows",
+          "name": "GetFirstThrowsOnEmptySequence",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
           "line": 49
         },
         {
-          "name": "ImmutableArraySequenceInsertAtThrows",
+          "name": "GetLastThrowsOnEmptySequence",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 55
-        },
-        {
-          "name": "ImmutableArraySequenceClearThrows",
-          "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 61
+          "line": 53
         },
         {
           "name": "ConcatWithNullptrThrows",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 68
+          "line": 57
         },
         {
           "name": "MapWithNullptrThrows",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 74
+          "line": 61
         },
         {
           "name": "WhereWithNullptrThrows",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 80
+          "line": 65
         },
         {
           "name": "ReduceWithNullptrThrows",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
+          "line": 69
+        },
+        {
+          "name": "BitSequenceAndThrowsWhenSizesDiffer",
+          "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
+          "line": 73
+        },
+        {
+          "name": "BitSequenceAndWorksWhenSizesEqual",
+          "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
+          "line": 77
+        },
+        {
+          "name": "BitSequenceGetThrowsWhenIndexOutOfRange",
+          "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
+          "line": 82
+        },
+        {
+          "name": "ImmutableAppendReturnsNew",
+          "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
           "line": 86
         },
         {
-          "name": "BitSequenceGetSubsequenceInvalidBounds",
+          "name": "ImmutablePrependReturnsNew",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 93
+          "line": 94
         },
         {
-          "name": "BitSequenceAndDifferentSizes",
+          "name": "ImmutableInsertAtReturnsNew",
           "file": "D:\\Lab_2\\tests\\test_exceptions.cpp",
-          "line": 103
+          "line": 102
         }
       ]
     },
     {
-      "name": "MapReduceTest",
-      "tests": 11,
-      "testsuite": [
-        {
-          "name": "MapOnArraySequence",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 6
-        },
-        {
-          "name": "MapOnListSequence",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 27
-        },
-        {
-          "name": "MapOnEmptySequence",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 44
-        },
-        {
-          "name": "WhereFiltersEvenNumbers",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 55
-        },
-        {
-          "name": "WhereFiltersGreaterThan",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 75
-        },
-        {
-          "name": "WhereOnEmptySequence",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 93
-        },
-        {
-          "name": "ReduceSum",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 104
-        },
-        {
-          "name": "ReduceProduct",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 118
-        },
-        {
-          "name": "ReduceMax",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 131
-        },
-        {
-          "name": "ReduceOnEmptySequenceReturnsInitial",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 145
-        },
-        {
-          "name": "ChainMapWhereReduce",
-          "file": "D:\\Lab_2\\tests\\test_map_reduce.cpp",
-          "line": 154
-        }
-      ]
-    },
-    {
-      "name": "ImmutableArraySequenceTest",
+      "name": "ImmutableTest",
       "tests": 7,
       "testsuite": [
         {
-          "name": "AppendThrowsException",
-          "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 6
-        },
-        {
-          "name": "PrependThrowsException",
-          "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 12
-        },
-        {
-          "name": "InsertAtThrowsException",
-          "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 18
-        },
-        {
-          "name": "ClearThrowsException",
+          "name": "ArrayAppendReturnsNewSequence",
           "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
           "line": 24
         },
         {
-          "name": "GetWorksCorrectly",
+          "name": "ArrayPrependReturnsNewSequence",
           "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 30
+          "line": 31
         },
         {
-          "name": "ConcatReturnsNewSequence",
+          "name": "ArrayInsertAtReturnsNewSequence",
           "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 43
+          "line": 39
         },
         {
-          "name": "IsMutableReturnsFalse",
+          "name": "ArrayGetWorks",
           "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 101
-        }
-      ]
-    },
-    {
-      "name": "ImmutableListSequenceTest",
-      "tests": 4,
-      "testsuite": [
-        {
-          "name": "AppendThrowsException",
-          "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 70
+          "line": 47
         },
         {
-          "name": "PrependThrowsException",
+          "name": "ListAppendReturnsNewSequence",
           "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 76
+          "line": 53
         },
         {
-          "name": "GetWorksCorrectly",
+          "name": "ListPrependReturnsNewSequence",
           "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 82
+          "line": 60
         },
         {
-          "name": "IsMutableReturnsFalse",
+          "name": "ListGetWorks",
           "file": "D:\\Lab_2\\tests\\test_immutable.cpp",
-          "line": 95
+          "line": 67
         }
       ]
     },
     {
       "name": "BitSequenceTest",
-      "tests": 13,
+      "tests": 20,
       "testsuite": [
         {
           "name": "DefaultConstructor",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 4
+          "line": 45
         },
         {
           "name": "ConstructorWithSize",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 9
+          "line": 49
         },
         {
-          "name": "ConstructorWithArray",
+          "name": "ConstructorWithInitializerList",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 17
+          "line": 57
         },
         {
-          "name": "AppendAddsBit",
+          "name": "Append",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 29
+          "line": 62
         },
         {
-          "name": "GetFirstReturnsFirstBit",
+          "name": "Prepend",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 41
+          "line": 67
         },
         {
-          "name": "GetLastReturnsLastBit",
+          "name": "InsertAt",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 50
+          "line": 73
+        },
+        {
+          "name": "InsertAtThrows",
+          "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
+          "line": 79
+        },
+        {
+          "name": "GetFirst",
+          "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
+          "line": 83
+        },
+        {
+          "name": "GetFirstThrows",
+          "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
+          "line": 87
+        },
+        {
+          "name": "GetLast",
+          "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
+          "line": 91
         },
         {
           "name": "AndOperation",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 59
+          "line": 95
         },
         {
           "name": "OrOperation",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 77
+          "line": 100
         },
         {
           "name": "XorOperation",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 95
+          "line": 105
         },
         {
           "name": "NotOperation",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 113
+          "line": 110
         },
         {
-          "name": "MapInvertsBits",
+          "name": "Map",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 128
+          "line": 115
         },
         {
-          "name": "WhereFiltersOnes",
+          "name": "Where",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 144
+          "line": 122
         },
         {
-          "name": "ReduceXorOfAllBits",
+          "name": "Reduce",
           "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
-          "line": 159
+          "line": 130
+        },
+        {
+          "name": "FluentInterface",
+          "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
+          "line": 136
+        },
+        {
+          "name": "Set",
+          "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
+          "line": 142
+        },
+        {
+          "name": "Clear",
+          "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "name": "BitSequenceCustomTypeTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "BitWrapperWorks",
+          "file": "D:\\Lab_2\\tests\\test_bit_sequence.cpp",
+          "line": 153
         }
       ]
     },
     {
       "name": "ListSequenceTest",
-      "tests": 10,
+      "tests": 20,
       "testsuite": [
         {
           "name": "DefaultConstructor",
           "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 5
+          "line": 48
         },
         {
-          "name": "AppendIncreasesSize",
+          "name": "InitializerList",
           "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 11
+          "line": 50
         },
         {
-          "name": "PrependAddsToBeginning",
+          "name": "CopyConstructor",
           "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 19
+          "line": 52
         },
         {
-          "name": "InsertAtBeginning",
+          "name": "Append",
           "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 32
+          "line": 54
         },
         {
-          "name": "InsertAtMiddle",
+          "name": "Prepend",
           "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 42
+          "line": 61
         },
         {
-          "name": "GetFirstReturnsFirstElement",
+          "name": "InsertAt",
           "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 53
+          "line": 67
         },
         {
-          "name": "GetLastReturnsLastElement",
+          "name": "InsertAtThrows",
           "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 60
+          "line": 72
         },
         {
-          "name": "GetSubsequenceReturnsCorrectSubsequence",
+          "name": "GetFirst",
           "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 69
+          "line": 77
         },
         {
-          "name": "ConcatCombinesTwoSequences",
+          "name": "GetFirstThrows",
           "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 84
+          "line": 79
         },
         {
-          "name": "ClearEmptiesSequence",
+          "name": "GetLast",
           "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
-          "line": 100
+          "line": 81
+        },
+        {
+          "name": "GetLastThrows",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 83
+        },
+        {
+          "name": "GetThrows",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 85
+        },
+        {
+          "name": "GetSubsequence",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 87
+        },
+        {
+          "name": "Concat",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 95
+        },
+        {
+          "name": "Clear",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 102
+        },
+        {
+          "name": "Map",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 104
+        },
+        {
+          "name": "Where",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 110
+        },
+        {
+          "name": "Reduce",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 117
+        },
+        {
+          "name": "FluentInterface",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 122
+        },
+        {
+          "name": "ImmutableAppend",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "name": "ListSequencePointTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "PointWorks",
+          "file": "D:\\Lab_2\\tests\\test_list_sequence.cpp",
+          "line": 136
         }
       ]
     },
     {
       "name": "ArraySequenceTest",
-      "tests": 15,
+      "tests": 13,
       "testsuite": [
         {
           "name": "DefaultConstructor",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 5
+          "line": 54
         },
         {
-          "name": "ConstructorWithArray",
+          "name": "InitializerListConstructor",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 10
+          "line": 58
         },
         {
-          "name": "AppendIncreasesSize",
+          "name": "Append",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 24
+          "line": 63
         },
         {
-          "name": "PrependAddsToBeginning",
+          "name": "Prepend",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 37
+          "line": 70
         },
         {
-          "name": "InsertAtBeginning",
+          "name": "InsertAt",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 50
+          "line": 75
         },
         {
-          "name": "InsertAtMiddle",
+          "name": "InsertAtThrows",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 62
+          "line": 80
         },
         {
-          "name": "InsertAtEnd",
-          "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 74
-        },
-        {
-          "name": "InsertAtThrowsOnInvalidIndex",
+          "name": "GetFirst",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
           "line": 84
         },
         {
-          "name": "GetFirstReturnsFirstElement",
+          "name": "GetFirstThrows",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 91
+          "line": 88
         },
         {
-          "name": "GetFirstThrowsOnEmptySequence",
+          "name": "GetLast",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 99
+          "line": 92
         },
         {
-          "name": "GetLastReturnsLastElement",
+          "name": "GetSubsequence",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 105
+          "line": 96
         },
         {
-          "name": "GetSubsequenceReturnsCorrectSubsequence",
+          "name": "Concat",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 114
+          "line": 104
         },
         {
-          "name": "GetSubsequenceThrowsOnInvalidBounds",
+          "name": "Clear",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 130
+          "line": 110
         },
         {
-          "name": "ConcatCombinesTwoSequences",
+          "name": "FluentInterface",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 144
+          "line": 115
+        }
+      ]
+    },
+    {
+      "name": "ArraySequenceDiffTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "String",
+          "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
+          "line": 121
         },
         {
-          "name": "ClearEmptiesSequence",
+          "name": "Double",
           "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
-          "line": 166
+          "line": 127
+        }
+      ]
+    },
+    {
+      "name": "ArraySequencePointTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "PointWorks",
+          "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
+          "line": 133
+        },
+        {
+          "name": "PointMap",
+          "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
+          "line": 140
+        },
+        {
+          "name": "PointWhere",
+          "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "name": "MapReduceTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "Map",
+          "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
+          "line": 155
+        },
+        {
+          "name": "Where",
+          "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
+          "line": 163
+        },
+        {
+          "name": "Reduce",
+          "file": "D:\\Lab_2\\tests\\test_array_sequence.cpp",
+          "line": 171
         }
       ]
     },
     {
       "name": "LinkedListTest",
-      "tests": 14,
+      "tests": 19,
       "testsuite": [
         {
           "name": "DefaultConstructor",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 5
+          "line": 48
         },
         {
-          "name": "CopyConstructor",
-          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 10
-        },
-        {
-          "name": "AppendIncreasesSize",
-          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 24
-        },
-        {
-          "name": "PrependAddsToBeginning",
-          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 36
-        },
-        {
-          "name": "InsertAtBeginning",
+          "name": "InitializerList",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
           "line": 49
         },
         {
-          "name": "InsertAtMiddle",
+          "name": "CopyConstructor",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 61
+          "line": 50
         },
         {
-          "name": "InsertAtEnd",
+          "name": "Append",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 73
+          "line": 52
         },
         {
-          "name": "GetFirstReturnsFirstElement",
+          "name": "Prepend",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 84
+          "line": 59
         },
         {
-          "name": "GetFirstThrowsOnEmptyList",
+          "name": "InsertAt",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 92
+          "line": 65
         },
         {
-          "name": "GetLastReturnsLastElement",
+          "name": "InsertAtThrows",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 98
+          "line": 70
         },
         {
-          "name": "RemoveAtBeginning",
+          "name": "GetFirst",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 107
+          "line": 75
         },
         {
-          "name": "RemoveAtMiddle",
+          "name": "GetFirstThrows",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 119
+          "line": 77
         },
         {
-          "name": "RemoveAtEnd",
+          "name": "GetLast",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 131
+          "line": 79
         },
         {
-          "name": "ClearEmptiesList",
+          "name": "GetLastThrows",
           "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
-          "line": 144
+          "line": 81
+        },
+        {
+          "name": "GetThrows",
+          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
+          "line": 83
+        },
+        {
+          "name": "RemoveAt",
+          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
+          "line": 85
+        },
+        {
+          "name": "RemoveAtThrows",
+          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
+          "line": 90
+        },
+        {
+          "name": "Clear",
+          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
+          "line": 95
+        },
+        {
+          "name": "GetSubList",
+          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
+          "line": 97
+        },
+        {
+          "name": "GetSubListThrows",
+          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
+          "line": 102
+        },
+        {
+          "name": "Assignment",
+          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
+          "line": 106
+        },
+        {
+          "name": "FluentInterface",
+          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "name": "LinkedListPointTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "PointWorks",
+          "file": "D:\\Lab_2\\tests\\test_linked_list.cpp",
+          "line": 118
         }
       ]
     },
     {
       "name": "DynamicArrayTest",
-      "tests": 18,
+      "tests": 13,
       "testsuite": [
         {
           "name": "DefaultConstructor",
           "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 5
+          "line": 49
         },
         {
           "name": "ConstructorWithSize",
           "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 10
+          "line": 53
         },
         {
-          "name": "ConstructorWithZeroSize",
+          "name": "ConstructorWithInitializerList",
           "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 15
+          "line": 58
         },
         {
           "name": "CopyConstructor",
           "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 20
+          "line": 63
         },
         {
           "name": "GetReturnsCorrectValue",
           "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 34
+          "line": 68
         },
         {
           "name": "GetThrowsOnInvalidIndex",
           "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 45
+          "line": 74
+        },
+        {
+          "name": "SetChangesValue",
+          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
+          "line": 78
         },
         {
           "name": "SetThrowsOnInvalidIndex",
           "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 53
-        },
-        {
-          "name": "AppendIncreasesSize",
-          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 60
-        },
-        {
-          "name": "AppendManyElements",
-          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 71
-        },
-        {
-          "name": "InsertAtBeginning",
-          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 81
-        },
-        {
-          "name": "InsertAtMiddle",
-          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 93
-        },
-        {
-          "name": "InsertAtEnd",
-          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 105
-        },
-        {
-          "name": "InsertAtThrowsOnInvalidIndex",
-          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 115
-        },
-        {
-          "name": "RemoveAtBeginning",
-          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 123
-        },
-        {
-          "name": "RemoveAtMiddle",
-          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 135
-        },
-        {
-          "name": "RemoveAtEnd",
-          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 147
-        },
-        {
-          "name": "RemoveAtThrowsOnInvalidIndex",
-          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 159
+          "line": 83
         },
         {
           "name": "ClearEmptiesArray",
           "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
-          "line": 167
+          "line": 87
+        },
+        {
+          "name": "ResizeToLargerSize",
+          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
+          "line": 92
+        },
+        {
+          "name": "ResizeToSmallerSize",
+          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
+          "line": 100
+        },
+        {
+          "name": "ResizeToZero",
+          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
+          "line": 105
+        },
+        {
+          "name": "AssignmentOperatorWorks",
+          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "name": "DynamicArrayPointTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "PointWorks",
+          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
+          "line": 116
+        },
+        {
+          "name": "PointSetWorks",
+          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
+          "line": 123
+        },
+        {
+          "name": "PointResizeWorks",
+          "file": "D:\\Lab_2\\tests\\test_dynamic_array.cpp",
+          "line": 130
         }
       ]
     }

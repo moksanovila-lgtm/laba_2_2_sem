@@ -10,9 +10,18 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
+set(SOURCES
+    src/main.cpp
+    src/MainWindow.cpp
+    src/SequenceController.cpp
+    src/SequenceWidget.cpp
+)
 
-set(SOURCES src/main.cpp src/MainWindow.cpp)
-set(HEADERS include/MainWindow.hpp)
+set(HEADERS
+    include/MainWindow.hpp
+    include/SequenceController.hpp
+    include/SequenceWidget.hpp
+)
 
 add_executable(SequenceGUI ${SOURCES} ${HEADERS})
 

@@ -236,9 +236,10 @@ tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj: \
  D:/Lab_2/library/include/Sequence.hpp \
  D:/Lab_2/library/include/ICollection.hpp \
  D:/Lab_2/library/include/IEnumerator.hpp \
- D:/Lab_2/library/include/Sequence.tpp \
+ D:/Lab_2/library/include/LinkedList.hpp \
  D:/Lab_2/library/include/exceptions.hpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
- D:/Lab_2/library/include/LinkedList.hpp \
  D:/Lab_2/library/include/LinkedList.tpp \
- D:/Lab_2/library/include/ListSequence.tpp
+ D:/Lab_2/library/include/ListSequence.tpp \
+ D:/Lab_2/library/include/ImmutableListSequence.hpp \
+ D:/Lab_2/library/include/ImmutableListSequence.tpp

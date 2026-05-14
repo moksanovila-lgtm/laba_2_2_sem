@@ -42,68 +42,25 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "MainWindow",
         "onCreate",
         "",
-        "onShow",
-        "onAppend",
-        "onPrepend",
-        "onInsert",
-        "onGet",
-        "onGetFirst",
-        "onGetLast",
-        "onClear",
-        "onGetSubsequence",
-        "onConcatCustom",
-        "onMap",
-        "onWhere",
-        "onReduce",
-        "onBitAnd",
-        "onBitOr",
-        "onBitXor",
-        "onBitNot",
-        "onBitSet",
-        "onBitGet"
+        "onTabClose",
+        "index",
+        "addNewTab",
+        "SequenceController*",
+        "controller",
+        "name"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Slot 'onCreate'
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onShow'
-        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onAppend'
-        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onPrepend'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onInsert'
-        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onGet'
-        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onGetFirst'
-        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onGetLast'
-        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onClear'
-        QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onGetSubsequence'
-        QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onConcatCustom'
-        QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onMap'
-        QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onWhere'
-        QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onReduce'
-        QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitAnd'
-        QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitOr'
-        QtMocHelpers::SlotData<void()>(17, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitXor'
-        QtMocHelpers::SlotData<void()>(18, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitNot'
-        QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitSet'
-        QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onBitGet'
-        QtMocHelpers::SlotData<void()>(21, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onTabClose'
+        QtMocHelpers::SlotData<void(int)>(3, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 4 },
+        }}),
+        // Slot 'addNewTab'
+        QtMocHelpers::SlotData<void(SequenceController *, const QString &)>(5, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 6, 7 }, { QMetaType::QString, 8 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -128,29 +85,23 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->onCreate(); break;
-        case 1: _t->onShow(); break;
-        case 2: _t->onAppend(); break;
-        case 3: _t->onPrepend(); break;
-        case 4: _t->onInsert(); break;
-        case 5: _t->onGet(); break;
-        case 6: _t->onGetFirst(); break;
-        case 7: _t->onGetLast(); break;
-        case 8: _t->onClear(); break;
-        case 9: _t->onGetSubsequence(); break;
-        case 10: _t->onConcatCustom(); break;
-        case 11: _t->onMap(); break;
-        case 12: _t->onWhere(); break;
-        case 13: _t->onReduce(); break;
-        case 14: _t->onBitAnd(); break;
-        case 15: _t->onBitOr(); break;
-        case 16: _t->onBitXor(); break;
-        case 17: _t->onBitNot(); break;
-        case 18: _t->onBitSet(); break;
-        case 19: _t->onBitGet(); break;
+        case 1: _t->onTabClose((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 2: _t->addNewTab((*reinterpret_cast<std::add_pointer_t<SequenceController*>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2]))); break;
         default: ;
         }
     }
-    (void)_a;
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+        case 2:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 0:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< SequenceController* >(); break;
+            }
+            break;
+        }
+    }
 }
 
 const QMetaObject *MainWindow::metaObject() const
@@ -172,14 +123,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 20)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 20;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 20)
-            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 20;
+        if (_id < 3)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
     }
     return _id;
 }

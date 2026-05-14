@@ -4,5 +4,9 @@ project(SequenceLibrary)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(SequenceLibrary INTERFACE)
-target_include_directories(SequenceLibrary INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+file(GLOB SOURCES "src/*.cpp")
+add_library(SequenceLibrary STATIC ${SOURCES})
+
+target_include_directories(SequenceLibrary PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)

@@ -1,9 +1,11 @@
 #pragma once
 
+#include <initializer_list>
 #include "ICollection.hpp"
 #include "exceptions.hpp"
 
-template <typename T> class ListSequence;
+template <typename T> 
+class ListSequence;
 
 template <typename T>
 class LinkedList : public ICollection<T> {
@@ -18,6 +20,12 @@ private:
     Node* tail;
 
 public:
+    LinkedList(std::initializer_list<T> list) : head(nullptr), tail(nullptr) {
+        for (const T& item : list) {
+            Append(item);
+        }
+    }
+
     LinkedList();
     LinkedList(const LinkedList& other);
     LinkedList& operator=(const LinkedList& other);
@@ -29,12 +37,14 @@ public:
     T GetFirst() const;
     T GetLast() const;
     
-    void Append(const T& item);
-    void Prepend(const T& item);
-    void InsertAt(const T& item, size_t index);
-    void RemoveAt(size_t index);
-    void Clear();
-
+    LinkedList<T>* Append(const T& item);
+    LinkedList<T>* Prepend(const T& item);
+    LinkedList<T>* InsertAt(const T& item, size_t index);
+    LinkedList<T>* RemoveAt(size_t index);
+    LinkedList<T>* Clear();
+    
+    LinkedList<T>* GetSubList(size_t startIndex, size_t endIndex) const;
+    
     Node* GetHead() const { return head; }
 
     template <typename U> friend class ListSequence;

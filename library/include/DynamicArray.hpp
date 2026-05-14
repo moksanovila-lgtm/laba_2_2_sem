@@ -1,5 +1,6 @@
 #pragma once
 
+#include <initializer_list>
 #include "ICollection.hpp"
 #include "exceptions.hpp"
 
@@ -10,8 +11,20 @@ private:
     size_t size;
 
 public:
+     DynamicArray(std::initializer_list<T> list) : size(list.size()) {
+        if (size == 0) {
+            data = nullptr;
+            return;
+        }
+        data = new T[size];
+        size_t i = 0;
+        for (const T& item : list) {
+            data[i++] = item;
+        }
+    }
+
     DynamicArray();
-    DynamicArray(size_t initialSize);
+    explicit DynamicArray(size_t initialSize);
     DynamicArray(const DynamicArray& other);
     DynamicArray& operator=(const DynamicArray& other);
     ~DynamicArray();
@@ -20,9 +33,7 @@ public:
     size_t GetCount() const override;
 
     void Set(size_t index, const T& value);
-    void Append(const T& item);
-    void InsertAt(const T& item, size_t index);
-    void RemoveAt(size_t index);
+    void Resize(size_t newSize);  
     void Clear();
 };
 

@@ -13,8 +13,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/sequence_tests.dir/test_linked_list.cpp.obj.d"
   "CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj"
   "CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.obj.d"
-  "CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj"
-  "CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj.d"
   "libsequence_tests.dll.a"
   "sequence_tests.exe"
   "sequence_tests.exe.manifest"

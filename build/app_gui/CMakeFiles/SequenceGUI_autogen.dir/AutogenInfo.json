@@ -257,6 +257,18 @@
 			"MU",
 			"6YEA5652QU/moc_MainWindow.cpp",
 			null
+		],
+		[
+			"D:/Lab_2/app_gui/include/SequenceController.hpp",
+			"MU",
+			"6YEA5652QU/moc_SequenceController.cpp",
+			null
+		],
+		[
+			"D:/Lab_2/app_gui/include/SequenceWidget.hpp",
+			"MU",
+			"6YEA5652QU/moc_SequenceWidget.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -334,6 +346,8 @@
 	"SOURCES" : 
 	[
 		[ "D:/Lab_2/app_gui/src/MainWindow.cpp", "MU", null ],
+		[ "D:/Lab_2/app_gui/src/SequenceController.cpp", "MU", null ],
+		[ "D:/Lab_2/app_gui/src/SequenceWidget.cpp", "MU", null ],
 		[ "D:/Lab_2/app_gui/src/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

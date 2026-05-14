@@ -1,174 +1,175 @@
 #include <gtest/gtest.h>
 #include "ArraySequence.hpp"
+#include "ImmutableArraySequence.hpp"
 
+struct Point {
+    int x, y;
+    Point(int x = 0, int y = 0) : x(x), y(y) {}
+    bool operator==(const Point& other) const { return x == other.x && y == other.y; }
+    friend std::ostream& operator<<(std::ostream& os, const Point& p) {
+        os << "(" << p.x << "," << p.y << ")"; return os;
+    }
+};
 
-TEST(ArraySequenceTest, DefaultConstructor) {
-    ArraySequence<int> seq;
-    EXPECT_EQ(seq.GetCount(), 0) << "Default constructor: sequence should be empty, count=0";
-}
-
-TEST(ArraySequenceTest, ConstructorWithArray) {
-    DynamicArray<int> arr(3);
-    arr.Set(0, 10);
-    arr.Set(1, 20);
-    arr.Set(2, 30);
-    
-    ArraySequence<int> seq(arr);
-    EXPECT_EQ(seq.GetCount(), 3) << "Constructor with array: size should be 3";
-    EXPECT_EQ(seq.Get(0), 10) << "Constructor with array: first element should be 10";
-    EXPECT_EQ(seq.Get(1), 20) << "Constructor with array: second element should be 20";
-    EXPECT_EQ(seq.Get(2), 30) << "Constructor with array: third element should be 30";
-}
-
-
-TEST(ArraySequenceTest, AppendIncreasesSize) {
-    ArraySequence<int> seq;
-    
-    seq.Append(10);
-    EXPECT_EQ(seq.GetCount(), 1) << "After first Append(10): count should be 1";
-    EXPECT_EQ(seq.Get(0), 10) << "After Append(10): first element should be 10";
-    
-    seq.Append(20);
-    EXPECT_EQ(seq.GetCount(), 2) << "After second Append(20): count should be 2";
-    EXPECT_EQ(seq.Get(1), 20) << "After Append(20): second element should be 20";
-}
-
-
-TEST(ArraySequenceTest, PrependAddsToBeginning) {
-    ArraySequence<int> seq;
-    seq.Append(20);
-    seq.Append(30);
-    seq.Prepend(10);
-    
-    EXPECT_EQ(seq.GetCount(), 3) << "After Prepend(10) to [20,30]: size should be 3";
-    EXPECT_EQ(seq.Get(0), 10) << "After Prepend(10): first element should be 10";
-    EXPECT_EQ(seq.Get(1), 20) << "After Prepend(10): second element should be 20";
-    EXPECT_EQ(seq.Get(2), 30) << "After Prepend(10): third element should be 30";
-}
-
-
-TEST(ArraySequenceTest, InsertAtBeginning) {
-    ArraySequence<int> seq;
-    seq.Append(20);
-    seq.Append(30);
-    seq.InsertAt(10, 0);
-    
-    EXPECT_EQ(seq.GetCount(), 3) << "InsertAt(10,0) into [20,30]: size should be 3";
-    EXPECT_EQ(seq.Get(0), 10) << "InsertAt(10,0): element at index 0 should be 10";
-    EXPECT_EQ(seq.Get(1), 20) << "InsertAt(10,0): element at index 1 should be 20";
-    EXPECT_EQ(seq.Get(2), 30) << "InsertAt(10,0): element at index 2 should be 30";
-}
-
-TEST(ArraySequenceTest, InsertAtMiddle) {
-    ArraySequence<int> seq;
-    seq.Append(10);
-    seq.Append(30);
-    seq.InsertAt(20, 1);
-    
-    EXPECT_EQ(seq.GetCount(), 3) << "InsertAt(20,1) into [10,30]: size should be 3";
-    EXPECT_EQ(seq.Get(0), 10) << "InsertAt(20,1): element at index 0 should be 10";
-    EXPECT_EQ(seq.Get(1), 20) << "InsertAt(20,1): element at index 1 should be 20";
-    EXPECT_EQ(seq.Get(2), 30) << "InsertAt(20,1): element at index 2 should be 30";
-}
-
-TEST(ArraySequenceTest, InsertAtEnd) {
-    ArraySequence<int> seq;
-    seq.Append(10);
-    seq.Append(20);
-    seq.InsertAt(30, 2);
-    
-    EXPECT_EQ(seq.GetCount(), 3) << "InsertAt(30,2) into [10,20]: size should be 3";
-    EXPECT_EQ(seq.Get(2), 30) << "InsertAt(30,2): element at index 2 should be 30";
-}
-
-TEST(ArraySequenceTest, InsertAtThrowsOnInvalidIndex) {
-    ArraySequence<int> seq;
-    EXPECT_THROW(seq.InsertAt(10, 1), IndexOutOfRangeException) 
-        << "InsertAt(10,1) on empty sequence should throw IndexOutOfRangeException";
-}
-
-
-TEST(ArraySequenceTest, GetFirstReturnsFirstElement) {
-    ArraySequence<int> seq;
-    seq.Append(10);
-    seq.Append(20);
-    seq.Append(30);
-    EXPECT_EQ(seq.GetFirst(), 10) << "GetFirst() on [10,20,30] should return 10";
-}
-
-TEST(ArraySequenceTest, GetFirstThrowsOnEmptySequence) {
-    ArraySequence<int> seq;
-    EXPECT_THROW(seq.GetFirst(), EmptySequenceException) 
-        << "GetFirst() on empty sequence should throw EmptySequenceException";
-}
-
-TEST(ArraySequenceTest, GetLastReturnsLastElement) {
-    ArraySequence<int> seq;
-    seq.Append(10);
-    seq.Append(20);
-    seq.Append(30);
-    EXPECT_EQ(seq.GetLast(), 30) << "GetLast() on [10,20,30] should return 30";
-}
-
-
-TEST(ArraySequenceTest, GetSubsequenceReturnsCorrectSubsequence) {
-    ArraySequence<int> seq;
-    for (int i = 1; i <= 10; ++i) {
-        seq.Append(i);
+class ArraySequenceTest : public ::testing::Test {
+protected:
+    void SetUp() override {
+        empty = new ArraySequence<int>();
+        seq = new ArraySequence<int>{10, 20, 30};
+        large = new ArraySequence<int>{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        concat1 = new ArraySequence<int>{1, 2, 3};
+        concat2 = new ArraySequence<int>{4, 5};
     }
     
-    Sequence<int>* sub = seq.GetSubsequence(2, 5);
-    EXPECT_EQ(sub->GetCount(), 4) << "GetSubsequence(2,5): size should be 4";
-    EXPECT_EQ(sub->Get(0), 3) << "GetSubsequence(2,5): first element should be 3";
-    EXPECT_EQ(sub->Get(1), 4) << "GetSubsequence(2,5): second element should be 4";
-    EXPECT_EQ(sub->Get(2), 5) << "GetSubsequence(2,5): third element should be 5";
-    EXPECT_EQ(sub->Get(3), 6) << "GetSubsequence(2,5): fourth element should be 6";
+    void TearDown() override {
+        delete empty; delete seq; delete large; delete concat1; delete concat2;
+    }
     
+    void expectCount(ArraySequence<int>* s, size_t exp, const std::string& ctx = "") {
+        size_t act = s->GetCount();
+        EXPECT_EQ(act, exp) << ctx << ": expected=" << exp << ", actual=" << act;
+    }
+    
+    void expectSeq(Sequence<int>* s, std::initializer_list<int> exp, const std::string& ctx = "") {
+        EXPECT_EQ(s->GetCount(), exp.size()) << ctx << ": size expected=" << exp.size();
+        size_t i = 0;
+        for (int val : exp) {
+            EXPECT_EQ(s->Get(i), val) << ctx << "[" << i << "]: expected=" << val;
+            i++;
+        }
+    }
+    
+    template<typename Ex, typename F>
+    void expectThrow(F f, const std::string& ctx = "") {
+        EXPECT_THROW(f(), Ex) << ctx;
+    }
+    
+    ArraySequence<int>* empty;
+    ArraySequence<int>* seq;
+    ArraySequence<int>* large;
+    ArraySequence<int>* concat1;
+    ArraySequence<int>* concat2;
+};
+
+TEST_F(ArraySequenceTest, DefaultConstructor) {
+    expectCount(empty, 0, "Default");
+}
+
+TEST_F(ArraySequenceTest, InitializerListConstructor) {
+    ArraySequence<int> s{100, 200, 300, 400};
+    expectSeq(&s, {100, 200, 300, 400}, "InitList");
+}
+
+TEST_F(ArraySequenceTest, Append) {
+    empty->Append(10);
+    expectSeq(empty, {10}, "Append");
+    empty->Append(20);
+    expectSeq(empty, {10, 20}, "Append2");
+}
+
+TEST_F(ArraySequenceTest, Prepend) {
+    seq->Prepend(5);
+    expectSeq(seq, {5, 10, 20, 30}, "Prepend");
+}
+
+TEST_F(ArraySequenceTest, InsertAt) {
+    seq->InsertAt(25, 2);
+    expectSeq(seq, {10, 20, 25, 30}, "InsertAt");
+}
+
+TEST_F(ArraySequenceTest, InsertAtThrows) {
+    expectThrow<IndexOutOfRangeException>([this]() { empty->InsertAt(10, 1); }, "InsertAt invalid");
+}
+
+TEST_F(ArraySequenceTest, GetFirst) {
+    EXPECT_EQ(seq->GetFirst(), 10);
+}
+
+TEST_F(ArraySequenceTest, GetFirstThrows) {
+    expectThrow<EmptySequenceException>([this]() { empty->GetFirst(); }, "GetFirst on empty");
+}
+
+TEST_F(ArraySequenceTest, GetLast) {
+    EXPECT_EQ(seq->GetLast(), 30);
+}
+
+TEST_F(ArraySequenceTest, GetSubsequence) {
+    auto* sub = large->GetSubsequence(2, 5);
+    EXPECT_EQ(sub->GetCount(), 4);
+    EXPECT_EQ(sub->Get(0), 3);
+    EXPECT_EQ(sub->Get(3), 6);
     delete sub;
 }
 
-TEST(ArraySequenceTest, GetSubsequenceThrowsOnInvalidBounds) {
-    ArraySequence<int> seq;
-    seq.Append(1);
-    seq.Append(2);
-    seq.Append(3);
-    
-    EXPECT_THROW(seq.GetSubsequence(2, 1), InvalidArgumentException) 
-        << "GetSubsequence(2,1): start>end should throw InvalidArgumentException";
-    
-    EXPECT_THROW(seq.GetSubsequence(3, 4), IndexOutOfRangeException) 
-        << "GetSubsequence(3,4): end out of range should throw IndexOutOfRangeException";
+TEST_F(ArraySequenceTest, Concat) {
+    auto* res = concat1->Concat(concat2);
+    expectSeq(res, {1, 2, 3, 4, 5}, "Concat");
+    delete res;
 }
 
-
-TEST(ArraySequenceTest, ConcatCombinesTwoSequences) {
-    ArraySequence<int> seq1;
-    seq1.Append(1);
-    seq1.Append(2);
-    seq1.Append(3);
-    
-    ArraySequence<int> seq2;
-    seq2.Append(4);
-    seq2.Append(5);
-    
-    Sequence<int>* result = seq1.Concat(&seq2);
-    EXPECT_EQ(result->GetCount(), 5) << "Concat of [1,2,3] and [4,5]: size should be 5";
-    EXPECT_EQ(result->Get(0), 1) << "Concat: first element should be 1";
-    EXPECT_EQ(result->Get(1), 2) << "Concat: second element should be 2";
-    EXPECT_EQ(result->Get(2), 3) << "Concat: third element should be 3";
-    EXPECT_EQ(result->Get(3), 4) << "Concat: fourth element should be 4";
-    EXPECT_EQ(result->Get(4), 5) << "Concat: fifth element should be 5";
-    
-    delete result;
+TEST_F(ArraySequenceTest, Clear) {
+    seq->Clear();
+    expectCount(seq, 0, "Clear");
 }
 
+TEST_F(ArraySequenceTest, FluentInterface) {
+    ArraySequence<int> s;
+    s.Append(1)->Append(2)->InsertAt(3, 2)->Append(4);
+    expectSeq(&s, {1, 2, 3, 4}, "Fluent");
+}
 
-TEST(ArraySequenceTest, ClearEmptiesSequence) {
-    ArraySequence<int> seq;
-    seq.Append(1);
-    seq.Append(2);
-    seq.Append(3);
-    seq.Clear();
-    
-    EXPECT_EQ(seq.GetCount(), 0) << "After Clear() on [1,2,3]: sequence should be empty";
+TEST(ArraySequenceDiffTest, String) {
+    ArraySequence<std::string> s{"hello", "world"};
+    EXPECT_EQ(s.GetCount(), 2);
+    EXPECT_EQ(s.Get(0), "hello");
+}
+
+TEST(ArraySequenceDiffTest, Double) {
+    ArraySequence<double> s{1.1, 2.2, 3.3};
+    EXPECT_EQ(s.GetCount(), 3);
+    EXPECT_DOUBLE_EQ(s.Get(0), 1.1);
+}
+
+TEST(ArraySequencePointTest, PointWorks) {
+    ArraySequence<Point> s{Point(1,2), Point(3,4), Point(5,6)};
+    EXPECT_EQ(s.GetCount(), 3);
+    EXPECT_EQ(s.Get(0).x, 1);
+    EXPECT_EQ(s.Get(2).y, 6);
+}
+
+TEST(ArraySequencePointTest, PointMap) {
+    ArraySequence<Point> s{Point(1,2), Point(3,4)};
+    auto* r = s.Map([](const Point& p) { return Point(p.x + 10, p.y + 10); });
+    EXPECT_EQ(r->Get(0).x, 11);
+    delete r;
+}
+
+TEST(ArraySequencePointTest, PointWhere) {
+    ArraySequence<Point> s{Point(1,2), Point(5,6), Point(3,4), Point(7,8)};
+    auto* r = s.Where([](const Point& p) { return p.x > 4; });
+    EXPECT_EQ(r->GetCount(), 2);
+    EXPECT_EQ(r->Get(0).x, 5);
+    delete r;
+}
+
+TEST(MapReduceTest, Map) {
+    ArraySequence<int> s{1, 2, 3, 4, 5};
+    auto* r = s.Map([](const int& x) { return x * 3; });
+    EXPECT_EQ(r->Get(0), 2);
+    EXPECT_EQ(r->Get(4), 10);
+    delete r;
+}
+
+TEST(MapReduceTest, Where) {
+    ArraySequence<int> s{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    auto* r = s.Where([](const int& x) { return x % 2 == 0; });
+    EXPECT_EQ(r->GetCount(), 5);
+    EXPECT_EQ(r->Get(0), 2);
+    delete r;
+}
+
+TEST(MapReduceTest, Reduce) {
+    ArraySequence<int> s{1, 2, 3, 4, 5};
+    int r = s.Reduce([](const int& a, const int& b) { return a + b; }, 0);
+    EXPECT_EQ(r, 15);
 }

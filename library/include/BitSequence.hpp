@@ -1,70 +1,67 @@
 #pragma once
 
+#include <initializer_list>
+#include <functional>
 #include "Sequence.hpp"
 #include "Bit.hpp"
-#include "IEnumerator.hpp"
+#include "DynamicArray.hpp"
 #include "exceptions.hpp"
 
 class BitSequence : public Sequence<Bit> {
-private:
-    unsigned char* data;    
-    size_t bitCount;       
-    bool isMutable;         
-    
+protected:
+    DynamicArray<unsigned char> data;
+    size_t bitCount;
+ 
     size_t getByteCount() const;
+    size_t getByteIndex(size_t index) const;
+    size_t getBitOffset(size_t index) const;
     void setBit(size_t index, bool value);
     bool getBit(size_t index) const;
     void resize(size_t newBitCount);
-    void ensureMutable() const;
     
 public:
+    BitSequence(std::initializer_list<Bit> list) : bitCount(list.size()) {
+        if (bitCount == 0) return;
+        
+        size_t byteCount = getByteCount();
+        data.Resize(byteCount);
+        
+        size_t i = 0;
+        for (const Bit& b : list) {
+            setBit(i++, b);
+        }
+    }
 
-    BitSequence(bool mutableFlag = true);
-    BitSequence(size_t size, bool mutableFlag = true);
-    BitSequence(const Bit* bits, size_t count, bool mutableFlag = true);
+    BitSequence();
+    explicit BitSequence(size_t size);
+    BitSequence(const Bit* bits, size_t count);
     BitSequence(const BitSequence& other);
-    ~BitSequence();
-    
     
     BitSequence& operator=(const BitSequence& other);
     
-    
-    bool IsMutable() const override { return isMutable; }
-    
     Bit Get(size_t index) const override;
     size_t GetCount() const override;
-    
-    
     Bit GetFirst() const override;
     Bit GetLast() const override;
     Sequence<Bit>* GetSubsequence(size_t start, size_t end) const override;
     
-    void Append(const Bit& item) override;
-    void Prepend(const Bit& item) override;
-    void InsertAt(const Bit& item, size_t index) override;
-    void Clear() override;
+    virtual BitSequence* Append(const Bit& item);
+    virtual BitSequence* Prepend(const Bit& item);
+    virtual BitSequence* InsertAt(const Bit& item, size_t index);
+    BitSequence* Set(size_t index, Bit value);
+    BitSequence* Clear();
+    
+    virtual BitSequence* And(const BitSequence& other);
+    virtual BitSequence* Or(const BitSequence& other);
+    virtual BitSequence* Xor(const BitSequence& other);
+    virtual BitSequence* Not();
     
     Sequence<Bit>* Concat(Sequence<Bit>* other) const override;
-    
-    
-    Sequence<Bit>* Map(Bit (*func)(const Bit&)) const override;
-    Sequence<Bit>* Where(bool (*predicate)(const Bit&)) const override;
-    Bit Reduce(Bit (*func)(const Bit&, const Bit&), const Bit& initial) const override;
-    
+    Sequence<Bit>* Map(std::function<Bit(const Bit&)> func) const override;
+    Sequence<Bit>* Where(std::function<bool(const Bit&)> predicate) const override;
+    Bit Reduce(std::function<Bit(const Bit&, const Bit&)> func, const Bit& initial) const override;
     
     IEnumerator<Bit>* GetEnumerator() const override;
-    
-
-    BitSequence* And(const BitSequence& other) const;
-    BitSequence* Or(const BitSequence& other) const;
-    BitSequence* Xor(const BitSequence& other) const;
-    BitSequence* Not() const;
-    
-    bool operator==(const BitSequence& other) const;
-    bool operator!=(const BitSequence& other) const;
-    
-    void Set(size_t index, Bit value);
-    
     
     class BitEnumerator : public IEnumerator<Bit> {
     private:
@@ -80,5 +77,3 @@ public:
         void Reset() override;
     };
 };
-
-#include "BitSequence.tpp"

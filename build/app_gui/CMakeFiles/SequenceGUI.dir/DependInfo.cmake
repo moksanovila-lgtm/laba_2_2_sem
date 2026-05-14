@@ -11,6 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "app_gui/SequenceGUI_autogen/timestamp" "custom" "app_gui/SequenceGUI_autogen/deps"
   "D:/Lab_2/build/app_gui/SequenceGUI_autogen/mocs_compilation.cpp" "app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj" "gcc" "app_gui/CMakeFiles/SequenceGUI.dir/SequenceGUI_autogen/mocs_compilation.cpp.obj.d"
   "D:/Lab_2/app_gui/src/MainWindow.cpp" "app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj" "gcc" "app_gui/CMakeFiles/SequenceGUI.dir/src/MainWindow.cpp.obj.d"
+  "D:/Lab_2/app_gui/src/SequenceController.cpp" "app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj" "gcc" "app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceController.cpp.obj.d"
+  "D:/Lab_2/app_gui/src/SequenceWidget.cpp" "app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj" "gcc" "app_gui/CMakeFiles/SequenceGUI.dir/src/SequenceWidget.cpp.obj.d"
   "D:/Lab_2/app_gui/src/main.cpp" "app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj" "gcc" "app_gui/CMakeFiles/SequenceGUI.dir/src/main.cpp.obj.d"
   )
 

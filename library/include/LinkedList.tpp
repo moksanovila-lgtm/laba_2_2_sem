@@ -44,10 +44,15 @@ size_t LinkedList<T>::GetCount() const {
 
 template <typename T>
 T LinkedList<T>::Get(size_t index) const {
-    if (index >= GetCount()) {
+    size_t size = GetCount();
+    
+    if (index >= size) {
         throw IndexOutOfRangeException(
-            "LinkedList::Get(): index out of range");
+            "LinkedList::Get(): index=" + std::to_string(index) + 
+            " >= size=" + std::to_string(size)
+        );
     }
+    
     Node* current = head;
     for (size_t i = 0; i < index; ++i) {
         current = current->next;
@@ -72,7 +77,7 @@ T LinkedList<T>::GetLast() const {
 }
 
 template <typename T>
-void LinkedList<T>::Append(const T& item) {
+LinkedList<T>* LinkedList<T>::Append(const T& item) {
     Node* newNode = new Node(item);
     if (!head) {
         head = tail = newNode;
@@ -80,10 +85,11 @@ void LinkedList<T>::Append(const T& item) {
         tail->next = newNode;
         tail = newNode;
     }
+    return this;
 }
 
 template <typename T>
-void LinkedList<T>::Prepend(const T& item) {
+LinkedList<T>* LinkedList<T>::Prepend(const T& item) {
     Node* newNode = new Node(item);
     if (!head) {
         head = tail = newNode;
@@ -91,41 +97,44 @@ void LinkedList<T>::Prepend(const T& item) {
         newNode->next = head;
         head = newNode;
     }
+    return this;
 }
 
 template <typename T>
-void LinkedList<T>::InsertAt(const T& item, size_t index) {
-    size_t len = GetCount();
-    if (index > len) {
+LinkedList<T>* LinkedList<T>::InsertAt(const T& item, size_t index) {
+    size_t size = GetCount();
+    
+    if (index > size) {
         throw IndexOutOfRangeException(
-            "LinkedList::InsertAt(): index > size");
+            "LinkedList::InsertAt(): index=" + std::to_string(index) + 
+            " > size=" + std::to_string(size)
+        );
     }
-    
     if (index == 0) {
-        Prepend(item);
-        return;
-    }
-    
-    if (index == len) {
-        Append(item);
-        return;
+        return Prepend(item);
     }
     
     Node* prev = head;
     for (size_t i = 0; i < index - 1; ++i) {
         prev = prev->next;
     }
+    
     Node* newNode = new Node(item);
     newNode->next = prev->next;
     prev->next = newNode;
+    if (!newNode->next) {
+        tail = newNode;
+    }
+    return this;
 }
 
 template <typename T>
-void LinkedList<T>::RemoveAt(size_t index) {
-    size_t len = GetCount();
-    if (index >= len) {
+LinkedList<T>* LinkedList<T>::RemoveAt(size_t index) {
+    if (!head) {
         throw IndexOutOfRangeException(
-            "LinkedList::RemoveAt(): index >= size");
+            "LinkedList::RemoveAt(): list is empty, cannot remove element at index " + 
+            std::to_string(index)
+        );
     }
     
     if (index == 0) {
@@ -135,27 +144,89 @@ void LinkedList<T>::RemoveAt(size_t index) {
             tail = nullptr;
         }
         delete toDelete;
-        return;
+        return this;
     }
     
     Node* prev = head;
     for (size_t i = 0; i < index - 1; ++i) {
+        if (!prev->next) {
+            throw IndexOutOfRangeException(
+                "LinkedList::RemoveAt(): index=" + std::to_string(index) + 
+                " out of range"
+            );
+        }
         prev = prev->next;
     }
+    
     Node* toDelete = prev->next;
+    if (!toDelete) {
+        throw IndexOutOfRangeException(
+            "LinkedList::RemoveAt(): index=" + std::to_string(index) + 
+            " out of range"
+        );
+    }
+    
     prev->next = toDelete->next;
     if (!prev->next) {
         tail = prev;
     }
     delete toDelete;
+    return this;
 }
 
 template <typename T>
-void LinkedList<T>::Clear() {
+LinkedList<T>* LinkedList<T>::Clear() {
     while (head) {
         Node* toDelete = head;
         head = head->next;
         delete toDelete;
     }
     tail = nullptr;
+    return this;
+}
+
+template <typename T>
+LinkedList<T>* LinkedList<T>::GetSubList(size_t startIndex, size_t endIndex) const {
+    if (startIndex > endIndex) {
+        throw IndexOutOfRangeException(
+            "LinkedList::GetSubList(): startIndex=" + std::to_string(startIndex) + 
+            " > endIndex=" + std::to_string(endIndex)
+        );
+    }
+    
+    Node* start = head;
+    for (size_t i = 0; i < startIndex; ++i) {
+        if (!start) {
+            throw IndexOutOfRangeException(
+                "LinkedList::GetSubList(): startIndex=" + std::to_string(startIndex) + 
+                " out of range"
+            );
+        }
+        start = start->next;
+    }
+    
+    Node* end = start;
+    for (size_t i = startIndex; i < endIndex; ++i) {
+        if (!end) {
+            throw IndexOutOfRangeException(
+                "LinkedList::GetSubList(): endIndex=" + std::to_string(endIndex) + 
+                " out of range"
+            );
+        }
+        end = end->next;
+    }
+    if (!end) {
+        throw IndexOutOfRangeException(
+            "LinkedList::GetSubList(): endIndex=" + std::to_string(endIndex) + 
+            " out of range"
+        );
+    }
+    
+    LinkedList<T>* result = new LinkedList<T>();
+    Node* current = start;
+    while (current != end->next) {
+        result->Append(current->data);
+        current = current->next;
+    }
+    return result;
 }

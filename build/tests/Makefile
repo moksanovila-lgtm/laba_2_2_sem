@@ -352,30 +352,6 @@ test_list_sequence.cpp.s:
 	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_list_sequence.cpp.s
 .PHONY : test_list_sequence.cpp.s
 
-test_map_reduce.obj: test_map_reduce.cpp.obj
-.PHONY : test_map_reduce.obj
-
-# target to build an object file
-test_map_reduce.cpp.obj:
-	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.obj
-.PHONY : test_map_reduce.cpp.obj
-
-test_map_reduce.i: test_map_reduce.cpp.i
-.PHONY : test_map_reduce.i
-
-# target to preprocess a source file
-test_map_reduce.cpp.i:
-	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.i
-.PHONY : test_map_reduce.cpp.i
-
-test_map_reduce.s: test_map_reduce.cpp.s
-.PHONY : test_map_reduce.s
-
-# target to generate assembly for a file
-test_map_reduce.cpp.s:
-	cd /d D:\Lab_2\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\sequence_tests.dir\build.make tests/CMakeFiles/sequence_tests.dir/test_map_reduce.cpp.s
-.PHONY : test_map_reduce.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -411,9 +387,6 @@ help:
 	@echo ... test_list_sequence.obj
 	@echo ... test_list_sequence.i
 	@echo ... test_list_sequence.s
-	@echo ... test_map_reduce.obj
-	@echo ... test_map_reduce.i
-	@echo ... test_map_reduce.s
 .PHONY : help
 
 

@@ -1,0 +1,2 @@
+C:\w64devkit\bin\ar.exe qc libSequenceLibrary.a CMakeFiles/SequenceLibrary.dir/src/BitSequence.cpp.obj CMakeFiles/SequenceLibrary.dir/src/ImmutableBitSequence.cpp.obj
+C:\w64devkit\bin\ranlib.exe libSequenceLibrary.a

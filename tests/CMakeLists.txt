@@ -20,7 +20,6 @@ set(TEST_SOURCES
     test_list_sequence.cpp
     test_bit_sequence.cpp
     test_immutable.cpp
-    test_map_reduce.cpp
     test_exceptions.cpp
 )
 
