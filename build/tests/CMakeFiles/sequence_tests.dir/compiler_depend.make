@@ -1297,12 +1297,15 @@ tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: D:/Lab_2/tests/test_
   _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
   D:/Lab_2/library/include/ArraySequence.hpp \
   D:/Lab_2/library/include/ArraySequence.tpp \
+  D:/Lab_2/library/include/Bit.hpp \
+  D:/Lab_2/library/include/BitSequence.hpp \
   D:/Lab_2/library/include/DynamicArray.hpp \
   D:/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_2/library/include/ICollection.hpp \
   D:/Lab_2/library/include/IEnumerator.hpp \
   D:/Lab_2/library/include/ImmutableArraySequence.hpp \
   D:/Lab_2/library/include/ImmutableArraySequence.tpp \
+  D:/Lab_2/library/include/ImmutableBitSequence.hpp \
   D:/Lab_2/library/include/ImmutableListSequence.hpp \
   D:/Lab_2/library/include/ImmutableListSequence.tpp \
   D:/Lab_2/library/include/LinkedList.hpp \

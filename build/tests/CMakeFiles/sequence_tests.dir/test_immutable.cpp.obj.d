@@ -248,4 +248,7 @@ tests/CMakeFiles/sequence_tests.dir/test_immutable.cpp.obj: \
  D:/Lab_2/library/include/LinkedList.hpp \
  D:/Lab_2/library/include/LinkedList.tpp \
  D:/Lab_2/library/include/ListSequence.tpp \
- D:/Lab_2/library/include/ImmutableListSequence.tpp
+ D:/Lab_2/library/include/ImmutableListSequence.tpp \
+ D:/Lab_2/library/include/ImmutableBitSequence.hpp \
+ D:/Lab_2/library/include/BitSequence.hpp \
+ D:/Lab_2/library/include/Bit.hpp
