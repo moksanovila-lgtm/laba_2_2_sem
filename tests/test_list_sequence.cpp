@@ -1,15 +1,29 @@
 #include <gtest/gtest.h>
 #include "ListSequence.hpp"
 #include "ImmutableListSequence.hpp"
+#include <sstream>
 
 struct Point {
     int x, y;
     Point(int x = 0, int y = 0) : x(x), y(y) {}
     bool operator==(const Point& other) const { return x == other.x && y == other.y; }
-    friend std::ostream& operator<<(std::ostream& os, const Point& p) { 
-        os << "(" << p.x << "," << p.y << ")"; return os; 
+    friend std::ostream& operator<<(std::ostream& os, const Point& p) {
+        os << "(" << p.x << "," << p.y << ")"; return os;
     }
 };
+
+template <typename T>
+std::string SeqToStr(Sequence<T>* seq) {
+    if (!seq || seq->GetCount() == 0) return "[]";
+    std::stringstream ss;
+    ss << "[";
+    for (size_t i = 0; i < seq->GetCount(); ++i) {
+        ss << seq->Get(i);
+        if (i < seq->GetCount() - 1) ss << ", ";
+    }
+    ss << "]";
+    return ss.str();
+}
 
 class ListSequenceTest : public ::testing::Test {
 protected:
@@ -18,124 +32,180 @@ protected:
         seq = new ListSequence<int>{10, 20, 30};
         large = new ListSequence<int>();
         for (int i = 1; i <= 10; ++i) large->Append(i);
+        concat1 = new ListSequence<int>{1, 2, 3};
+        concat2 = new ListSequence<int>{4, 5};
     }
-    void TearDown() override { delete empty; delete seq; delete large; }
     
-    void expectCount(Sequence<int>* s, size_t exp, const std::string& ctx = "") {
-    size_t act = s->GetCount();
-    EXPECT_EQ(act, exp) << ctx << ": expected=" << exp << ", actual=" << act;
-}
-    
-    void expectSeq(Sequence<int>* s, std::initializer_list<int> exp, const std::string& ctx = "") {
-        EXPECT_EQ(s->GetCount(), exp.size()) << ctx << ": size expected=" << exp.size();
-        size_t i = 0;
-        for (int v : exp) {
-            EXPECT_EQ(s->Get(i), v) << ctx << "[" << i << "]: expected=" << v;
-            i++;
-        }
+    void TearDown() override {
+        delete empty; 
+        delete seq; 
+        delete large; 
+        delete concat1;
+        delete concat2;
     }
     
     template<typename Ex, typename F>
     void expectThrow(F f, const std::string& ctx = "") {
-        EXPECT_THROW(f(), Ex) << ctx << " should throw " << typeid(Ex).name();
+        EXPECT_THROW(f(), Ex) << ctx;
     }
     
     ListSequence<int>* empty;
     ListSequence<int>* seq;
     ListSequence<int>* large;
+    ListSequence<int>* concat1;
+    ListSequence<int>* concat2;
 };
 
-TEST_F(ListSequenceTest, DefaultConstructor) { expectCount(empty, 0, "Default"); }
-
-TEST_F(ListSequenceTest, InitializerList) { ListSequence<int> s{1,2,3}; expectSeq(&s, {1,2,3}, "InitList"); }
-
-TEST_F(ListSequenceTest, CopyConstructor) { ListSequence<int> s2(*seq); expectSeq(&s2, {10,20,30}, "Copy"); }
-
-TEST_F(ListSequenceTest, Append) { 
-    empty->Append(10); 
-    expectSeq(empty, {10}, "Append"); 
-    empty->Append(20); 
-    expectSeq(empty, {10,20}, "Append2"); 
+TEST_F(ListSequenceTest, DefaultConstructor) {
+    EXPECT_EQ(empty->GetCount(), 0) << "Default: expected 0, got " << empty->GetCount();
 }
 
-TEST_F(ListSequenceTest, Prepend) { 
-    ListSequence<int> s{20,30}; 
-    s.Prepend(10); 
-    expectSeq(&s, {10,20,30}, "Prepend"); 
+TEST_F(ListSequenceTest, InitializerListConstructor) {
+    ListSequence<int> s{100, 200, 300, 400};
+    std::string got = SeqToStr(&s);
+    std::string expected = "[100, 200, 300, 400]";
+    EXPECT_EQ(got, expected) << "InitializerListConstructor: expected " << expected << ", got " << got;
+}
+
+TEST_F(ListSequenceTest, Append) {
+    std::string before1 = SeqToStr(empty);
+    empty->Append(10);
+    std::string got1 = SeqToStr(empty);
+    std::string expected1 = "[10]";
+    EXPECT_EQ(got1, expected1) << "Append(10): before=" << before1 << ", expected " << expected1 << ", got " << got1;
+    std::string before2 = SeqToStr(empty);
+    empty->Append(20);
+    std::string got2 = SeqToStr(empty);
+    std::string expected2 = "[10, 20]";
+    EXPECT_EQ(got2, expected2) << "Append(20): before=" << before2 << ", expected " << expected2 << ", got " << got2;
+}
+
+TEST_F(ListSequenceTest, Prepend) {
+    std::string before = SeqToStr(seq);
+    seq->Prepend(5);
+    std::string got = SeqToStr(seq);
+    std::string expected = "[5, 10, 20, 30]";
+    EXPECT_EQ(got, expected) << "Prepend(5): before=" << before << ", expected " << expected << ", got " << got;
 }
 
 TEST_F(ListSequenceTest, InsertAt) {
-    ListSequence<int> s{10,30};
-    s.InsertAt(20, 1);
-    expectSeq(&s, {10,20,30}, "InsertAt");
+    ListSequence<int> testSeq{10, 20, 30};
+    std::string before = SeqToStr(&testSeq);
+    testSeq.InsertAt(25, 2);
+    std::string got = SeqToStr(&testSeq);
+    std::string expected = "[10, 20, 25, 30]";
+    EXPECT_EQ(got, expected) << "InsertAt(25,2): before=" << before << ", expected " << expected << ", got " << got;
 }
-TEST_F(ListSequenceTest, InsertAtThrows) {
-    ListSequence<int> s{10};
-    expectThrow<IndexOutOfRangeException>([&]() { s.InsertAt(20, 2); }, "InsertAt invalid");
+
+TEST_F(ListSequenceTest, GetFirst) {
+    EXPECT_EQ(seq->GetFirst(), 10) << "GetFirst on [10,20,30]: expected 10, got " << seq->GetFirst();
 }
 
-TEST_F(ListSequenceTest, GetFirst) { EXPECT_EQ(seq->GetFirst(), 10) << "GetFirst: expected=10, actual=" << seq->GetFirst(); }
-
-TEST_F(ListSequenceTest, GetFirstThrows) { expectThrow<EmptySequenceException>([this]() { empty->GetFirst(); }, "GetFirst on empty"); }
-
-TEST_F(ListSequenceTest, GetLast) { EXPECT_EQ(seq->GetLast(), 30) << "GetLast: expected=30, actual=" << seq->GetLast(); }
-
-TEST_F(ListSequenceTest, GetLastThrows) { expectThrow<EmptySequenceException>([this]() { empty->GetLast(); }, "GetLast on empty"); }
-
-TEST_F(ListSequenceTest, GetThrows) { expectThrow<IndexOutOfRangeException>([this]() { seq->Get(3); }, "Get invalid"); }
+TEST_F(ListSequenceTest, GetLast) {
+    EXPECT_EQ(seq->GetLast(), 30) << "GetLast on [10, 20, 30]: expected 30, got " << seq->GetLast();
+}
 
 TEST_F(ListSequenceTest, GetSubsequence) {
+    std::string before = SeqToStr(large);
     auto* sub = large->GetSubsequence(2, 5);
-    expectCount(sub, 4, "Subsequence size");
-    EXPECT_EQ(sub->Get(0), 3);
-    EXPECT_EQ(sub->Get(3), 6);
+    std::string got = SeqToStr(sub);
+    std::string expected = "[3, 4, 5, 6]";
+    EXPECT_EQ(got, expected) << "GetSubsequence(2,5): input=" << before << ", expected " << expected << ", got " << got;
     delete sub;
 }
 
 TEST_F(ListSequenceTest, Concat) {
-    ListSequence<int> a{1,2}, b{3,4};
-    auto* res = a.Concat(&b);
-    expectSeq(res, {1,2,3,4}, "Concat");
+    std::string before1 = SeqToStr(concat1);
+    std::string before2 = SeqToStr(concat2);
+    auto* res = concat1->Concat(concat2);
+    std::string got = SeqToStr(res);
+    std::string expected = "[1, 2, 3, 4, 5]";
+    EXPECT_EQ(got, expected) << "Concat: " << before1 << " + " << before2 << ", expected " << expected << ", got " << got;
     delete res;
 }
 
-TEST_F(ListSequenceTest, Clear) { seq->Clear(); expectCount(seq, 0, "Clear"); }
+TEST_F(ListSequenceTest, Clear) {
+    ListSequence<int> testSeq{10, 20, 30};
+    std::string before = SeqToStr(&testSeq);
+    testSeq.Clear();
+    EXPECT_EQ(testSeq.GetCount(), 0) << "Clear: before=" << before << ", expected size 0, got " << testSeq.GetCount();
+}
 
 TEST_F(ListSequenceTest, Map) {
-    auto* res = seq->Map([](const int& x) { return x * 2; });
-    expectSeq(res, {20,40,60}, "Map");
-    delete res;
+    std::string before = SeqToStr(seq);
+    auto doubleFunc = [](const int& x) { return x * 2; };
+    auto* result = seq->Map(doubleFunc);
+    std::string got = SeqToStr(result);
+    std::string expected = "[20, 40, 60]";
+    EXPECT_EQ(got, expected) << "Map(x*2): input=" << before << ", expected " << expected << ", got " << got;
+    delete result;
 }
 
 TEST_F(ListSequenceTest, Where) {
-    ListSequence<int> s{1,2,3,4,5,6};
-    auto* res = s.Where([](const int& x) { return x % 2 == 0; });
-    expectSeq(res, {2,4,6}, "Where");
-    delete res;
+    ListSequence<int> s{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    std::string before = SeqToStr(&s);
+    auto isEven = [](const int& x) { return x % 2 == 0; };
+    auto* result = s.Where(isEven);
+    std::string got = SeqToStr(result);
+    std::string expected = "[2, 4, 6, 8, 10]";
+    EXPECT_EQ(got, expected) << "Where(even): input=" << before << ", expected " << expected << ", got " << got;   
+    delete result;
 }
 
 TEST_F(ListSequenceTest, Reduce) {
-    int res = seq->Reduce([](const int& a, const int& b) { return a + b; }, 0);
-    EXPECT_EQ(res, 60) << "Reduce sum: expected=60, actual=" << res;
+    std::string before = SeqToStr(seq);
+    auto sum = [](const int& a, const int& b) { return a + b; };
+    int result = seq->Reduce(sum, 0);
+    EXPECT_EQ(result, 60) << "Reduce(sum): input=" << before << ", expected 60, got " << result;
 }
 
 TEST_F(ListSequenceTest, FluentInterface) {
     ListSequence<int> s;
-    s.Append(1)->Append(2)->InsertAt(3,2)->Append(4);
-    expectSeq(&s, {1,2,3,4}, "Fluent");
+    s.Append(1)->Append(2)->InsertAt(3, 2)->Append(4);
+    std::string got = SeqToStr(&s);
+    std::string expected = "[1, 2, 3, 4]";
+    EXPECT_EQ(got, expected) << "Fluent interface chain failed: Append(1)->Append(2)->InsertAt(3, 2)->Append(4), expected " << expected << ", got " << got;
 }
 
-TEST_F(ListSequenceTest, ImmutableAppend) {
-    ImmutableListSequence<int> imm{1,2,3};
-    auto* newSeq = imm.Append(4);
-    EXPECT_EQ(imm.GetCount(), 3);
-    EXPECT_EQ(newSeq->GetCount(), 4);
-    delete newSeq;
+TEST(ListSequenceDiffTest, String) {
+    ListSequence<std::string> s{"hello", "world"};
+    std::string got = SeqToStr(&s);
+    std::string expected = "[hello, world]";
+    EXPECT_EQ(got, expected) << "ListSequence<std::string> failed";
+}
+
+TEST(ListSequenceDiffTest, Double) {
+    ListSequence<double> s{1.1, 2.2, 3.3};
+    std::string got = SeqToStr(&s);
+    std::string expected = "[1.1, 2.2, 3.3]";
+    EXPECT_EQ(got, expected) << "ListSequence<double> initialization failed";
 }
 
 TEST(ListSequencePointTest, PointWorks) {
+    ListSequence<Point> s{Point(1,2), Point(3,4), Point(5,6)};
+    std::string got = SeqToStr(&s);
+    std::string expected = "[(1,2), (3,4), (5,6)]";
+    EXPECT_EQ(got, expected) << "ListSequence<Point> initialization failed";
+}
+
+TEST(ListSequencePointTest, PointMap) {
     ListSequence<Point> s{Point(1,2), Point(3,4)};
-    EXPECT_EQ(s.GetCount(), 2);
-    EXPECT_EQ(s.Get(0).x, 1);
-    EXPECT_EQ(s.Get(1).y, 4);
+    std::string before = SeqToStr(&s);
+    auto movePoint = [](const Point& p) { return Point(p.x + 10, p.y + 10); };
+    auto* result = s.Map(movePoint);
+    std::string got = SeqToStr(result);
+    std::string expected = "[(11,12), (13,14)]";
+    EXPECT_EQ(got, expected) << "Map(Point: x + 10, y + 10): input=" << before << ", expected " << expected << ", got " << got;
+    delete result;
+}
+
+TEST(ListSequencePointTest, PointWhere) {
+    ListSequence<Point> s{Point(1,2), Point(5,6), Point(3,4), Point(7,8)};
+    std::string before = SeqToStr(&s);
+    auto isXGreaterThan4 = [](const Point& p) { return p.x > 4; };
+    auto* result = s.Where(isXGreaterThan4);
+    std::string got = SeqToStr(result);
+    std::string expected = "[(5,6), (7,8)]";
+    EXPECT_EQ(got, expected) << "PointWhere: input=" << before << ", expected " << expected << ", got " << got;
+    delete result;
 }

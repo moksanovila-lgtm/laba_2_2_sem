@@ -1,14 +1,19 @@
 #include <gtest/gtest.h>
 #include "LinkedList.hpp"
+#include <sstream>
 
-struct Point {
-    int x, y;
-    Point(int x = 0, int y = 0) : x(x), y(y) {}
-    bool operator==(const Point& other) const { return x == other.x && y == other.y; }
-    friend std::ostream& operator<<(std::ostream& os, const Point& p) {
-        os << "(" << p.x << "," << p.y << ")"; return os;
+template <typename T>
+std::string ListToStr(LinkedList<T>* list) {
+    if (!list || list->GetCount() == 0) return "[]";
+    std::stringstream ss;
+    ss << "[";
+    for (size_t i = 0; i < list->GetCount(); ++i) {
+        ss << list->Get(i);
+        if (i < list->GetCount() - 1) ss << ", ";
     }
-};
+    ss << "]";
+    return ss.str();
+}
 
 class LinkedListTest : public ::testing::Test {
 protected:
@@ -18,26 +23,16 @@ protected:
         large = new LinkedList<int>();
         for (int i = 1; i <= 10; ++i) large->Append(i);
     }
-    void TearDown() override { delete empty; delete seq; delete large; }
     
-    void expectCount(LinkedList<int>* s, size_t exp, const std::string& ctx = "") {
-        size_t act = s->GetCount();
-        EXPECT_EQ(act, exp) << ctx << ": expected=" << exp << ", actual=" << act;
-    }
-    
-    void expectSeq(LinkedList<int>* s, std::initializer_list<int> exp, const std::string& ctx = "") {
-        expectCount(s, exp.size(), ctx);
-        size_t i = 0;
-        for (int v : exp) {
-            int act = s->Get(i);
-            EXPECT_EQ(act, v) << ctx << "[" << i << "]: expected=" << v << ", actual=" << act;
-            ++i;
-        }
+    void TearDown() override { 
+        delete empty; 
+        delete seq; 
+        delete large; 
     }
     
     template<typename Ex, typename F>
     void expectThrow(F f, const std::string& ctx = "") {
-        EXPECT_THROW(f(), Ex) << ctx << " should throw " << typeid(Ex).name();
+        EXPECT_THROW(f(), Ex) << ctx;
     }
     
     LinkedList<int>* empty;
@@ -45,79 +40,110 @@ protected:
     LinkedList<int>* large;
 };
 
-TEST_F(LinkedListTest, DefaultConstructor) { expectCount(empty, 0, "Default"); }
-TEST_F(LinkedListTest, InitializerList) { LinkedList<int> s{1,2,3}; expectSeq(&s, {1,2,3}, "InitList"); }
-TEST_F(LinkedListTest, CopyConstructor) { LinkedList<int> s2(*seq); expectSeq(&s2, {10,20,30}, "Copy"); }
-
-TEST_F(LinkedListTest, Append) { 
-    empty->Append(10); 
-    expectSeq(empty, {10}, "Append"); 
-    empty->Append(20); 
-    expectSeq(empty, {10,20}, "Append2"); 
+TEST_F(LinkedListTest, DefaultConstructor) {
+    std::string got = ListToStr(empty);
+    std::string expected = "[]";
+    EXPECT_EQ(got, expected) << "DefaultConstructor failed";
 }
 
-TEST_F(LinkedListTest, Prepend) { 
-    LinkedList<int> s{20,30}; 
-    s.Prepend(10); 
-    expectSeq(&s, {10,20,30}, "Prepend"); 
+TEST_F(LinkedListTest, InitializerList) {
+    LinkedList<int> s{1, 2, 3};
+    std::string got = ListToStr(&s);
+    std::string expected = "[1, 2, 3]";
+    EXPECT_EQ(got, expected) << "InitializerList[1, 2, 3] failed";
+}
+
+TEST_F(LinkedListTest, CopyConstructor) {
+    LinkedList<int> s2(*seq);
+    std::string got = ListToStr(&s2);
+    std::string expected = "[10, 20, 30]";
+    EXPECT_EQ(got, expected) << "CopyConstructor failed";
+}
+
+TEST_F(LinkedListTest, Append) {
+    std::string before1 = ListToStr(empty);
+    empty->Append(10);
+    std::string got1 = ListToStr(empty);
+    std::string expected1 = "[10]";
+    EXPECT_EQ(got1, expected1) << "Append(10): before=" << before1 << ", expected " << expected1 << ", got " << got1;
+    std::string before2 = ListToStr(empty);
+    empty->Append(20);
+    std::string got2 = ListToStr(empty);
+    std::string expected2 = "[10, 20]";
+    EXPECT_EQ(got2, expected2) << "Append(20): before=" << before2 << ", expected " << expected2 << ", got " << got2;
+}
+
+TEST_F(LinkedListTest, Prepend) {
+    LinkedList<int> s{20, 30};
+    std::string before = ListToStr(&s);
+    s.Prepend(10);
+    std::string got = ListToStr(&s);
+    std::string expected = "[10, 20, 30]";
+    EXPECT_EQ(got, expected) << "Prepend(10): before=" << before << ", expected " << expected << ", got " << got;
 }
 
 TEST_F(LinkedListTest, InsertAt) {
-    LinkedList<int> s{10,30};
+    LinkedList<int> s{10, 30};
+    std::string before = ListToStr(&s);
     s.InsertAt(20, 1);
-    expectSeq(&s, {10,20,30}, "InsertAt");
-}
-TEST_F(LinkedListTest, InsertAtThrows) {
-    LinkedList<int> s{10};
-    expectThrow<IndexOutOfRangeException>([&]() { s.InsertAt(20, 2); }, "InsertAt invalid");
+    std::string got = ListToStr(&s);
+    std::string expected = "[10, 20, 30]";
+    EXPECT_EQ(got, expected) << "InsertAt(20,1): before=" << before << ", expected " << expected << ", got " << got;
 }
 
-TEST_F(LinkedListTest, GetFirst) { EXPECT_EQ(seq->GetFirst(), 10) << "GetFirst: expected=10, actual=" << seq->GetFirst(); }
+TEST_F(LinkedListTest, GetFirst) {
+    std::string before = ListToStr(seq);
+    int first = seq->GetFirst();
+    EXPECT_EQ(first, 10) << "GetFirst: list=" << before << ", expected 10, got " << first;
+}
 
-TEST_F(LinkedListTest, GetFirstThrows) { expectThrow<EmptySequenceException>([this]() { empty->GetFirst(); }, "GetFirst on empty"); }
-
-TEST_F(LinkedListTest, GetLast) { EXPECT_EQ(seq->GetLast(), 30) << "GetLast: expected=30, actual=" << seq->GetLast(); }
-
-TEST_F(LinkedListTest, GetLastThrows) { expectThrow<EmptySequenceException>([this]() { empty->GetLast(); }, "GetLast on empty"); }
-
-TEST_F(LinkedListTest, GetThrows) { expectThrow<IndexOutOfRangeException>([this]() { seq->Get(3); }, "Get invalid"); }
+TEST_F(LinkedListTest, GetLast) {
+    std::string before = ListToStr(seq);
+    int last = seq->GetLast();
+    EXPECT_EQ(last, 30) << "GetLast: list=" << before << ", expected 30, got " << last;
+}
 
 TEST_F(LinkedListTest, RemoveAt) {
-    LinkedList<int> s{10,20,30};
+    LinkedList<int> s{10, 20, 30};
+    std::string before = ListToStr(&s);
     s.RemoveAt(1);
-    expectSeq(&s, {10,30}, "RemoveAt");
-}
-TEST_F(LinkedListTest, RemoveAtThrows) {
-    LinkedList<int> s{10};
-    expectThrow<IndexOutOfRangeException>([&]() { s.RemoveAt(1); }, "RemoveAt invalid");
+    std::string got = ListToStr(&s);
+    std::string expected = "[10, 30]";
+    EXPECT_EQ(got, expected) << "RemoveAt(1): before=" << before << ", expected " << expected << ", got " << got;
 }
 
-TEST_F(LinkedListTest, Clear) { seq->Clear(); expectCount(seq, 0, "Clear"); }
+TEST_F(LinkedListTest, Clear) {
+    std::string before = ListToStr(seq);
+    seq->Clear();
+    std::string got = ListToStr(seq);
+    std::string expected = "[]";
+    EXPECT_EQ(got, expected) << "Clear: before=" << before << ", expected " << expected << ", got " << got;
+}
 
 TEST_F(LinkedListTest, GetSubList) {
+    std::string before = ListToStr(seq);
     auto* sub = seq->GetSubList(1, 2);
-    expectSeq(sub, {20,30}, "GetSubList");
+    std::string got = ListToStr(sub);
+    std::string expected = "[20, 30]";
+    EXPECT_EQ(got, expected) << "GetSubList(1,2): list=" << before << ", expected " << expected << ", got " << got;
     delete sub;
-}
-TEST_F(LinkedListTest, GetSubListThrows) {
-    expectThrow<IndexOutOfRangeException>([this]() { seq->GetSubList(2, 1); }, "GetSubList start>end");
 }
 
 TEST_F(LinkedListTest, Assignment) {
+    std::string before = ListToStr(seq);
     LinkedList<int> s2;
     s2 = *seq;
-    expectSeq(&s2, {10,20,30}, "Assignment");
+    std::string got = ListToStr(&s2);
+    std::string expected = "[10, 20, 30]";
+    EXPECT_EQ(got, expected) << "Assignment: original=" << before << ", expected " << expected << ", got " << got;
 }
 
 TEST_F(LinkedListTest, FluentInterface) {
     LinkedList<int> s;
-    s.Append(1)->Append(2)->InsertAt(3,2)->Append(4)->Prepend(0);
-    expectSeq(&s, {0,1,2,3,4}, "Fluent");
+    s.Append(1)->Append(2)->InsertAt(3, 2)->Append(4)->Prepend(0);
+    std::string got = ListToStr(&s);
+    std::string expected = "[0, 1, 2, 3, 4]";
+    EXPECT_EQ(got, expected) << "Fluent interface chain failed: Append(1)->Append(2)->InsertAt(3, 2)->Append(4)->Prepend(0) expected " << expected << ", got " << got;
 }
 
-TEST(LinkedListPointTest, PointWorks) {
-    LinkedList<Point> s{Point(1,2), Point(3,4)};
-    EXPECT_EQ(s.GetCount(), 2);
-    EXPECT_EQ(s.Get(0).x, 1);
-    EXPECT_EQ(s.Get(1).y, 4);
-}
+

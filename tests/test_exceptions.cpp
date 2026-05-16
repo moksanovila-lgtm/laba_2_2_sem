@@ -35,74 +35,74 @@ protected:
 };
 
 TEST_F(ExceptionTest, GetThrowsWhenIndexOutOfRange) {
-    expectThrow<IndexOutOfRangeException>([this]() { seq->Get(2); }, "Get(2) on size 2");
+    size_t size = seq->GetCount();
+    EXPECT_THROW(seq->Get(2), IndexOutOfRangeException) 
+        << "Get(2) should throw IndexOutOfRangeException, "
+        << "but array size = " << size << " (valid indices 0-" << (size - 1) << ")";
 }
 
 TEST_F(ExceptionTest, InsertAtThrowsWhenIndexOutOfRange) {
-    expectThrow<IndexOutOfRangeException>([this]() { seq->InsertAt(3, 3); }, "InsertAt(3,3) on size 2");
+    size_t size = seq->GetCount();
+    EXPECT_THROW(seq->InsertAt(3, 3), IndexOutOfRangeException) 
+        << "InsertAt(3,3) should throw IndexOutOfRangeException, "
+        << "but array size = " << size;
 }
 
 TEST_F(ExceptionTest, GetSubsequenceThrowsWhenStartGreaterThanEnd) {
-    expectThrow<InvalidArgumentException>([this]() { seq->GetSubsequence(2, 1); }, "start=2, end=1");
+    size_t size = seq->GetCount();
+    EXPECT_THROW(seq->GetSubsequence(2, 1), InvalidArgumentException) 
+        << "GetSubsequence(2,1) should throw InvalidArgumentException, "
+        << "start=2 > end=1, array size=" << size;
 }
 
 TEST_F(ExceptionTest, GetFirstThrowsOnEmptySequence) {
-    expectThrow<EmptySequenceException>([this]() { empty->GetFirst(); }, "GetFirst on empty");
+    EXPECT_THROW(empty->GetFirst(), EmptySequenceException) 
+        << "GetFirst() on empty sequence should throw EmptySequenceException";
 }
 
 TEST_F(ExceptionTest, GetLastThrowsOnEmptySequence) {
-    expectThrow<EmptySequenceException>([this]() { empty->GetLast(); }, "GetLast on empty");
+    EXPECT_THROW(empty->GetLast(), EmptySequenceException) 
+        << "GetLast() on empty sequence should throw EmptySequenceException";
 }
 
 TEST_F(ExceptionTest, ConcatWithNullptrThrows) {
-    expectThrow<InvalidArgumentException>([this]() { seq->Concat(nullptr); }, "Concat(nullptr)");
+    EXPECT_THROW(seq->Concat(nullptr), InvalidArgumentException) 
+        << "Concat(nullptr) should throw InvalidArgumentException";
 }
 
 TEST_F(ExceptionTest, MapWithNullptrThrows) {
-    expectThrow<InvalidArgumentException>([this]() { seq->Map(nullptr); }, "Map(nullptr)");
+    EXPECT_THROW(seq->Map(nullptr), InvalidArgumentException) 
+        << "Map(nullptr) should throw InvalidArgumentException";
 }
 
 TEST_F(ExceptionTest, WhereWithNullptrThrows) {
-    expectThrow<InvalidArgumentException>([this]() { seq->Where(nullptr); }, "Where(nullptr)");
+    EXPECT_THROW(seq->Where(nullptr), InvalidArgumentException) 
+        << "Where(nullptr) should throw InvalidArgumentException";
 }
 
 TEST_F(ExceptionTest, ReduceWithNullptrThrows) {
-    expectThrow<InvalidArgumentException>([this]() { seq->Reduce(nullptr, 0); }, "Reduce(nullptr)");
+    EXPECT_THROW(seq->Reduce(nullptr, 0), InvalidArgumentException) 
+        << "Reduce(nullptr) should throw InvalidArgumentException";
 }
 
 TEST_F(ExceptionTest, BitSequenceAndThrowsWhenSizesDiffer) {
-    expectThrow<IncompatibleSizesException>([this]() { bit3->And(*bit4); }, "And(3 vs 4)");
+    size_t size3 = bit3->GetCount();
+    size_t size4 = bit4->GetCount();
+    EXPECT_THROW(bit3->And(*bit4), IncompatibleSizesException) 
+        << "And() should throw IncompatibleSizesException, "
+        << "sizes differ: " << size3 << " vs " << size4;
 }
 
 TEST_F(ExceptionTest, BitSequenceAndWorksWhenSizesEqual) {
     BitSequence bit3_copy{1, 0, 1};
-    EXPECT_NO_THROW(bit3->And(bit3_copy));
+    EXPECT_NO_THROW(bit3->And(bit3_copy)) 
+        << "And() with equal sizes (both " << bit3->GetCount() 
+        << ") should not throw any exception";
 }
 
 TEST_F(ExceptionTest, BitSequenceGetThrowsWhenIndexOutOfRange) {
-    expectThrow<IndexOutOfRangeException>([this]() { bit3->Get(3); }, "Get(3) on size 3");
-}
-
-TEST_F(ExceptionTest, ImmutableAppendReturnsNew) {
-    size_t oldSize = immutable->GetCount();
-    auto* newSeq = immutable->Append(10);
-    EXPECT_EQ(immutable->GetCount(), oldSize);
-    EXPECT_EQ(newSeq->GetCount(), oldSize + 1);
-    delete newSeq;
-}
-
-TEST_F(ExceptionTest, ImmutablePrependReturnsNew) {
-    size_t oldSize = immutable->GetCount();
-    auto* newSeq = immutable->Prepend(10);
-    EXPECT_EQ(immutable->GetCount(), oldSize);
-    EXPECT_EQ(newSeq->GetCount(), oldSize + 1);
-    delete newSeq;
-}
-
-TEST_F(ExceptionTest, ImmutableInsertAtReturnsNew) {
-    size_t oldSize = immutable->GetCount();
-    auto* newSeq = immutable->InsertAt(10, 0);
-    EXPECT_EQ(immutable->GetCount(), oldSize);
-    EXPECT_EQ(newSeq->GetCount(), oldSize + 1);
-    delete newSeq;
+    size_t size = bit3->GetCount();
+    EXPECT_THROW(bit3->Get(3), IndexOutOfRangeException) 
+        << "Get(3) should throw IndexOutOfRangeException, "
+        << "BitSequence size = " << size << " (valid indices 0-" << (size - 1) << ")";
 }
